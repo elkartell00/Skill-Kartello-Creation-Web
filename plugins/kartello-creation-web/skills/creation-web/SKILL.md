@@ -21,9 +21,11 @@ Idea iniziale passata all'avvio (può essere vuota): $ARGUMENTS
 5. **Non bloccarti.** Se l'utente non sa rispondere, proponi un default ragionevole, dichiaralo in una riga e prosegui.
 6. **Bozza realistica ma onesta.** Scrivi testi veri, mai Lorem Ipsum. Recensioni, nomi, numeri e loghi inventati sono segnaposto: elencali in `docs/brief-sito.md`, sezione "Contenuti da sostituire", perché vanno rimpiazzati con dati reali prima della pubblicazione.
 7. **Lingua.** Fai le domande nella lingua dell'utente. I testi del sito vanno nella lingua scelta nel brief.
+8. **La tecnologia la sceglie l'utente.** Non esiste uno stack predefinito: in base al brief raccomanda quello più adatto al sito, spiega perché in poche righe, e lascia la decisione all'utente (domanda W4).
 
 ## Come fare le domande
 
+- All'avvio l'utente sceglie la **modalità dell'intervista**: **Rapida**, **Standard** o **Approfondita**. Quali domande fa ogni modalità è in [references/domande.md](references/domande.md) §0.
 - Lavora a giri brevi: al massimo 4–6 domande per giro, raggruppate per tema.
 - Chiedi solo ciò che manca. Se l'idea iniziale, i messaggi precedenti o i file del progetto rispondono già, non richiedere.
 - Domande chiuse: se è disponibile lo strumento di domande a scelta multipla (AskUserQuestion), usalo. Al massimo 4 domande per chiamata, l'opzione consigliata per prima con "(Consigliato)", anteprime per palette e scale tipografiche. Altrimenti usa un elenco numerato in chat con le opzioni.
@@ -38,12 +40,13 @@ La banca completa delle domande, con opzioni e default, è in [references/domand
 ### Fase 0 — Avvio
 
 1. Controlla se nel progetto esistono già `docs/brief-sito.md` e `docs/design-system.md`. Se sì, mostra un riepilogo e chiedi se continuare, modificare un parametro o aggiungere pagine. Non rifare l'intervista da capo.
-2. Controlla se il progetto ha già un framework (`package.json`, `astro.config.*`, `next.config.*`, ecc.): lo stack rilevato vince sulla domanda dello stack.
+2. Controlla se il progetto ha già un framework (`package.json`, `astro.config.*`, `next.config.*`, ecc.). Se c'è, annotalo: con W4 raccomanderai di mantenerlo, ma la scelta resta all'utente.
 3. Leggi l'idea iniziale e deduci tutto quello che puoi: settore, tipo di sito, obiettivo, pubblico.
+4. Chiedi la modalità dell'intervista (Rapida, Standard, Approfondita), salvo che l'utente l'abbia già indicata. Se usa "decidi tu", vale Standard.
 
 ### Fase 1 — Brief base (sempre)
 
-Quattro giri, in quest'ordine. Dettagli in [references/domande.md](references/domande.md) §1.
+Quattro giri, in quest'ordine (in modalità Rapida diventano un solo giro con le domande essenziali). Dettagli in [references/domande.md](references/domande.md) §1.
 
 1. **Idea**: cosa è, settore e posizionamento, obiettivo principale, pubblico, tipo di sito, lingua, riferimenti, materiali esistenti.
 2. **Pagine**: proponi un elenco di pagine adatto al settore. L'utente conferma, toglie o aggiunge. Definisci l'obiettivo di ogni pagina e cosa va nel menu.
@@ -52,7 +55,7 @@ Quattro giri, in quest'ordine. Dettagli in [references/domande.md](references/do
 
 ### Fase 2 — Approfondimento mirato
 
-Scegli dalla banca domande ([references/domande.md](references/domande.md) §2) solo i blocchi pertinenti al tipo di sito e all'obiettivo: conversione e prove (se il sito deve vendere, raccogliere contatti o prenotazioni), tono di voce, stile, animazioni, navigazione, SEO e tecnica. Uno o due giri al massimo.
+Scegli dalla banca domande ([references/domande.md](references/domande.md) §2) i blocchi pertinenti al tipo di sito e all'obiettivo: conversione e prove (se il sito deve vendere, raccogliere contatti o prenotazioni), tono di voce, stile, animazioni, navigazione, SEO e tecnica. Quanti blocchi e quante domande dipende dalla modalità (§0). In ogni modalità chiedi la tecnologia (W4) con la tua raccomandazione motivata.
 
 ### Fase 3 — Brief e design system (blocco dei parametri)
 

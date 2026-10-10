@@ -6,6 +6,20 @@ Regole d'uso: chiedi solo ciò che manca, a giri di 4–6 domande, e dopo ogni g
 
 ---
 
+## §0 Modalità dell'intervista
+
+L'utente sceglie la modalità all'avvio. In tutte le modalità le risposte già presenti nell'idea iniziale non si richiedono, e ogni default applicato va in "Assunzioni" nel brief.
+
+| Modalità | Per chi | Domande |
+|---|---|---|
+| **Rapida** | Ha fretta, o vuole vedere subito una bozza | Un solo giro: I1, I3, I5, la proposta di pagine (P1), colori (C1, o C2 con tre palette), scala tipografica (T4) e tecnologia (W4). Tutto il resto con i default, dichiarati |
+| **Standard** | La maggior parte dei casi | I quattro giri del §1, poi uno o due giri del §2 con i soli blocchi pertinenti al tipo di sito e all'obiettivo. Circa 15–25 domande in tutto |
+| **Approfondita** | Progetti importanti, massimo controllo | Tutte le domande del §1 e del §2 pertinenti al tipo di sito, giro per giro, comprese quelle che nelle altre modalità prendono il default. Revisione della tabella tipografica e della palette prima di fissarle |
+
+Default se l'utente risponde "decidi tu": Standard.
+
+---
+
 ## §1 Brief base (sempre)
 
 ### Giro 1 — Idea
@@ -135,5 +149,20 @@ Dettagli in [strategia-e-struttura.md](strategia-e-struttura.md) §5.
 | W1 | Indicizzare su Google? [F1] | Sì (pagine stabili) · No (campagne pubblicitarie, offerte a tempo) | Sì |
 | W2 | Parole chiave e zona geografica principali | Aperta | Dedotte da I1 e I4 |
 | W3 | Dove devono arrivare le richieste? | Email · Servizio per moduli · WhatsApp · Sistema di prenotazione · CRM | Email |
-| W4 | Tecnologia | Next.js più Tailwind · Astro più Tailwind · HTML più Tailwind statico · Già esistente | Rilevata dal progetto, altrimenti Next.js più Tailwind |
+| W4 | Tecnologia | Vedi sotto | Nessuno: si chiede sempre |
 | W5 | Dati legali per il footer (attività italiana): ragione sociale, P.IVA, sede | Aperta | Segnaposto in "Contenuti da sostituire" |
+
+### W4 — Come raccomandare la tecnologia
+
+W4 si chiede in **ogni** modalità e la scelta finale è sempre dell'utente. Valuta il brief, proponi l'opzione più adatta come prima scelta con "(Consigliato)" e il motivo in una o due righe, poi le alternative valide.
+
+| Situazione emersa dal brief | Raccomandazione |
+|---|---|
+| Il progetto ha già un framework | Mantenerlo |
+| Sito vetrina, contenuti, blog; priorità a velocità e SEO | Astro più Tailwind |
+| Sito destinato a crescere: aree riservate, funzioni dinamiche, integrazioni, app | Next.js più Tailwind |
+| Landing singola o sito di poche pagine da consegnare come file, senza build | HTML più Tailwind statico |
+| Il cliente vuole aggiornare i contenuti da solo | Aggiungere un CMS (es. un CMS headless con Astro o Next.js, oppure WordPress) |
+| Negozio online con catalogo ampio | Valutare una piattaforma e-commerce dedicata (es. Shopify) |
+
+I token del design system ([design-system.md](design-system.md) §9) si adattano a qualsiasi scelta: con Tailwind via `@theme`, altrimenti come variabili CSS.

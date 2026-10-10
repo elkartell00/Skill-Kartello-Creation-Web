@@ -8,8 +8,9 @@ poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 
 ## Come funziona
 
+0. **Modalità**: scegli l'intervista Rapida, Standard o Approfondita.
 1. **Brief base**: idea del sito, pagine, palette colori, tipografia (Display, H1–H6, testi, bottoni) fissata e approvata.
-2. **Approfondimento mirato**: conversione, prove, tono, stile, animazioni, navigazione, SEO, tecnologia; solo ciò che serve al tipo di sito.
+2. **Approfondimento mirato**: conversione, prove, tono, stile, animazioni, navigazione, SEO; solo ciò che serve al tipo di sito. La tecnologia viene raccomandata in base al sito, ma la scegli tu.
 3. **Blocco dei parametri**: scrive `docs/brief-sito.md` e `docs/design-system.md` nel progetto e aggiunge al suo `CLAUDE.md` la regola che li rende fissi.
 4. **Piano**: mappa del sito, scaletta delle pagine, testi della hero, benefici, FAQ, SEO.
 5. **Costruzione** sezione per sezione, con le regole di qualità della skill.
