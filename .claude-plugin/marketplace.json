@@ -1,0 +1,15 @@
+{
+  "name": "kartello",
+  "description": "Skill Claude Code di Kartello",
+  "owner": {
+    "name": "elkartell00",
+    "url": "https://github.com/elkartell00"
+  },
+  "plugins": [
+    {
+      "name": "kartello-creation-web",
+      "source": "./plugins/kartello-creation-web",
+      "description": "Skill Kartello Creation Web (in sviluppo)"
+    }
+  ]
+}

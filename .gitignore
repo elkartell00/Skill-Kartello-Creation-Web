@@ -1,0 +1,20 @@
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Impostazioni locali di Claude Code
+.claude/settings.local.json
+
+# Dipendenze e build
+node_modules/
+__pycache__/
+*.pyc
+dist/
+*.zip
+
+# Variabili d'ambiente
+.env
+.env.*
