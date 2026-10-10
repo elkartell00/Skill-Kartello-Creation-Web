@@ -1,22 +1,37 @@
 # Skill Kartello Creation Web
 
-Skill per [Claude Code](https://code.claude.com), distribuita come plugin tramite un marketplace GitHub.
+Skill per [Claude Code](https://code.claude.com) che crea siti web da zero per qualsiasi settore.
+Quando la avvii ti fa domande mirate, fissa un design system che resta costante su tutto il sito,
+poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 
-> Stato: **in sviluppo** — la skill è ancora un segnaposto.
+> Stato: **in sviluppo**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`).
+
+## Come funziona
+
+1. **Brief base**: idea del sito, pagine, palette colori, tipografia (Display, H1–H6, testi, bottoni) fissata e approvata.
+2. **Approfondimento mirato**: conversione, prove, tono, stile, animazioni, navigazione, SEO, tecnologia; solo ciò che serve al tipo di sito.
+3. **Blocco dei parametri**: scrive `docs/brief-sito.md` e `docs/design-system.md` nel progetto e aggiunge al suo `CLAUDE.md` la regola che li rende fissi.
+4. **Piano**: mappa del sito, scaletta delle pagine, testi della hero, benefici, FAQ, SEO.
+5. **Costruzione** sezione per sezione, con le regole di qualità della skill.
+6. **Controllo qualità** con checklist e consegna.
+
+Avvio: `/creation-web` (skill di progetto) oppure `/kartello-creation-web:creation-web` (plugin installato), eventualmente seguito dall'idea: `/creation-web sito per uno studio di fisioterapia a Bologna`.
 
 ## Struttura
 
 ```
 .
 ├── .claude-plugin/
-│   └── marketplace.json          # catalogo del marketplace "kartello"
+│   └── marketplace.json              # catalogo del marketplace "kartello"
 ├── plugins/
-│   └── kartello-creation-web/    # il plugin
+│   └── kartello-creation-web/        # il plugin
 │       ├── .claude-plugin/
-│       │   └── plugin.json       # manifest del plugin (nome, versione, autore)
+│       │   └── plugin.json           # manifest del plugin (nome, versione, autore)
 │       └── skills/
 │           └── creation-web/
-│               └── SKILL.md      # la skill vera e propria
+│               ├── SKILL.md          # flusso a fasi e regole d'oro
+│               ├── references/       # domande, design system, stili, strategia, motion, qualità, checklist, fonti
+│               └── templates/        # modelli di brief e design system per il progetto
 └── .claude/
     └── skills/
         └── creation-web -> ../../plugins/kartello-creation-web/skills/creation-web
@@ -42,8 +57,6 @@ Oppure dentro una sessione Claude Code:
 /plugin install kartello-creation-web@kartello
 ```
 
-Una volta installata, la skill si richiama con `/kartello-creation-web:creation-web`.
-
 In alternativa, senza plugin: copiare la cartella
 `plugins/kartello-creation-web/skills/creation-web` in `~/.claude/skills/`.
 
@@ -58,3 +71,8 @@ claude plugin validate ./plugins/kartello-creation-web
 
 Quando si rilascia una nuova versione, aggiornare `version` in
 `plugins/kartello-creation-web/.claude-plugin/plugin.json`.
+
+## Crediti
+
+Le regole integrate da altre skill e le relative licenze sono elencate in
+`plugins/kartello-creation-web/skills/creation-web/references/fonti.md`.
