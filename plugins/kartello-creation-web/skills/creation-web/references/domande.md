@@ -168,3 +168,31 @@ W4 si chiede in **ogni** modalità e la scelta finale è sempre dell'utente. Val
 | Negozio online con catalogo ampio | Valutare una piattaforma e-commerce dedicata (es. Shopify) |
 
 I token del design system ([design-system.md](design-system.md) §9) si adattano a qualsiasi scelta: con Tailwind via `@theme`, altrimenti come variabili CSS.
+
+### 2.7 Contenuti visivi [SA]
+
+Quando il sito ha immagini, cioè quasi sempre. Immagini, logo, icone illustrative, favicon, video e audio si creano solo con Studio AI ([contenuti-visivi.md](contenuti-visivi.md) §1); prima di questo giro leggi la skill `studio-ai` e il suo `CATALOGO.md` (§2). Se Studio AI non è disponibile nella sessione, fai comunque le domande: il sito usa segnaposto etichettati e le immagini si generano poi dove Studio AI è collegato. Attività, pubblico, colori e logo esistente hanno già una risposta in I1, I4, C1 e I8: riusala, non richiederla. Le domande vanno in un solo giro, saltando quelle che hanno già una risposta [F2].
+
+| ID | Domanda | Opzioni | Default |
+|---|---|---|---|
+| A1 | Stile delle immagini e atmosfera | Fotografico realistico · Illustrato · Minimal/flat · 3D; più l'atmosfera (calda, tecnica, lussuosa…) | Dedotto dalla direzione stilistica (V3) |
+| A2 | Possono comparire persone nelle immagini? | Sì, sempre inventate · No · Solo dettagli (mani, gesti) | Dedotto dal settore |
+| A3 | Video nella hero [F2] | Nessun video · Loop di sfondo · Video guidato dallo scroll | Nessun default: si chiede sempre, in ogni modalità, con la stima dei costi |
+| A4 | Qualità delle immagini | Standard (consigliata) · High per hero e logo | Standard |
+| A5 | Foto reali del cliente: quali ci sono? Il cliente acconsente al ritocco? Le persone ritratte acconsentono a comparire in nuove immagini? [F2] | Elenco delle foto · Ritocco sì o no · Nuove immagini sì o no | Usate così come sono, ottimizzate per il web, nessun ritocco |
+| A6 | C'è già un logo? (collegata a I8) | Sì: chiedi il file, meglio se vettoriale · No | Se manca: simbolo generato con Studio AI e nome del marchio in SVG con il font del sito |
+
+- **A1** fornisce lo stile da salvare in Studio AI e usare in tutte le immagini del sito ([contenuti-visivi.md](contenuti-visivi.md) §4).
+- **A2**: le persone generate da zero sono sempre inventate, mai somiglianti a persone reali; le persone reali arrivano solo dalle foto del cliente (A5).
+- **A3**: descrivi le opzioni in parole semplici, ognuna con la sua stima dei costi ([contenuti-visivi.md](contenuti-visivi.md) §12).
+  - *Nessun video*: la hero usa l'immagine.
+  - *Loop di sfondo*: un video muto di 8 secondi che si ripete dietro il titolo, con l'immagine della hero come anteprima; su mobile una versione più leggera dello stesso video ([contenuti-visivi.md](contenuti-visivi.md) §9).
+  - *Video guidato dallo scroll*: opzione avanzata; i dettagli arriveranno con l'integrazione della prossima fonte sullo scroll cinematico ([contenuti-visivi.md](contenuti-visivi.md) §9).
+
+  Prima di generare qualsiasi video attendi il via esplicito sulla stima. "Decidi tu" non vale come via: proponi l'opzione che consigli, con la stima, e finché l'utente non dice sì il sito resta senza video.
+- **A4**: stesso livello per tutte le immagini di una serie (card, galleria) [F2].
+- **A5**: le foto reali del cliente hanno sempre la precedenza sulle generate ([contenuti-visivi.md](contenuti-visivi.md) §8).
+  - Ritocco con Studio AI (luce, colore, stile, mantenendo persone e oggetti): serve il consenso del cliente e, se nella foto compaiono persone, anche quello di ognuna di loro.
+  - Nuove immagini che usano la foto come riferimento: per la stessa persona serve anche il consenso della persona ritratta; per lo stesso prodotto basta quello del cliente.
+  - Registra ogni consenso nel brief (sezione "Contenuti visivi"): foto, chi acconsente, a quale uso. Senza consenso registrato le foto si usano solo ottimizzate per il web.
+- **A6**: se I8 dice già che il logo c'è, non chiedere A6: chiedi il file. Un logo esistente non si genera né si ridisegna; le varianti (bianca, nera, monocolore) si ricavano dal file originale [F2]. Per un logo nuovo Studio AI genera solo il simbolo, senza testo; il nome del marchio si compone in SVG o HTML con il font del sito ([contenuti-visivi.md](contenuti-visivi.md) §7).

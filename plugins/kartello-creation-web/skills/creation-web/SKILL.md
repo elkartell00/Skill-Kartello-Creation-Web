@@ -1,6 +1,6 @@
 ---
 name: creation-web
-description: Crea siti web da zero per qualsiasi settore (sito vetrina multipagina, landing page, one page, portfolio, sito per attività locali) guidando l'utente con domande mirate su idea, obiettivo, pagine, palette colori, tipografia H1–H6, stile e conversione. Fissa un design system che resta costante su tutto il sito, poi pianifica e costruisce sezione per sezione una prima bozza di livello professionale. Usala quando l'utente chiede di creare, progettare o impostare un nuovo sito web o una landing page, oppure quando chiede di aggiungere pagine o sezioni a un sito che ha già `docs/brief-sito.md` e `docs/design-system.md`.
+description: Crea siti web da zero per qualsiasi settore (sito vetrina multipagina, landing page, one page, portfolio, sito per attività locali) guidando l'utente con domande mirate su idea, obiettivo, pagine, palette colori, tipografia H1–H6, stile e conversione. Fissa un design system che resta costante su tutto il sito, poi pianifica e costruisce sezione per sezione una prima bozza di livello professionale, con immagini, logo e video creati con Studio AI. Usala quando l'utente chiede di creare, progettare o impostare un nuovo sito web o una landing page, oppure quando chiede di aggiungere pagine o sezioni a un sito che ha già `docs/brief-sito.md` e `docs/design-system.md`.
 argument-hint: "[idea del sito]"
 ---
 
@@ -14,7 +14,7 @@ Idea iniziale passata all'avvio (può essere vuota): $ARGUMENTS
 
 ## Regole d'oro
 
-1. **Prima le domande, poi il codice.** Non scrivere codice del sito finché brief e design system non sono approvati dall'utente. Unica eccezione: l'utente chiede esplicitamente di procedere senza domande (es. "niente domande", "fai tutto tu"); allora applica i default e dichiarali. Anche in questo caso chiedi la tecnologia (W4), scrivi brief e design system, mostra un unico riepilogo (design system e piano) e attendi un ok prima del codice. "Decidi tu" detto a una singola domanda vale solo per quella domanda.
+1. **Prima le domande, poi il codice.** Non scrivere codice del sito finché brief e design system non sono approvati dall'utente. Unica eccezione: l'utente chiede esplicitamente di procedere senza domande (es. "niente domande", "fai tutto tu"); allora applica i default e dichiarali. Anche in questo caso chiedi la tecnologia (W4) e il video nella hero (A3), scrivi brief e design system, mostra un unico riepilogo (design system e piano) e attendi un ok prima del codice. "Decidi tu" detto a una singola domanda vale solo per quella domanda.
 2. **I parametri approvati sono fissi.** Colori, tipografia (Display, H1–H6, testi), spaziature, raggi e animazioni vivono nel design system del progetto. Ogni valore nel codice deriva da lì: nessun valore inventato al momento. Per cambiarne uno serve una richiesta esplicita dell'utente; si aggiorna prima il design system, poi il codice.
 3. **Priorità in caso di conflitto:** richiesta esplicita dell'utente > design system approvato del progetto > regole di questa skill > default del framework.
 4. **Nessuno stile imposto.** La skill serve qualsiasi settore. Le direzioni in [references/stili.md](references/stili.md) sono opzioni da proporre, non regole.

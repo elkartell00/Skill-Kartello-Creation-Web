@@ -37,6 +37,25 @@ CTA nell'header:
 - Movimento, navigazione, tagline reveal:
 - Priorità mobile (V7):
 
+## Contenuti visivi
+Immagini, logo, icone illustrative, favicon e video si creano solo con Studio AI. Il dettaglio di ogni immagine è nel Piano degli asset di `docs/piano-sito.md`.
+
+- Studio AI: {collegato | non collegato in questa sessione: segnaposto etichettati, da generare dove è collegato}
+- Stile delle immagini e atmosfera (A1):
+- Persone nelle immagini (A2): {sì, sempre inventate | no | solo dettagli}
+- Video nella hero (A3): {nessuno | loop di sfondo | guidato dallo scroll} · Stima mostrata: · Via dell'utente il:
+- Qualità (A4): {standard | high per hero e logo}
+- Logo (A6): {file del cliente: percorso | nuovo: simbolo con Studio AI e nome in SVG con il font del sito}
+- Nome dello stile salvato in Studio AI:
+
+Foto reali del cliente (A5). Hanno la precedenza sulle immagini generate. Senza consenso registrato qui si usano solo ottimizzate per il web.
+
+| Foto | Cosa mostra | Persone ritratte | Consenso del cliente | Consenso delle persone ritratte | Uso consentito |
+|---|---|---|---|---|---|
+| | | {nessuna \| chi} | {no \| sì, il gg/mm/aaaa, per ritocco e/o nuove immagini} | {no \| sì, il gg/mm/aaaa, per ritocco e/o nuove immagini \| non serve} | {solo ottimizzata \| ritocco \| riferimento per nuove immagini} |
+
+Il ritocco di una foto con persone e le nuove immagini della stessa persona richiedono entrambi i consensi; le nuove immagini dello stesso prodotto solo quello del cliente.
+
 ## SEO e tecnica
 - Indicizzazione:
 - Parole chiave e zona:
@@ -50,7 +69,7 @@ Default applicati senza una risposta esplicita, uno per riga.
 -
 
 ## Contenuti da sostituire
-Tutto ciò che nella bozza è inventato e va sostituito con dati reali prima della pubblicazione.
+Tutto ciò che nella bozza è inventato e va sostituito con dati reali prima della pubblicazione, compresi i segnaposto delle immagini (slot, formato, dimensioni) quando Studio AI non era disponibile.
 
 | Dove | Segnaposto | Cosa serve |
 |---|---|---|
