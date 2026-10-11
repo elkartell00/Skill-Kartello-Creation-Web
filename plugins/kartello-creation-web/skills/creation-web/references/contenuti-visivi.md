@@ -84,7 +84,7 @@ Ogni slot ha il suo formato fin dalla generazione, mai un formato unico ritaglia
 
 ## §9 Video
 
-- **Il video nella hero si chiede sempre** (domanda A3), senza default e con la stima dei costi: nessun video, loop di sfondo, oppure video guidato dallo scroll (opzione avanzata, dettagli in arrivo con la prossima fonte integrata) [scelta del proprietario].
+- **Il video nella hero si chiede sempre** (domanda A3), senza default e con la stima dei costi: nessun video, loop di sfondo, oppure video guidato dallo scroll, cioè lo scroll cinematico ([scroll-cinematico.md](scroll-cinematico.md)) [scelta del proprietario].
 - **Prima l'immagine, poi il video**: si genera e si approva il fotogramma di partenza (di solito la hero), poi lo si anima con `anima_immagine` come primo fotogramma. Il prompt del video descrive solo il movimento della camera e del soggetto [F2].
 - **Loop di sfondo** [SA]: `genera_video` o `anima_immagine` in 16:9, 8 s, `audio: false`, livello standard; nel markup `autoplay muted loop playsinline` con l'immagine hero come `poster`.
 - **Requisiti per il web** [F2]: un solo movimento di camera continuo e lento, senza tagli; soggetto centrato con spazio per il testo; esposizione e colore costanti; grade e palette uguali alle immagini.

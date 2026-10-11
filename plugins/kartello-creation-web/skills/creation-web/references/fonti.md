@@ -7,6 +7,7 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | F1 | `landing-page-design` | [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) | MIT | 2026-10-10 |
 | F2 | Pratiche di generazione da `higgsfield-generate`, `higgsfield-brandkit`, `higgsfield-product-photoshoot` e dal percorso website di `higgsfield-websites` | [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) v0.13.0, commit f83af0bc | MIT | 2026-10-11 |
 | SA | Istruzioni Studio AI del proprietario e `CATALOGO.md` dell'app | Proprietario | — | 2026-10-11 |
+| F3 | `scroll-world` v0.8.0 | [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | 2026-10-11 |
 
 ---
 
@@ -154,6 +155,57 @@ Scelte del proprietario che modificano il blocco:
 - **Icone**: modello misto, libreria per l'interfaccia e Studio AI per icone illustrative e favicon.
 - **Video nella hero**: si chiede ogni volta (A3), senza default.
 - **Foto reali**: con il consenso del cliente si possono ritoccare; con il consenso anche delle persone ritratte possono fare da riferimento per nuove immagini.
+
+## F3 — scroll-world
+
+Pagina in cui lo scroll guida una telecamera che vola tra scene generate, senza tagli: interviste, generazione delle scene e dei video concatenati, giunture identiche al fotogramma, codifica per lo scrub e un motore JavaScript portabile.
+
+| Parte originale | Dove si trova ora |
+|---|---|
+| Step 0 Bootstrap | [scroll-cinematico.md](scroll-cinematico.md) §1 (solo Studio AI, ffmpeg, Python) |
+| Step 1 Interview | [domande.md](domande.md) §2.8 (X1–X6), riusando brief e design system; preventivo in [scroll-cinematico.md](scroll-cinematico.md) §2 |
+| Step 2–3 Scene stills, knockout | [scroll-cinematico.md](scroll-cinematico.md) §3; `assets/scroll-cinematico/knockout.py` |
+| Step 4 Camera architecture, camera grammar | [scroll-cinematico.md](scroll-cinematico.md) §4 |
+| Step 5 Connectors | [scroll-cinematico.md](scroll-cinematico.md) §5 |
+| Step 6 Encode | [scroll-cinematico.md](scroll-cinematico.md) §6 |
+| Step 7 Assemble | [scroll-cinematico.md](scroll-cinematico.md) §7; `assets/scroll-cinematico/scrub-engine.js` e `index-template.html` |
+| Step 8 QA, Gotchas | [scroll-cinematico.md](scroll-cinematico.md) §8–§9; [checklist.md](checklist.md) |
+| prompts.md | [scroll-cinematico-prompt.md](scroll-cinematico-prompt.md) (prompt in inglese, istruzioni in italiano) |
+| pipeline.md | Solo i comandi ffmpeg in [scroll-cinematico.md](scroll-cinematico.md) §5–§6; la generazione passa da Studio AI |
+
+**Sostituzioni per Studio AI:** immagini con `genera_immagine`/`genera_lotto` invece di Higgsfield `gpt_image_2` o Codex `image_gen`; ingressi, tratti e raccordi con `anima_immagine` (`immagine_iniziale` e `immagine_finale`) invece di Seedance/Kling su Higgsfield o Monid; livello `low` come bozza invece di `seedance_2_0_mini` o 480p; stile coerente con `salva_stile`; preventivo con `stima_costo` e `riepilogo_spese` invece della calibrazione dei crediti; durate e risoluzioni adattate a Veo (4, 6, 8 s; 1080p a 8 s).
+
+**Scelte del proprietario:** stile del motore adattato al design system oppure originale (X6, entrambe disponibili); uso anche come apertura della Home (opzione `release`); menu del sito più punti laterali del motore (opzione `topbar: false`).
+
+**Modifiche al motore** (`scrub-engine.js`, marcate "Kartello"): opzioni `topbar` e `release`; testate in Chromium.
+
+**Non integrato:** CLI e flussi di Higgsfield, Monid e Codex (registrazione, crediti, file system `sfs`, protocollo di qualificazione degli endpoint, modelli della lista), comandi per macOS come `stat -f%z`, i limiti specifici dei loro filtri.
+
+### Licenza F3
+
+```
+MIT License
+
+Copyright (c) 2026 cyw
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ## Aggiunte Kartello
 

@@ -165,3 +165,8 @@ function initTaglineReveal(section) {
 
 document.querySelectorAll('[data-tagline]').forEach(initTaglineReveal);
 ```
+
+## §6 Scroll cinematico con video [F3]
+
+Quando lo scroll fa avanzare un video (telecamera che vola tra scene generate), segui [scroll-cinematico.md](scroll-cinematico.md): motore pronto in `assets/scroll-cinematico/`, video caricati come Blob, ricerche raggruppate su mobile, poster finché il video non disegna, solo immagini con `prefers-reduced-motion`. Valgono comunque le regole del §2.
+

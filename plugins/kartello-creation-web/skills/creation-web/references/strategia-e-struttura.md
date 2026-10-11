@@ -75,6 +75,7 @@ Scegline uno e spiega perché.
 | **B. Storia lunga** | Bisogna educare e superare lo scetticismo |
 | **C. Pagina di conversione minimale** | Traffico ad alta intenzione (email a utenti che ci conoscono) o offerta breve come download o lista d'attesa |
 | **D. Pagina di confronto** | La ricerca contiene alternative ("X vs Y", "il migliore per"). Di solito insieme a pagine SEO |
+| **E. Mondo scorrevole cinematico** [F3] | Brand, prodotti e attività con una filiera da raccontare (produzione, luoghi, servizi in sequenza); budget per i video. Lo scroll fa volare una telecamera tra 5–7 scene con i testi sopra; può anche aprire la Home seguita dalle sezioni normali ([scroll-cinematico.md](scroll-cinematico.md)) |
 
 ## §6 Regole di conversione [F1]
 

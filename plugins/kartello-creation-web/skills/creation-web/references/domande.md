@@ -140,7 +140,7 @@ Solo se I5 è landing page singola, dopo K6 e K7. Se non viene chiesto (Rapida, 
 
 | ID | Domanda | Opzioni | Default |
 |---|---|---|---|
-| L1 | Layout | A Classico (hero più sezioni) · B Storia lunga · C Minimale · D Confronto | A |
+| L1 | Layout | A Classico (hero più sezioni) · B Storia lunga · C Minimale · D Confronto · E Mondo scorrevole cinematico [F3] | A |
 
 Dettagli in [strategia-e-struttura.md](strategia-e-struttura.md) §5.
 
@@ -187,7 +187,7 @@ Quando il sito ha immagini, cioè quasi sempre. Immagini, logo, icone illustrati
 - **A3**: descrivi le opzioni in parole semplici, ognuna con la sua stima dei costi ([contenuti-visivi.md](contenuti-visivi.md) §12).
   - *Nessun video*: la hero usa l'immagine.
   - *Loop di sfondo*: un video muto di 8 secondi che si ripete dietro il titolo, con l'immagine della hero come anteprima; su mobile una versione più leggera dello stesso video ([contenuti-visivi.md](contenuti-visivi.md) §9).
-  - *Video guidato dallo scroll*: opzione avanzata; i dettagli arriveranno con l'integrazione della prossima fonte sullo scroll cinematico ([contenuti-visivi.md](contenuti-visivi.md) §9).
+  - *Video guidato dallo scroll*: la telecamera vola tra le scene mentre si scorre (scroll cinematico): domande X1–X6 (§2.8) e procedura in [scroll-cinematico.md](scroll-cinematico.md).
 
   Prima di generare qualsiasi video attendi il via esplicito sulla stima. "Decidi tu" non vale come via: proponi l'opzione che consigli, con la stima, e finché l'utente non dice sì il sito resta senza video.
 - **A4**: stesso livello per tutte le immagini di una serie (card, galleria) [F2].
@@ -196,3 +196,18 @@ Quando il sito ha immagini, cioè quasi sempre. Immagini, logo, icone illustrati
   - Nuove immagini che usano la foto come riferimento: per la stessa persona serve anche il consenso della persona ritratta; per lo stesso prodotto basta quello del cliente.
   - Registra ogni consenso nel brief (sezione "Contenuti visivi"): foto, chi acconsente, a quale uso. Senza consenso registrato le foto si usano solo ottimizzate per il web.
 - **A6**: se I8 dice già che il logo c'è, non chiedere A6: chiedi il file. Un logo esistente non si genera né si ridisegna; le varianti (bianca, nera, monocolore) si ricavano dal file originale [F2]. Per un logo nuovo Studio AI genera solo il simbolo, senza testo; il nome del marchio si compone in SVG o HTML con il font del sito ([contenuti-visivi.md](contenuti-visivi.md) §7).
+
+### 2.8 Scroll cinematico [F3]
+
+Solo se A3 = "video guidato dallo scroll" o L1 = E. Procedura in [scroll-cinematico.md](scroll-cinematico.md), prompt in [scroll-cinematico-prompt.md](scroll-cinematico-prompt.md). Attività, nome, palette e tono vengono già dal brief e dal design system: non richiederli. X3 e X4 si chiedono **sempre**, anche in modalità Rapida.
+
+| ID | Domanda | Opzioni | Default |
+|---|---|---|---|
+| X1 | Il viaggio: quali tappe attraversa la telecamera? Proponi 5–7 scene ricavate dalla filiera dell'attività (es. panificio: campo di grano → mulino → forno → bancone → consegna → il pane in tavola), l'utente modifica. L'ultima è il prodotto o il risultato, con la CTA | Aperta, con proposta | La proposta |
+| X2 | Direzione artistica del mondo | Diorama di argilla (miniatura isometrica) · Carta ritagliata · Giocattolo lucido · Plastilina · Notte al neon · Fotorealistico architettonico | Dedotta dallo stile (V3): miniatura per stili giocosi, fotorealistico per lusso e immobiliare |
+| X3 | Come si muove la telecamera? (presentala per sensazione, con il compromesso in una riga) | Volo nel mondo (entra in ogni scena, risale e vola alla successiva) · Percorso continuo (un'unica ripresa sempre in avanti) · Planata isometrica fissa (angolo sempre uguale, il mondo scorre) | Nessuno: si chiede sempre. Consiglia il volo per le miniature e il percorso continuo per il fotorealistico |
+| X4 | Vuoi anche la versione per smartphone? È un secondo percorso video in verticale, pensato per il telefono, e circa raddoppia la spesa dei video (dichiara la cifra) | Solo desktop · Desktop più mobile (verticale nativo) | Nessuno: si chiede sempre |
+| X5 | Qualità e bozza | Bozza economica di tutto il percorso, poi finale (consigliato) · Direttamente il finale | Bozza poi finale |
+| X6 | Stile del motore dello scroll | Adattato al design system del sito (consigliato) · Stile originale del motore | Adattato (scelta del proprietario: entrambe le opzioni disponibili) |
+
+Dopo X1–X6 calcola il preventivo (N immagini + 2N−1 video, ×2 con X4 = sì, +15%) con `stima_costo` e attendi il sì esplicito prima di generare ([scroll-cinematico.md](scroll-cinematico.md) §2).

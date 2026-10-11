@@ -45,6 +45,7 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Video solo se scelto con A3 e approvato sulla stima; muto, con poster
 - [ ] File nel progetto con nomi parlanti; `width`, `height` reali e `alt` in italiano nel markup
 - [ ] Immagine OG e favicon presenti; costo totale riepilogato all'utente
+- [ ] Se c'è lo scroll cinematico: giunture controllate, mobile come scelto con X4, `release` e punti laterali funzionanti, solo immagini con reduced motion ([scroll-cinematico.md](scroll-cinematico.md) §8) [F3]
 
 ## Consegna
 - [ ] Stati hover, active, focus, caricamento, vuoto ed errore presenti [F1]

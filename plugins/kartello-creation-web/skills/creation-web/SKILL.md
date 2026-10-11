@@ -23,6 +23,7 @@ Idea iniziale passata all'avvio (può essere vuota): $ARGUMENTS
 7. **Lingua.** Fai le domande nella lingua dell'utente. I testi del sito vanno nella lingua scelta nel brief.
 8. **La tecnologia la sceglie l'utente.** Non esiste uno stack predefinito: in base al brief raccomanda quello più adatto al sito, spiega perché in poche righe, e lascia la decisione all'utente (domanda W4). Se risponde "decidi tu", applica l'opzione consigliata e scrivila in "Assunzioni" nel brief.
 9. **Immagini, video e audio solo con Studio AI.** Si generano sempre e solo con l'app Studio AI (server MCP `studio-ai`), mai con altri servizi o foto di repertorio. Le foto del cliente hanno la precedenza. Se Studio AI non è collegato, usa segnaposto etichettati e prosegui. Le richieste a Studio AI partono senza conferme: la stima e il via dell'utente li chiede la skill. Tutto in [references/contenuti-visivi.md](references/contenuti-visivi.md).
+10. **Proponi, consiglia, decide l'utente.** Ogni sito è diverso. Per le scelte che danno carattere al sito (stile, struttura e layout, navigazione, animazioni, video e scroll cinematico, tecnologia) proponi 2–3 opzioni davvero diverse tra loro, ragionando su settore, obiettivo e pubblico; indica quella che consigli e spiega perché in una riga. La scelta finale è sempre dell'utente.
 
 ## Come fare le domande
 
@@ -80,7 +81,7 @@ Prima di scrivere codice presenta, in quest'ordine:
 5. **Come funziona**: tre passaggi, se pertinente.
 6. **FAQ**: da sei a dodici domande e risposte, se pertinente.
 7. **SEO**: indicizzare o no, title e meta description per pagina.
-8. **Layout** delle landing: A, B, C o D, con il motivo.
+8. **Layout** delle landing: A, B, C, D o E, con il motivo.
 9. **Piano degli asset**: ogni immagine, icona illustrativa, logo e video del sito, con preset, formato e nome file, più la stima dei costi ([references/contenuti-visivi.md](references/contenuti-visivi.md) §3 e §12).
 
 Scrivi i testi secondo [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §6–§7 e [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §1; per SEO e layout segui [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §8 e §5.
@@ -115,5 +116,6 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/motion.md](references/motion.md) | Animazioni, navigazione, sezione tagline |
 | [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) | Fasi 4 e 5: scrittura dei testi e costruzione |
 | [references/contenuti-visivi.md](references/contenuti-visivi.md) | Fasi 2, 4 e 5: immagini, logo, icone, video e audio con Studio AI |
+| [references/scroll-cinematico.md](references/scroll-cinematico.md) e [references/scroll-cinematico-prompt.md](references/scroll-cinematico-prompt.md) | Solo se A3 = video guidato dallo scroll o L1 = E: scroll cinematico con il motore in `assets/scroll-cinematico/` |
 | [references/checklist.md](references/checklist.md) | Fase 6 |
 | [references/fonti.md](references/fonti.md) | Origine delle regole integrate e licenze |
