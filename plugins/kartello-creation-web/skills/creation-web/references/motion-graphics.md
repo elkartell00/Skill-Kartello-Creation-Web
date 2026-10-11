@@ -1,8 +1,8 @@
 # Motion graphics in codice: l'effetto wow
 
-**Il cuore della skill.** Ogni sito di livello **Wow** (G1) ha un **momento firma in motion graphics fatto in codice**: la cosa che fa dire "come è possibile?". Si costruisce solo con il codice (HTML, CSS, SVG, Canvas, WebGL, GSAP, Three.js), senza app esterne e senza costi. Si salta solo se l'utente dice esplicitamente di non volerlo.
+**Il cuore della skill.** Ogni sito di livello **High Quality** (G1) ha un **momento firma in motion graphics fatto in codice**: la cosa che fa dire "come è possibile?". Si costruisce solo con il codice (HTML, CSS, SVG, Canvas, WebGL, GSAP, Three.js), senza app esterne e senza costi. Si salta solo se l'utente dice esplicitamente di non volerlo.
 
-**Studio AI al servizio del wow, mai al posto del wow** (scelta del proprietario). Prima si prova sempre in codice. Se il codice non arriva al livello (per esempio serve una ripresa realistica dentro la scena, come nelle ricette di [siti-3d-scroll.md](siti-3d-scroll.md)), Studio AI va bene, con stima e sì dell'utente, e al livello Wow si può investire di più. Ma la spesa deve tradursi in un risultato mozzafiato: se dopo tante generazioni il sito sarebbe comunque normale, non si spende ([contenuti-visivi.md](contenuti-visivi.md) §12).
+**Studio AI al servizio del wow, mai al posto del wow** (scelta del proprietario). Prima si prova sempre in codice. Se il codice non arriva al livello (per esempio serve una ripresa realistica dentro la scena, come nelle ricette di [siti-3d-scroll.md](siti-3d-scroll.md)), Studio AI va bene, con stima e sì dell'utente, e al livello High Quality si può investire di più. Ma la spesa deve tradursi in un risultato mozzafiato: se dopo tante generazioni il sito sarebbe comunque normale, non si spende ([contenuti-visivi.md](contenuti-visivi.md) §12).
 
 ## §1 Il metodo (come si arriva al wow)
 

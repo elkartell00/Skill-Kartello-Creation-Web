@@ -24,15 +24,15 @@ Si chiede all'avvio insieme alla modalità, in ogni modalità. Non va confuso co
 
 | ID | Domanda | Opzioni | Default |
 |---|---|---|---|
-| G1 | Che livello di sito vuoi? | **Base**: sito normale e semplice, animazioni essenziali, spesa minima · **Standard**: bel sito moderno, animazioni curate, momento firma facoltativo · **Wow**: alta qualità, mozzafiato, da migliaia di dollari, tanto motion graphics e un momento firma fatto in codice | Wow (consigliato) |
+| G1 | Che livello di sito vuoi? | **Low Quality**: sito normale e semplice, animazioni essenziali, spesa minima · **Standard**: bel sito moderno, animazioni curate, momento firma facoltativo · **High Quality**: mozzafiato, da migliaia di dollari, tanto motion graphics e un momento firma fatto in codice | High Quality (consigliato) |
 
 | Livello | Movimento consigliato (M1) | Momento firma (M4) | Budget base con Studio AI (indicativo) |
 |---|---|---|---|
-| Base | Sottile | No | Fino a 2–3 immagini e al massimo 1 video |
+| Low Quality | Sottile | No | Fino a 2–3 immagini e al massimo 1 video |
 | Standard | Fluido | Facoltativo, si propone | Fino a 5–6 immagini e 1–2 video |
-| Wow | Fluido o cinematografico | Sempre | Più ampio, solo per ciò che serve al wow |
+| High Quality | Fluido o cinematografico | Sempre | Più ampio, solo per ciò che serve al wow |
 
-Sempre prima il codice. Se servirebbero più generazioni del budget base, **chiedi prima**: cosa aggiungerebbero, la stima e che il sito **resta allo stesso livello**, solo più completo; l'utente decide (anche "ci penso"). Al livello Wow una spesa più alta deve tradursi in un sito davvero mozzafiato ([contenuti-visivi.md](contenuti-visivi.md) §12).
+Sempre prima il codice. Se servirebbero più generazioni del budget base, **chiedi prima**: cosa aggiungerebbero, la stima e che il sito **resta allo stesso livello**, solo più completo; l'utente decide (anche "ci penso"). Al livello High Quality una spesa più alta deve tradursi in un sito davvero mozzafiato ([contenuti-visivi.md](contenuti-visivi.md) §12).
 
 ---
 
@@ -147,7 +147,7 @@ Se I3 è vendita, contatti, prenotazioni o lead. In due giri: K1–K4, poi K5–
 | M1 | Quanto movimento? | Nessuno (solo stati) · Sottile · Fluido · Cinematografico | Fluido |
 | M2 | Navigazione | Barra classica fissa · Isola fluttuante in vetro · Trasparente sopra la hero · Menu laterale | Barra classica fissa |
 | M3 | Sezione "tagline reveal": una frase grande che si accende parola per parola durante lo scroll | Sì · No | Sì per landing e stile Minimal tech, altrimenti no |
-| M4 | Momento firma in motion graphics, quello che il visitatore ricorda [F5] | 2–3 idee in codice adatte all'attività ([motion-graphics.md](motion-graphics.md), [effetti-wow.md](effetti-wow.md)), più "Nessun effetto firma" | Livello Wow: sempre l'idea consigliata, nessuno solo se l'utente lo chiede. Standard: facoltativo, si propone. Base: no, salvo richiesta |
+| M4 | Momento firma in motion graphics, quello che il visitatore ricorda [F5] | 2–3 idee in codice adatte all'attività ([motion-graphics.md](motion-graphics.md), [effetti-wow.md](effetti-wow.md)), più "Nessun effetto firma" | Livello High Quality: sempre l'idea consigliata, nessuno solo se l'utente lo chiede. Standard: facoltativo, si propone. Low Quality: no, salvo richiesta |
 
 Dettagli in [motion.md](motion.md).
 
