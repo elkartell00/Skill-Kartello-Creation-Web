@@ -12,11 +12,11 @@ L'utente sceglie la modalità all'avvio. In tutte le modalità le risposte già 
 
 | Modalità | Per chi | Domande |
 |---|---|---|
-| **Rapida** | Ha fretta, o vuole vedere subito una bozza | Due giri brevi: (1) I1, I3, I5 e C1, saltando ciò che l'idea già dice; (2) proposta di pagine (P1), stile dedotto (V3) dichiarato prima delle palette, tre palette adatte a settore e stile se C1 è "proponimi tu" (senza chiedere C2), scala tipografica (T4) e tecnologia (W4) con raccomandazione. Tutto il resto, L1 compreso, con i default dichiarati |
-| **Standard** | La maggior parte dei casi | I quattro giri del §1, poi uno o due giri del §2 con i soli blocchi pertinenti al tipo di sito e all'obiettivo. Circa 20–30 domande in tutto, meno quelle a cui l'idea iniziale risponde già |
-| **Approfondita** | Progetti importanti, massimo controllo | Tutte le domande del §1 e del §2 pertinenti al tipo di sito, giro per giro, comprese quelle che nelle altre modalità prendono il default. Revisione della tabella tipografica e della palette prima di fissarle |
+| **Rapida** | Ha fretta, o vuole vedere subito una bozza | Due giri brevi: (1) I1, I3, I5 e C1, saltando ciò che l'idea già dice; (2) proposta di pagine (P1), stile dedotto (V3) dichiarato prima delle palette, tre palette adatte a settore e stile se C1 è "proponimi tu" (senza chiedere C2), scala tipografica (T4), tecnologia (W4) con raccomandazione e video nella hero (A3) con la stima dei costi. A5 e A6 solo se I8 o l'idea iniziale indicano foto o un logo del cliente. Tutto il resto, L1, A1, A2 e A4 compresi, con i default dichiarati |
+| **Standard** | La maggior parte dei casi | I quattro giri del §1, poi uno o due giri del §2 con i soli blocchi pertinenti al tipo di sito e all'obiettivo; il blocco 2.7 quando il sito ha immagini, A3 in ogni caso. Circa 20–30 domande in tutto, meno quelle a cui l'idea iniziale risponde già |
+| **Approfondita** | Progetti importanti, massimo controllo | Tutte le domande del §1 e del §2 pertinenti al tipo di sito (blocco 2.7 compreso), giro per giro, anche quelle che nelle altre modalità prendono il default. Revisione della tabella tipografica e della palette prima di fissarle |
 
-Default se l'utente risponde "decidi tu" a questa domanda: Standard. La richiesta di procedere senza domande ("niente domande", "fai tutto tu") segue invece la regola d'oro 1 di `SKILL.md`.
+Default se l'utente risponde "decidi tu" a questa domanda: Standard. La richiesta di procedere senza domande ("niente domande", "fai tutto tu") segue invece la regola d'oro 1 di `SKILL.md`; anche in quel caso si chiede A3, che non ha default.
 
 ---
 
@@ -37,7 +37,7 @@ Domande aperte, in chat, in due parti: prima I1–I5, poi I6–I8.
 | I7 | Siti che ti piacciono (e cosa ti piace), siti che non ti piacciono, concorrenti. | Nessuno |
 | I8 | Cosa hai già: logo, colori, font, testi, foto, video, dominio, sito attuale. | Niente |
 
-I3 decide la CTA principale di tutto il sito. Se I5 è "landing page singola", usa la struttura landing ([strategia-e-struttura.md](strategia-e-struttura.md) §2).
+I3 decide la CTA principale di tutto il sito. Se I5 è "landing page singola", usa la struttura landing ([strategia-e-struttura.md](strategia-e-struttura.md) §2). Se I8 indica foto o un logo, approfondisci con A5 e A6 (§2.7).
 
 ### Giro 2 — Pagine
 
@@ -110,7 +110,7 @@ Se I3 è vendita, contatti, prenotazioni o lead. In due giri: K1–K4, poi K5–
 | ID | Domanda | Default |
 |---|---|---|
 | R1 | Quali prove hai? Loghi clienti, recensioni, numeri, casi studio, certificazioni, premi, articoli. | Segnaposto da sostituire |
-| R2 | Materiali visivi: foto reali (luogo, team, prodotti), screenshot, video demo, illustrazioni. | Segnaposto indicati |
+| R2 | Materiali visivi: foto reali (luogo, team, prodotti), screenshot, video demo, illustrazioni. | In quest'ordine: foto reali del cliente (A5), immagini generate con Studio AI, segnaposto etichettato con slot, formato e dimensioni ([contenuti-visivi.md](contenuti-visivi.md) §1) [SA]. Screenshot e video demo solo reali, altrimenti segnaposto [F2] |
 | R3 | Come riduciamo il rischio per il cliente? Prova gratuita, piano gratuito, senza carta di credito, disdici quando vuoi, soddisfatti o rimborsati, preventivo o sopralluogo gratuito, garanzia. | Almeno una in ogni landing e nelle pagine di conversione |
 
 ### 2.3 Tono e stile [F1]
