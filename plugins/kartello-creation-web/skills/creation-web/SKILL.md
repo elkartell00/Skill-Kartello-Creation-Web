@@ -120,5 +120,6 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/volo-in-prima-persona.md](references/volo-in-prima-persona.md) | Solo se X3 = volo in prima persona nei locali |
 | [references/seo.md](references/seo.md) | Fasi 4 e 6: title, meta, dati strutturati, contenuti citabili dalle AI, controllo SEO |
 | [references/effetti-wow.md](references/effetti-wow.md) | Fasi 2 e 4: effetto firma (M4) e diversità tra siti |
+| [references/siti-3d-scroll.md](references/siti-3d-scroll.md) | Se l'effetto firma è un "3D scroll" (famiglia E): ricette E1–E7 e motore in `assets/scroll-3d/` |
 | [references/checklist.md](references/checklist.md) | Fase 6 |
 | [references/fonti.md](references/fonti.md) | Origine delle regole integrate e licenze |

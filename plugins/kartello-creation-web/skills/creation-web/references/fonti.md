@@ -10,6 +10,8 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | F3 | `scroll-world` v0.8.0 | [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | 2026-10-11 |
 | F4 | `opus-55-10k-websites` (Drone Fly-Through e Mobile Refinement) | Prompt forniti dal proprietario | Nessuna licenza dichiarata: solo idee riscritte | 2026-10-11 |
 | F5 | Percorso website di `higgsfield-websites` (design-recipe, review-rubric, wow-catalog, seo) | [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) v0.13.0, commit f83af0bc | MIT (testo in F2) | 2026-10-11 |
+| F6 | *Build Award-Winning 3D Scroll Websites* (prompt pack PDF, settembre 2026) | Fornito dal proprietario | Nessuna licenza: solo tecniche e strutture riscritte | 2026-10-11 |
+| F7 | `scroll-cinematic` (skill più vecchia) | Fornita dal proprietario | Nessuna licenza: solo idee, nessun codice copiato | 2026-10-11 |
 
 ---
 
@@ -248,6 +250,29 @@ Dallo stesso repository di F2 (licenza MIT riportata in F2), le parti utili a co
 **Non integrato perché in conflitto con scelte già fatte:** il sito animato con scroll-scrub obbligatorio per ogni sito (qui è un'opzione, A3 e M4); un solo tema per pagina (C3 prevede "chiaro con sezioni scure"); il divieto totale del trattino medio (qui ammesso negli intervalli di dati); il divieto dei segnali di scroll ("scorri") e delle rivelazioni che partono da opacità zero (in conflitto con F1 e con il motore di F3); scala tipografica con `tracking-tighter` (in conflitto con la scala F1); uno stile diverso per ogni bottone (in conflitto con il design system bloccato).
 
 **Non integrato perché legato alla piattaforma:** CLI, deploy su Cloudflare, React con TanStack, Quanta, autenticazione, app e giochi, 3D, marchio Higgsfield, loghi di terzi da Simple Icons.
+
+## F6 — Award-Winning 3D Scroll Websites (PDF)
+
+Pacchetto di 7 prompt per siti "3D scroll" (sequenze di fotogrammi su canvas) e la guida che li accompagna. Nessuna licenza dichiarata: **nessun testo o prompt è stato copiato**; sono state riscritte in italiano le tecniche e la struttura dei sette siti, per trasportarle in altri settori.
+
+| Parte originale | Dove si trova ora |
+|---|---|
+| Come funziona il 3D scroll, ricetta in 7 passi, sei lezioni | [siti-3d-scroll.md](siti-3d-scroll.md) §1–§2, §8 |
+| Quale modello per quale ripresa | [siti-3d-scroll.md](siti-3d-scroll.md) §3, tradotto nelle funzioni di Studio AI |
+| I sette siti (LAMINA, CYMA, HESPER, UNDO, CLEARLINE, FACET, OASIS) | Ricette E1–E7 in [siti-3d-scroll.md](siti-3d-scroll.md) §5 e [effetti-wow.md](effetti-wow.md), con nomi generici e settori in cui trasportarle |
+| Cinque potenziamenti | [siti-3d-scroll.md](siti-3d-scroll.md) §6 |
+| Guidare con sensazioni, non specifiche | [siti-3d-scroll.md](siti-3d-scroll.md) §7 |
+| Un'immagine madre, tutte le altre come modifiche | [contenuti-visivi.md](contenuti-visivi.md) §4 |
+
+**Sostituzioni per Studio AI:** immagini con `genera_immagine` e `modifica_immagine` invece di GPT Image su Higgsfield; video con partenza e arrivo con `anima_immagine` invece di Kling, Cinema Studio e Seedance; ripresa unica con `durata` lunga; confronto tra modelli diventato confronto tra varianti; aumento dei fotogrammi con `minterpolate` di ffmpeg invece di Topaz; il modello 3D da ruotare (Hunyuan3D) non è disponibile e diventa un video in orbita.
+
+**Non integrato:** prezzi in crediti Higgsfield, il rifiuto dei preset di Higgsfield, link alla community a pagamento.
+
+## F7 — scroll-cinematic (skill più vecchia)
+
+Skill di circa quattro mesi prima per siti "3D scroll" da un solo prompt. Analisi veloce come richiesto dal proprietario: quasi tutto è superato da F6 e dal motore Kartello. Tenuti solo come idee riscritte: i movimenti consigliati per tipo di sito, le regole del motore canvas (precaricamento, palco fissato da 420–600 vh, disegno solo quando cambia il fotogramma, adattamento "cover" e densità di pixel limitata a 2, finestre di comparsa dei testi), il trucco gratuito delle varianti di colore con il filtro `hue` di ffmpeg. Il motore `assets/scroll-3d/frame-scrub.js` è scritto da zero.
+
+**Non integrato:** il codice e i modelli (nessuna licenza), il flusso Higgsfield (`declined_preset_id`, modelli di riserva), l'installazione automatica di ffmpeg, il componente React e il lanciatore per macOS.
 
 ## Aggiunte Kartello
 

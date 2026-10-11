@@ -37,6 +37,8 @@ La scheda contiene [F2]:
 - il "mondo materiale" dell'attività: le cose concrete che tocca (legno, acciaio, farina, vapore…);
 - almeno due cose da evitare, compresi i segni tipici dell'immagine sintetica: lucidità plastica ovunque, bagliori e neon a caso, oggetti fluttuanti senza senso, bloom e foschia eccessivi, marmo e piedistallo "lusso" generico, microtesti finti.
 
+**Una sola immagine madre** per ogni soggetto ricorrente (prodotto, scena, casa): le altre immagini dello stesso soggetto si fanno come **modifiche** della madre (`modifica_immagine`), mai da zero, così prodotto, camera e luce restano identici [F6].
+
 Per un elemento usa **un solo modo di guidare lo stile**: lo stile salvato oppure un'immagine di riferimento, salvo che il catalogo dica che si combinano [F2]. Le persone che ricorrono in più immagini si salvano con `salva_personaggio` (§8).
 
 ## §5 Preset per ogni slot

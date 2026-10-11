@@ -31,8 +31,8 @@ Avvio: `/creation-web` (skill di progetto) oppure `/kartello-creation-web:creati
 │       └── skills/
 │           └── creation-web/
 │               ├── SKILL.md          # flusso a fasi e regole d'oro
-│               ├── references/       # domande, design system, stili, strategia, motion, contenuti visivi, scroll cinematico, volo in prima persona, SEO, effetti wow, qualità, checklist, fonti
-│               ├── assets/           # motore dello scroll cinematico
+│               ├── references/       # domande, design system, stili, strategia, motion, contenuti visivi, scroll cinematico, volo in prima persona, SEO, effetti wow, siti 3D scroll, qualità, checklist, fonti
+│               ├── assets/           # motori dello scroll cinematico e del 3D scroll
 │               └── templates/        # modelli di brief, design system e piano del sito
 └── .claude/
     └── skills/

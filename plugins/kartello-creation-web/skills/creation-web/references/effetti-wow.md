@@ -44,6 +44,20 @@ L'effetto firma è la cosa che il visitatore ricorda. **Uno per pagina**, scelto
 | D2 | **Capitoli impilati**: sezioni a tutto schermo che si sovrappongono e si staccano, ognuna con la sua immagine o il suo loop | Immagini del piano degli asset |
 | D3 | **Tipografia in movimento**: testo enorme coreografato con lo scroll (lettere scaglionate, assi di peso e larghezza di un font variabile) su un'immagine generata. Quando la voce del marchio è la tipografia | Immagine di fondo con `genera_immagine` |
 
+### E. Siti "3D scroll" (sequenza di fotogrammi su canvas) [F6]
+
+Ricette complete, con immagini, film e sito, da trasportare in qualsiasi settore: [siti-3d-scroll.md](siti-3d-scroll.md) §5. Motore in `assets/scroll-3d/frame-scrub.js`.
+
+| ID | Ricetta | Per esempio |
+|---|---|---|
+| E1 | Lancio "flagship": un prodotto umile presentato come uno smartphone | Panificio, bar, prodotto simbolo |
+| E2 | Esplosione di colore: pulito, carico, al culmine | Audio, scarpe, cosmetici, bevande |
+| E3 | Ripresa unica: lo scroll è il conto alla rovescia | Inaugurazioni, eventi, lanci |
+| E4 | Restauro: lo scroll trasforma il prima nel dopo | Detailing, pulizie, tetti, ristrutturazioni |
+| E5 | Raggi X: vedere dentro, con la lente sotto il cursore | Idraulici, elettricisti, dentisti, officine |
+| E6 | Dentro la luce: prodotto nel nero sotto un faro | Gioielli, orologi, cristallo |
+| E7 | Il cantiere che si costruisce da solo | Piscine, giardini, cucine, case |
+
 **Non sono effetti firma** (al massimo contorno): un loop di sfondo da solo, comparse generiche in dissolvenza, particelle dietro il testo senza interazione, strisce che scorrono, card che si inclinano al passaggio del mouse [F5].
 
 ## Regole di realizzazione [F5]
