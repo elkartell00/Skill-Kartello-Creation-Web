@@ -108,6 +108,7 @@ Valgono anche le regole di scrittura di [contenuti-e-qualita.md](contenuti-e-qua
 - **Non indicizzare** le pagine solo per campagne pubblicitarie o le offerte molto legate a una data: `noindex` o un percorso non indicizzato.
 - **Indicizza** le offerte stabili e le pagine dove l'intento di ricerca coincide con la promessa. Ogni pagina indicizzata ha: title chiaro, meta description, link interni dalla home e dalle pagine correlate, FAQ in forma domanda e risposta (utile anche per i motori di risposta AI). Aggiungi lo schema FAQ quando è appropriato.
 - **Attività locali:** nome, indirizzo e telefono identici ovunque, schema `LocalBusiness`, pagina contatti con mappa, collegamento al profilo Google.
+- Title, description, robots, sitemap, dati strutturati, contenuti citabili dalle AI e controllo finale: [seo.md](seo.md) [F5].
 
 ## §9 Errori da evitare [F1]
 

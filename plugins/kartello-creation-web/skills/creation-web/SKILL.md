@@ -80,8 +80,8 @@ Prima di scrivere codice presenta, in quest'ordine:
 4. **Benefici**: da tre a cinque, orientati al risultato.
 5. **Come funziona**: tre passaggi, se pertinente.
 6. **FAQ**: da sei a dodici domande e risposte, se pertinente.
-7. **SEO**: indicizzare o no, title e meta description per pagina.
-8. **Layout** delle landing: A, B, C, D o E, con il motivo.
+7. **SEO**: indicizzare o no, title e meta description per pagina, dati strutturati ([references/seo.md](references/seo.md)).
+8. **Layout** delle landing: A, B, C, D o E, con il motivo; **effetto firma** della pagina, se scelto con M4 ([references/effetti-wow.md](references/effetti-wow.md)).
 9. **Piano degli asset**: ogni immagine, icona illustrativa, logo e video del sito, con preset, formato e nome file, più la stima dei costi ([references/contenuti-visivi.md](references/contenuti-visivi.md) §3 e §12).
 
 Scrivi i testi secondo [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §6–§7 e [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §1; per SEO e layout segui [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §8 e §5.
@@ -101,7 +101,7 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 
 ### Fase 6 — Controllo qualità e consegna
 
-1. Passa la [checklist](references/checklist.md) e correggi ciò che non va.
+1. Passa la [checklist](references/checklist.md), compreso il controllo meccanico e il controllo SEO, e correggi ciò che non va.
 2. Se possibile avvia il sito e controllalo a 375px, 768px e 1280px di larghezza (telefoni in dettaglio: [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §6). Nella consegna distingui i controlli fatti da quelli non fatti.
 3. Consegna: cosa è stato fatto, come avviarlo, i file creati con Studio AI e dove sono, il costo totale (`riepilogo_spese`), l'elenco "Contenuti da sostituire", i punti aperti e i prossimi passi consigliati.
 
@@ -118,5 +118,7 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/contenuti-visivi.md](references/contenuti-visivi.md) | Fasi 2, 4 e 5: immagini, logo, icone, video e audio con Studio AI |
 | [references/scroll-cinematico.md](references/scroll-cinematico.md) e [references/scroll-cinematico-prompt.md](references/scroll-cinematico-prompt.md) | Solo se A3 = video guidato dallo scroll o L1 = E: scroll cinematico con il motore in `assets/scroll-cinematico/` |
 | [references/volo-in-prima-persona.md](references/volo-in-prima-persona.md) | Solo se X3 = volo in prima persona nei locali |
+| [references/seo.md](references/seo.md) | Fasi 4 e 6: title, meta, dati strutturati, contenuti citabili dalle AI, controllo SEO |
+| [references/effetti-wow.md](references/effetti-wow.md) | Fasi 2 e 4: effetto firma (M4) e diversità tra siti |
 | [references/checklist.md](references/checklist.md) | Fase 6 |
 | [references/fonti.md](references/fonti.md) | Origine delle regole integrate e licenze |

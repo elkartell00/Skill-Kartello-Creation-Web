@@ -35,7 +35,9 @@ Con tema scuro (o doppio tema) definisci gli stessi ruoli anche per lo scuro.
 ### Regole
 
 - **Proporzioni 60/30/10:** neutri circa 60%, superfici e secondario circa 30%, primario e accento circa 10%. Con C4 "Ricco" il colore può salire.
-- **Un solo colore per le CTA principali** in tutto il sito.
+- **Un solo colore per le CTA principali** in tutto il sito, e **un solo accento** in tutta la pagina [F5].
+- **Neutri tutti caldi o tutti freddi**, mai mescolati [F5].
+- **Palette da non usare come prima scelta** perché tipiche dei siti fatti con l'AI, salvo colori di brand dell'utente [F5]: grafite o quasi nero con accento arancio o ambra; quasi nero con accento neon (ciano, blu, verde); beige e crema con ottone, argilla o bordeaux e testo espresso (tipica di artigianato, benessere, lusso); viola e violetto luminosi in sfumatura. Parti dal mondo materiale dell'attività, non da un elenco; e non ripetere la famiglia di palette del sito precedente ([effetti-wow.md](effetti-wow.md), "Diversità tra siti").
 - **Contrasto WCAG AA, sempre verificato:** testo normale almeno 4.5:1; testo grande (da 24px, o da 18.66px in grassetto) e componenti dell'interfaccia almeno 3:1. Controlla almeno `ink` e `ink-muted` su `background` e `surface`, `primary-ink` su `primary`, e `line-strong` e `focus` su `background` e `surface` (almeno 3:1). Calcola il rapporto con la formula WCAG della luminanza relativa, se serve con un breve script; se non passa, correggi il colore e dillo.
 - **Sfondi piatti di default** [F1]. I gradienti si usano solo se V6 lo consente (§6).
 - **Sfondi scuri consigliati** per il tema scuro [F1]: `#000000` · `#181818` · `#1F1F1F` · `#272727` · `#313131` · `#131209`.
@@ -68,6 +70,8 @@ Suggerimenti per carattere (T2), tutti disponibili su Google Fonts:
 | Tecnico (solo accenti) | Geist Mono, JetBrains Mono, IBM Plex Mono |
 
 Abbinamenti collaudati se T3 = due font: Fraunces + Manrope · Instrument Serif + Instrument Sans · Playfair Display + DM Sans · Bricolage Grotesque + Figtree.
+
+**Serif con una ragione** [F5]: "brief creativo o premium = serif" è uno dei segnali più tipici dei siti fatti con l'AI. Proponi un serif solo se il marchio è davvero editoriale, di lusso o un'istituzione storica, oppure se l'utente lo chiede, e scrivi il perché nel brief; Fraunces e Instrument Serif sono i più abusati, quindi non proporli come prima scelta. Un'attività tradizionale (barbiere, panificio, sarto) non è "storica" solo per questo. Per evidenziare una parola in un titolo usa il corsivo o il grassetto **della stessa famiglia**, mai una parola in serif dentro un titolo sans.
 
 Se il font non ha il peso scelto con T5, cambia peso o font e imposta `font-synthesis: none` per evitare il grassetto finto.
 

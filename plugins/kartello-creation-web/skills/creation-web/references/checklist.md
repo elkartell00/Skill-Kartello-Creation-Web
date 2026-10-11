@@ -56,3 +56,24 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Dati legali nel footer (attività italiane, vedi [contenuti-e-qualita.md](contenuti-e-qualita.md) §3)
 - [ ] Controllo visivo a 375px, 768px e 1280px; telefoni in verticale e orizzontale senza scroll orizzontale [F4]
 - [ ] Moduli con destinazione reale o comportamento dimostrativo dichiarato [F4]
+
+## Controllo meccanico prima della consegna [F5]
+
+Da eseguire sul codice, correggendo ogni risultato prima di consegnare:
+
+```bash
+grep -rniE 'lorem ipsum|TODO|REMOVE_THIS|\{\{|\[NOME' src/ app/ 2>/dev/null    # segnaposto rimasti
+grep -rn 'h-screen' src/ app/ 2>/dev/null                                    # usare dvh
+grep -rn ' — ' src/ app/ 2>/dev/null                                          # lineette nei testi visibili
+```
+
+- [ ] Nessun segnaposto tecnico nei testi; quelli voluti sono in "Contenuti da sostituire"
+- [ ] Ogni file in `public/` è usato da una pagina; la hero usa un'immagine vera
+- [ ] Head completo: favicon (ico e png), `apple-touch-icon`, icone 192 e 512 con `site.webmanifest`, `theme-color`, blocco Open Graph e Twitter con URL assoluti
+- [ ] Nessun accesso a `window`, `document` o `localStorage` fuori dagli effetti nei framework con rendering lato server
+- [ ] Una sola etichetta per intento di CTA; CTA principali brevi
+- [ ] Sopratitoli entro il limite; tipi di sezione non ripetuti ([contenuti-e-qualita.md](contenuti-e-qualita.md) §7)
+- [ ] La pagina costruita corrisponde alla scaletta approvata in `docs/piano-sito.md`
+- [ ] Controllo SEO in 10 punti superato ([seo.md](seo.md) §6)
+- [ ] Rilettura di tutti i testi visibili
+

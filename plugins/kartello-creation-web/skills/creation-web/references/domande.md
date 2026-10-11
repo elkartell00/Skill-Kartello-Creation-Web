@@ -131,6 +131,7 @@ Se I3 è vendita, contatti, prenotazioni o lead. In due giri: K1–K4, poi K5–
 | M1 | Quanto movimento? | Nessuno (solo stati) · Sottile · Fluido · Cinematografico | Fluido |
 | M2 | Navigazione | Barra classica fissa · Isola fluttuante in vetro · Trasparente sopra la hero · Menu laterale | Barra classica fissa |
 | M3 | Sezione "tagline reveal": una frase grande che si accende parola per parola durante lo scroll | Sì · No | Sì per landing e stile Minimal tech, altrimenti no |
+| M4 | Effetto firma della pagina, quello che il visitatore ricorda [F5] | 2–3 effetti adatti all'idea del sito da [effetti-wow.md](effetti-wow.md), più "Nessun effetto firma" | Il primo consigliato; nessuno se il movimento è "Nessuno" |
 
 Dettagli in [motion.md](motion.md).
 
@@ -153,6 +154,7 @@ Dettagli in [strategia-e-struttura.md](strategia-e-struttura.md) §5.
 | W3 | Dove devono arrivare le richieste? | Email · Servizio per moduli · WhatsApp · Sistema di prenotazione · CRM | Email |
 | W4 | Tecnologia | Vedi sotto | Nessuno stack fisso: si chiede sempre. Se l'utente risponde "decidi tu", applica l'opzione (Consigliato) e scrivila in Assunzioni |
 | W5 | Dati legali per il footer (attività italiana): quelli elencati in [contenuti-e-qualita.md](contenuti-e-qualita.md) §3 | Aperta | Segnaposto in "Contenuti da sostituire" |
+| W6 | Profili social e professionali attivi, scheda Google, anno di fondazione, zona servita (per i dati strutturati) [F5] | Aperta | Solo ciò che l'utente conferma; nessun profilo inventato ([seo.md](seo.md) §4) |
 
 ### W4 — Come raccomandare la tecnologia
 

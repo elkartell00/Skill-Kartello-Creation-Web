@@ -79,3 +79,36 @@ La versione mobile si progetta, non si rimpicciolisce il desktop:
 - navigazione sempre visibile, con logo e nome su una riga a sinistra e menu a destra; aree sicure del telefono rispettate;
 - controllo a 360×740, 375×812, 390×844 e 430×932, in verticale e in orizzontale, senza scroll orizzontale in nessuna sezione; poi ricontrolla il desktop.
 
+## §7 Segnali del "sito fatto con l'AI" da evitare [F5]
+
+Sono default, non dogmi: uno stile scelto o una richiesta esplicita dell'utente li supera (regola d'oro 3).
+
+**Hero**
+- Sta nella prima schermata: titolo al massimo 2 righe su desktop, sottotitolo al massimo 20 parole, CTA visibile senza scorrere.
+- Al massimo 4 elementi di testo: sopratitolo o striscia del marchio (facoltativo), titolo, sottotitolo, riga di CTA (una principale e al massimo una secondaria). Fuori dalla hero: frasi sotto le CTA, strisce di fiducia, prezzi, elenchi di funzioni, file di avatar, etichette di versione. I loghi dei clienti vanno in una sezione sotto.
+- Serve un'immagine vera ([contenuti-visivi.md](contenuti-visivi.md)): testo più una macchia di gradiente è un segnaposto; un finto prodotto costruito con i `div` (finta lista di attività, finto terminale, finta dashboard) è il segnale più evidente.
+- Non sempre centrata: salvo siti editoriali o manifesti, preferisci composizioni divise o asimmetriche.
+
+**Impaginazione**
+- Ogni tipo di sezione (tre card, testo più immagine, citazione a tutta larghezza, bento…) compare **al massimo una volta** per pagina; con 6 o più sezioni almeno 4 tipi diversi; al massimo 2 alternanze testo e immagine di fila.
+- Sopratitoli (piccole etichette in maiuscolo sopra i titoli): al massimo uno ogni tre sezioni, hero compresa.
+- Niente fila di tre card identiche come soluzione di default: alternanza a due colonne, griglia asimmetrica o scorrimento orizzontale.
+- Bento: tante celle quanti contenuti, niente celle vuote di riempimento, 2–3 celle con una vera variazione visiva.
+- Niente intestazioni di sezione con titolo gigante a sinistra e paragrafo piccolo a destra: impila.
+- Card solo dove l'elevazione indica una gerarchia; altrimenti filetti o spazio.
+- Menu su una riga su desktop, alto al massimo 80px. Per ogni sezione a più colonne dichiara come si comporta su mobile.
+- Altezze a schermo intero con `dvh` (`min-h-dvh`), mai `h-screen`, che si rompe con la barra degli indirizzi su mobile.
+
+**Testi**
+- Titoli al massimo 8 parole, paragrafi di sezione al massimo 25; per ogni sezione un'immagine o una CTA.
+- **Una sola etichetta per ogni intento** in tutta la pagina: non "Contattaci", "Scrivici" e "Parliamone" insieme. CTA principali di al massimo 3 parole, su una riga.
+- Niente etichette da "artigiano" di maniera ("Note dal campo", "Scelti in silenzio da…"), numerazione delle sezioni ("001 · Servizi"), strisce con luogo e meteo, puntini di stato decorativi, salvo che lo stile scelto li preveda.
+- Statistiche di marketing inventate (es. "92% più veloce", "10k+ clienti") solo come segnaposto dichiarati; i dati di catalogo di un'attività di prova (prezzi, misure, formati) invece servono e devono essere plausibili e coerenti.
+- Citazioni al massimo 3 righe, con virgolette tipografiche, nome e ruolo.
+- **Rilettura prima della consegna**: ogni testo visibile riletto; riscrivi ciò che è sgrammaticato, ambiguo o "AI che cerca di sembrare profonda". Meglio un testo semplice e utile che uno brillante.
+
+**Movimento e interazione**
+- Un effetto firma per pagina ([effetti-wow.md](effetti-wow.md)) più comparse motivate. Prima di ogni animazione chiediti cosa comunica (gerarchia, racconto, risposta, stato): "era carino" non basta.
+- Niente cursori personalizzati né animazioni infinite nelle sezioni informative.
+- Contrasto AA anche per i bottoni "fantasma" sopra le foto (con velatura o contorno). Nei moduli: etichetta sopra, errore sotto.
+

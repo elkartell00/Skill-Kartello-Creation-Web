@@ -9,6 +9,7 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | SA | Istruzioni Studio AI del proprietario e `CATALOGO.md` dell'app | Proprietario | — | 2026-10-11 |
 | F3 | `scroll-world` v0.8.0 | [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | 2026-10-11 |
 | F4 | `opus-55-10k-websites` (Drone Fly-Through e Mobile Refinement) | Prompt forniti dal proprietario | Nessuna licenza dichiarata: solo idee riscritte | 2026-10-11 |
+| F5 | Percorso website di `higgsfield-websites` (design-recipe, review-rubric, wow-catalog, seo) | [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) v0.13.0, commit f83af0bc | MIT (testo in F2) | 2026-10-11 |
 
 ---
 
@@ -117,7 +118,7 @@ Dal repository ufficiale Higgsfield sono state prese **solo pratiche indipendent
 | Controllo, rigenerazioni, errori, file e markup | [contenuti-visivi.md](contenuti-visivi.md) §11 |
 | Stime, approvazioni, consuntivo | [contenuti-visivi.md](contenuti-visivi.md) §12 |
 
-**Non integrato:** CLI, crediti e modelli di Higgsfield, deploy e app su Cloudflare, giochi, 3D, Marketing Studio e annunci pubblicitari. Il resto del percorso website di `higgsfield-websites` (SEO, controllo pre-consegna, effetti "wow", scroll-scrub) è in coda come fonte da integrare.
+**Non integrato:** CLI, crediti e modelli di Higgsfield, deploy e app su Cloudflare, giochi, 3D, Marketing Studio e annunci pubblicitari. Il resto del percorso website di `higgsfield-websites` è stato integrato come fonte F5.
 
 Le idee prese da `higgsfield-websites/references/design-taste-frontend.md` (MIT, autore Hermes Agent) sono solo principi riscritti, nessun testo copiato.
 
@@ -229,6 +230,24 @@ Due prompt per un sito costruito intorno a un volo in prima persona nei locali d
 **Sostituzioni per Studio AI:** immagini con `genera_immagine` e `modifica_immagine`; il clip da immagine e le estensioni video con `anima_immagine` e `durata` lunga (estensioni di Studio AI, 720p) oppure tratti da 8 s concatenati sull'ultimo fotogramma; la modifica video per togliere oggetti (che Studio AI non offre) diventa taglio più rigenerazione del solo tratto; caricamento dei file non necessario (percorsi locali); spesa con `riepilogo_spese`.
 
 **Non integrato:** link di affiliazione, nomi di modelli e parametri di Higgsfield (Seedance, FLUX, `media_upload`), stime in crediti Higgsfield.
+
+## F5 — higgsfield-websites (percorso website)
+
+Dallo stesso repository di F2 (licenza MIT riportata in F2), le parti utili a costruire siti, riscritte in italiano; ogni generazione di immagini e video passa da Studio AI.
+
+| Parte originale | Dove si trova ora |
+|---|---|
+| `seo.md`: title e description, robots, canonico, sitemap, dati strutturati per tipo di sito, entity SEO, GEO, audit in 10 punti | [seo.md](seo.md); domanda W6 |
+| `wow-catalog.md`: catalogo degli effetti firma, regole di scelta e realizzazione, diversità tra siti | [effetti-wow.md](effetti-wow.md); domanda M4 |
+| `design-recipe.md`: hero, impaginazione, testi, movimento, palette e serif "da AI" | [contenuti-e-qualita.md](contenuti-e-qualita.md) §7; [design-system.md](design-system.md) §2 e §3.1 |
+| `review-rubric.md`: controllo meccanico prima della consegna | [checklist.md](checklist.md), "Controllo meccanico" |
+| Pratiche su immagini, video e audio | Già in F2 ([contenuti-visivi.md](contenuti-visivi.md)) |
+
+**Diventato default modificabile, non regola:** tutte le regole anti "sito fatto con l'AI" (uno stile scelto o l'utente le superano); il serif come scelta da motivare invece che vietato; le palette tipiche dell'AI come "non prima scelta" invece che vietate.
+
+**Non integrato perché in conflitto con scelte già fatte:** il sito animato con scroll-scrub obbligatorio per ogni sito (qui è un'opzione, A3 e M4); un solo tema per pagina (C3 prevede "chiaro con sezioni scure"); il divieto totale del trattino medio (qui ammesso negli intervalli di dati); il divieto dei segnali di scroll ("scorri") e delle rivelazioni che partono da opacità zero (in conflitto con F1 e con il motore di F3); scala tipografica con `tracking-tighter` (in conflitto con la scala F1); uno stile diverso per ogni bottone (in conflitto con il design system bloccato).
+
+**Non integrato perché legato alla piattaforma:** CLI, deploy su Cloudflare, React con TanStack, Quanta, autenticazione, app e giochi, 3D, marchio Higgsfield, loghi di terzi da Simple Icons.
 
 ## Aggiunte Kartello
 
