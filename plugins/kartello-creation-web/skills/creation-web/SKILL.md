@@ -67,7 +67,7 @@ Scegli dalla banca domande ([references/domande.md](references/domande.md) §2) 
 
 1. Scrivi `docs/brief-sito.md` partendo da [templates/brief-sito.md](templates/brief-sito.md).
 2. Scrivi `docs/design-system.md` partendo da [templates/design-system.md](templates/design-system.md), con tutti i valori finali.
-3. Mostra un riepilogo e chiedi l'approvazione esplicita.
+3. Mostra un riepilogo e chiedi l'approvazione esplicita. Insieme al riepilogo prepara una **tavola di stile** in HTML (`docs/tavola-stile.html`) costruita con i token veri: logo, palette, titoli e testi, bottoni, link, una card d'esempio e la direzione delle immagini. Così l'utente vede il design system prima di approvarlo [F4].
 4. Dopo l'approvazione, porta lo stato di entrambi i file ad "approvato il gg/mm/aaaa" e aggiungi al `CLAUDE.md` del progetto (crealo se manca) il blocco "Design system bloccato" che trovi in fondo al modello del design system. Così i parametri restano fissi anche nelle sessioni future.
 
 ### Fase 4 — Piano del sito
@@ -102,7 +102,7 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 ### Fase 6 — Controllo qualità e consegna
 
 1. Passa la [checklist](references/checklist.md) e correggi ciò che non va.
-2. Se possibile avvia il sito e controllalo a 375px, 768px e 1280px di larghezza.
+2. Se possibile avvia il sito e controllalo a 375px, 768px e 1280px di larghezza (telefoni in dettaglio: [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §6). Nella consegna distingui i controlli fatti da quelli non fatti.
 3. Consegna: cosa è stato fatto, come avviarlo, i file creati con Studio AI e dove sono, il costo totale (`riepilogo_spese`), l'elenco "Contenuti da sostituire", i punti aperti e i prossimi passi consigliati.
 
 ## Riferimenti
@@ -117,5 +117,6 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) | Fasi 4 e 5: scrittura dei testi e costruzione |
 | [references/contenuti-visivi.md](references/contenuti-visivi.md) | Fasi 2, 4 e 5: immagini, logo, icone, video e audio con Studio AI |
 | [references/scroll-cinematico.md](references/scroll-cinematico.md) e [references/scroll-cinematico-prompt.md](references/scroll-cinematico-prompt.md) | Solo se A3 = video guidato dallo scroll o L1 = E: scroll cinematico con il motore in `assets/scroll-cinematico/` |
+| [references/volo-in-prima-persona.md](references/volo-in-prima-persona.md) | Solo se X3 = volo in prima persona nei locali |
 | [references/checklist.md](references/checklist.md) | Fase 6 |
 | [references/fonti.md](references/fonti.md) | Origine delle regole integrate e licenze |

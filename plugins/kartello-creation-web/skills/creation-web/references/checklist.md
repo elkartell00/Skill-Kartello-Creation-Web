@@ -45,6 +45,7 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Video solo se scelto con A3 e approvato sulla stima; muto, con poster
 - [ ] File nel progetto con nomi parlanti; `width`, `height` reali e `alt` in italiano nel markup
 - [ ] Immagine OG e favicon presenti; costo totale riepilogato all'utente
+- [ ] Se c'è il volo in prima persona: nessun taglio nascosto nel master, uscita e rivelazione realistiche, "Salta la visita" presente, ritaglio mobile controllato ([volo-in-prima-persona.md](volo-in-prima-persona.md) §8) [F4]
 - [ ] Se c'è lo scroll cinematico: giunture controllate, mobile come scelto con X4, `release` e punti laterali funzionanti, solo immagini con reduced motion ([scroll-cinematico.md](scroll-cinematico.md) §8) [F3]
 
 ## Consegna
@@ -53,4 +54,5 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] 404, link legali, validazione dei moduli, favicon, meta tag, testi alternativi [F1]
 - [ ] Link "salta al contenuto", HTML semantico, banner cookie se serve [F1]
 - [ ] Dati legali nel footer (attività italiane, vedi [contenuti-e-qualita.md](contenuti-e-qualita.md) §3)
-- [ ] Controllo visivo a 375px, 768px e 1280px
+- [ ] Controllo visivo a 375px, 768px e 1280px; telefoni in verticale e orizzontale senza scroll orizzontale [F4]
+- [ ] Moduli con destinazione reale o comportamento dimostrativo dichiarato [F4]

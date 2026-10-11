@@ -199,15 +199,17 @@ Quando il sito ha immagini, cioè quasi sempre. Immagini, logo, icone illustrati
 
 ### 2.8 Scroll cinematico [F3]
 
-Solo se A3 = "video guidato dallo scroll" o L1 = E. Procedura in [scroll-cinematico.md](scroll-cinematico.md), prompt in [scroll-cinematico-prompt.md](scroll-cinematico-prompt.md). Attività, nome, palette e tono vengono già dal brief e dal design system: non richiederli. X3 e X4 si chiedono **sempre**, anche in modalità Rapida.
+Solo se A3 = "video guidato dallo scroll" o L1 = E. Procedura in [scroll-cinematico.md](scroll-cinematico.md), prompt in [scroll-cinematico-prompt.md](scroll-cinematico-prompt.md); per il volo in prima persona nei locali [volo-in-prima-persona.md](volo-in-prima-persona.md). Attività, nome, palette e tono vengono già dal brief e dal design system: non richiederli. X3 e X4 si chiedono **sempre**, anche in modalità Rapida.
 
 | ID | Domanda | Opzioni | Default |
 |---|---|---|---|
 | X1 | Il viaggio: quali tappe attraversa la telecamera? Proponi 5–7 scene ricavate dalla filiera dell'attività (es. panificio: campo di grano → mulino → forno → bancone → consegna → il pane in tavola), l'utente modifica. L'ultima è il prodotto o il risultato, con la CTA | Aperta, con proposta | La proposta |
 | X2 | Direzione artistica del mondo | Diorama di argilla (miniatura isometrica) · Carta ritagliata · Giocattolo lucido · Plastilina · Notte al neon · Fotorealistico architettonico | Dedotta dallo stile (V3): miniatura per stili giocosi, fotorealistico per lusso e immobiliare |
-| X3 | Come si muove la telecamera? (presentala per sensazione, con il compromesso in una riga) | Volo nel mondo (entra in ogni scena, risale e vola alla successiva) · Percorso continuo (un'unica ripresa sempre in avanti) · Planata isometrica fissa (angolo sempre uguale, il mondo scorre) | Nessuno: si chiede sempre. Consiglia il volo per le miniature e il percorso continuo per il fotorealistico |
+| X3 | Come si muove la telecamera? (presentala per sensazione, con il compromesso in una riga) | Volo nel mondo (entra in ogni scena, risale e vola alla successiva) · Percorso continuo (un'unica ripresa sempre in avanti) · Planata isometrica fissa (angolo sempre uguale, il mondo scorre) · Volo in prima persona nei locali (come un drone guidato da un pilota: entra dalla porta, attraversa gli spazi, esce e sale a mostrare l'edificio) [F4] | Nessuno: si chiede sempre. Consiglia il volo per le miniature, il percorso continuo per il fotorealistico, il volo in prima persona per attività con locali fisici da visitare |
 | X4 | Vuoi anche la versione per smartphone? È un secondo percorso video in verticale, pensato per il telefono, e circa raddoppia la spesa dei video (dichiara la cifra) | Solo desktop · Desktop più mobile (verticale nativo) | Nessuno: si chiede sempre |
 | X5 | Qualità e bozza | Bozza economica di tutto il percorso, poi finale (consigliato) · Direttamente il finale | Bozza poi finale |
+| X7 | Solo con il volo in prima persona [F4]: il percorso. Da dove entra la telecamera, quali spazi attraversa, da dove esce? | Aperta (es. "entra dalla porta, salone, officina, magazzino, esce dal portone sul retro") | Percorso realistico proposto per quel tipo di locale |
+| X8 | Solo con il volo in prima persona [F4]: come generiamo la ripresa? | Ripresa lunga unica (continuità massima, 720p) · Tratti da 8 s in 1080p (più nitida, più giunture da controllare) | Ripresa lunga unica |
 | X6 | Stile del motore dello scroll | Adattato al design system del sito (consigliato) · Stile originale del motore | Adattato (scelta del proprietario: entrambe le opzioni disponibili) |
 
 Dopo X1–X6 calcola il preventivo (N immagini + 2N−1 video, ×2 con X4 = sì, +15%) con `stima_costo` e attendi il sì esplicito prima di generare ([scroll-cinematico.md](scroll-cinematico.md) §2).

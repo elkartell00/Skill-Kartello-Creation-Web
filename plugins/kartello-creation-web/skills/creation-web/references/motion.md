@@ -71,6 +71,7 @@ Regole comuni: la pagina corrente è sempre indicata; il menu mobile si apre e c
 
 - **Barra classica fissa:** in alto, sfondo pieno (o vetro leggero dopo lo scroll), logo a sinistra, voci al centro o a destra, CTA a destra.
 - **Trasparente sopra la hero:** testo leggibile sopra l'immagine (verifica il contrasto), diventa piena appena si scorre.
+- **Header da vetro a pieno** (con video o scroll cinematico in apertura) [F4]: sopra il video l'header è trasparente con una sfumatura del colore più scuro del marchio, forte in alto (circa 70%) e nulla in basso, senza linea netta; logo, menu e CTA leggibili anche sui fotogrammi più chiari. Quando la sezione del video è passata diventa quasi pieno (90–95%) con `backdrop-filter: blur(10px)` (più il prefisso `-webkit-`) e un bordo sottile; torna vetro risalendo. Lo stato si decide dalla posizione della sezione del video (ascoltatore di scroll passivo, più ridimensionamento, rotazione e caricamento); si anima solo sfondo, bordo e sfocatura, 250–350 ms, mai altezza o posizione. Il menu mobile aperto usa sempre lo stato pieno. Header montato fuori dalla sezione fissata, sempre sopra; `scroll-padding-top` pari all'altezza dell'header perché le ancore non finiscano sotto.
 - **Menu laterale:** per portfolio e siti con molte sezioni.
 - **Isola fluttuante in vetro** [F1]:
   - *Chiusa:* una pillola di vetro staccata dal bordo superiore: `mt-6 mx-auto w-max rounded-full`.

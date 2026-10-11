@@ -38,6 +38,8 @@ Ogni elemento interattivo ha tutti i suoi stati:
 
 **Nessun link morto.** Un bottone che punta a `#` o è collegato o appare disabilitato. La pagina corrente è indicata nella navigazione.
 
+**Moduli onesti.** Un modulo ha una destinazione reale oppure un comportamento dimostrativo dichiarato: mai "inviato" se non è stato inviato nulla [F4].
+
 ## §3 Requisiti di consegna [F1]
 
 Le cose che si dimenticano e fanno sembrare un sito non finito:
@@ -69,3 +71,11 @@ Le cose che si dimenticano e fanno sembrare un sito non finito:
 - Immagini in formato moderno (WebP o AVIF), con `width` e `height` reali; caricamento differito sotto la piega, mai sull'immagine della hero. Immagini, video e audio si creano solo con Studio AI, mai foto di repertorio ([contenuti-visivi.md](contenuti-visivi.md))
 - Font: solo i pesi usati, `font-display: swap`
 - Nessuna libreria pesante per effetti che si ottengono con poche righe di CSS o JavaScript
+
+## §6 Mobile [F4]
+
+La versione mobile si progetta, non si rimpicciolisce il desktop:
+- ogni sezione su una colonna: barre di ricerca e filtri con campi a tutta larghezza e bottone a tutta larghezza; schede di categoria che vanno a capo o scorrono orizzontalmente senza uscire dalla pagina; griglie di card a una colonna (due solo se restano leggibili); passaggi in verticale, senza linee di collegamento che non collegano più; moduli, slider e calcolatori a tutta larghezza con aree toccabili adeguate; fasce con immagine con il testo in basso sopra una velatura; footer a due colonne o a una;
+- navigazione sempre visibile, con logo e nome su una riga a sinistra e menu a destra; aree sicure del telefono rispettate;
+- controllo a 360×740, 375×812, 390×844 e 430×932, in verticale e in orizzontale, senza scroll orizzontale in nessuna sezione; poi ricontrolla il desktop.
+

@@ -40,6 +40,7 @@ Si sceglie con X3; questa sezione la **attua**, non la ridecide [F3].
 | Volo nel mondo | **B**: ingresso in ogni scena + raccordo aereo | Diorami, miniature, mondi visti dall'alto |
 | Percorso continuo | **A**: un'unica ripresa in avanti, a tratti concatenati | Stili realistici e fotografici |
 | Planata isometrica fissa | **A** + clausola "isometrica bloccata" | Il più calmo ed economico da rigenerare |
+| Volo in prima persona nei locali | Ripresa unica FPV con sequenza di fotogrammi: procedura a parte in [volo-in-prima-persona.md](volo-in-prima-persona.md) [F4] | Attività con locali fisici da far visitare |
 
 **Un solo livello e un solo modello per tutti i clip concatenati** [F3]. Ogni motore ha la sua grana, colore e movimento: cambiarlo a metà percorso si nota. Usa lo stesso `livello` per tutto il percorso e controlla `modello` nelle risposte: se un clip è uscito con un modello diverso, rigeneralo. Unica eccezione: un singolo raccordo bloccato dal filtro (§9).
 

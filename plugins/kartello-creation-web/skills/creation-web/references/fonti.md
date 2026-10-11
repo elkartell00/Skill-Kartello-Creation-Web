@@ -8,6 +8,7 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | F2 | Pratiche di generazione da `higgsfield-generate`, `higgsfield-brandkit`, `higgsfield-product-photoshoot` e dal percorso website di `higgsfield-websites` | [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) v0.13.0, commit f83af0bc | MIT | 2026-10-11 |
 | SA | Istruzioni Studio AI del proprietario e `CATALOGO.md` dell'app | Proprietario | — | 2026-10-11 |
 | F3 | `scroll-world` v0.8.0 | [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | 2026-10-11 |
+| F4 | `opus-55-10k-websites` (Drone Fly-Through e Mobile Refinement) | Prompt forniti dal proprietario | Nessuna licenza dichiarata: solo idee riscritte | 2026-10-11 |
 
 ---
 
@@ -206,6 +207,28 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+## F4 — Volo in prima persona (opus-55-10k-websites)
+
+Due prompt per un sito costruito intorno a un volo in prima persona nei locali dell'attività, con la rifinitura mobile. Il repository non dichiara una licenza: **nessun testo è stato copiato**, sono state integrate solo tecniche e idee, riscritte in italiano.
+
+| Parte originale | Dove si trova ora |
+|---|---|
+| Brief minimo, modalità guidata e autonoma | Già coperti da `SKILL.md` e dalle modalità; percorso come domanda X7 |
+| Identità e tavola di stile | `SKILL.md` Fase 3 (tavola di stile HTML con i token veri) |
+| Percorso, tabella Storia visiva, piano del ritmo | [volo-in-prima-persona.md](volo-in-prima-persona.md) §1 |
+| Manovre da pilota, uscita e rivelazione corrette, parole nei prompt | [volo-in-prima-persona.md](volo-in-prima-persona.md) §2 |
+| Immagini di partenza e di rivelazione, ripresa concatenata | [volo-in-prima-persona.md](volo-in-prima-persona.md) §3, domanda X8 |
+| Controllo, riparazione, master | [volo-in-prima-persona.md](volo-in-prima-persona.md) §4 |
+| Sequenza di fotogrammi e manifest | [volo-in-prima-persona.md](volo-in-prima-persona.md) §5 |
+| Sito, canvas, timeline a tappe, "Salta la visita", caricamento | [volo-in-prima-persona.md](volo-in-prima-persona.md) §6 |
+| Rifinitura mobile: header da vetro a pieno, ritaglio centrale con fuoco per tappa, ritmo mobile | [volo-in-prima-persona.md](volo-in-prima-persona.md) §7; [motion.md](motion.md) §4 |
+| Impaginazione mobile del resto del sito, misure di controllo | [contenuti-e-qualita.md](contenuti-e-qualita.md) §6 |
+| Moduli onesti, controlli dichiarati | [contenuti-e-qualita.md](contenuti-e-qualita.md) §2; `SKILL.md` Fase 6 |
+
+**Sostituzioni per Studio AI:** immagini con `genera_immagine` e `modifica_immagine`; il clip da immagine e le estensioni video con `anima_immagine` e `durata` lunga (estensioni di Studio AI, 720p) oppure tratti da 8 s concatenati sull'ultimo fotogramma; la modifica video per togliere oggetti (che Studio AI non offre) diventa taglio più rigenerazione del solo tratto; caricamento dei file non necessario (percorsi locali); spesa con `riepilogo_spese`.
+
+**Non integrato:** link di affiliazione, nomi di modelli e parametri di Higgsfield (Seedance, FLUX, `media_upload`), stime in crediti Higgsfield.
 
 ## Aggiunte Kartello
 
