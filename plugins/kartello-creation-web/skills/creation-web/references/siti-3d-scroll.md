@@ -2,7 +2,7 @@
 
 Come sono fatti i siti con l'effetto "3D scroll" che fa vincere premi, e come trasportarli in qualsiasi settore mantenendo lo stesso impatto visivo e lo stesso movimento. Le regole marcate [F6] vengono dalla fonte F6, quelle marcate [F7] dalla fonte F7 ([fonti.md](fonti.md)); immagini e video solo con Studio AI ([contenuti-visivi.md](contenuti-visivi.md)). Motore pronto: `assets/scroll-3d/frame-scrub.js`.
 
-Si propone come effetto firma (M4, famiglia E di [effetti-wow.md](effetti-wow.md)): la skill consiglia la ricetta più adatta all'attività, l'utente sceglie.
+Si propone come effetto firma (M4, famiglia E di [effetti-firma.md](effetti-firma.md)): la skill consiglia la ricetta più adatta all'attività, l'utente sceglie.
 
 ## §1 Come funziona davvero
 

@@ -240,7 +240,7 @@ Dallo stesso repository di F2 (licenza MIT riportata in F2), le parti utili a co
 | Parte originale | Dove si trova ora |
 |---|---|
 | `seo.md`: title e description, robots, canonico, sitemap, dati strutturati per tipo di sito, entity SEO, GEO, audit in 10 punti | [seo.md](seo.md); domanda W6 |
-| `wow-catalog.md`: catalogo degli effetti firma, regole di scelta e realizzazione, diversità tra siti | [effetti-wow.md](effetti-wow.md); domanda M4 |
+| `wow-catalog.md`: catalogo degli effetti firma, regole di scelta e realizzazione, diversità tra siti | [effetti-firma.md](effetti-firma.md); domanda M4 |
 | `design-recipe.md`: hero, impaginazione, testi, movimento, palette e serif "da AI" | [contenuti-e-qualita.md](contenuti-e-qualita.md) §7; [design-system.md](design-system.md) §2 e §3.1 |
 | `review-rubric.md`: controllo meccanico prima della consegna | [checklist.md](checklist.md), "Controllo meccanico" |
 | Pratiche su immagini, video e audio | Già in F2 ([contenuti-visivi.md](contenuti-visivi.md)) |
@@ -259,7 +259,7 @@ Pacchetto di 7 prompt per siti "3D scroll" (sequenze di fotogrammi su canvas) e 
 |---|---|
 | Come funziona il 3D scroll, ricetta in 7 passi, sei lezioni | [siti-3d-scroll.md](siti-3d-scroll.md) §1–§2, §8 |
 | Quale modello per quale ripresa | [siti-3d-scroll.md](siti-3d-scroll.md) §3, tradotto nelle funzioni di Studio AI |
-| I sette siti (LAMINA, CYMA, HESPER, UNDO, CLEARLINE, FACET, OASIS) | Ricette E1–E7 in [siti-3d-scroll.md](siti-3d-scroll.md) §5 e [effetti-wow.md](effetti-wow.md), con nomi generici e settori in cui trasportarle |
+| I sette siti (LAMINA, CYMA, HESPER, UNDO, CLEARLINE, FACET, OASIS) | Ricette E1–E7 in [siti-3d-scroll.md](siti-3d-scroll.md) §5 e [effetti-firma.md](effetti-firma.md), con nomi generici e settori in cui trasportarle |
 | Cinque potenziamenti | [siti-3d-scroll.md](siti-3d-scroll.md) §6 |
 | Guidare con sensazioni, non specifiche | [siti-3d-scroll.md](siti-3d-scroll.md) §7 |
 | Un'immagine madre, tutte le altre come modifiche | [contenuti-visivi.md](contenuti-visivi.md) §4 |
@@ -276,11 +276,11 @@ Skill di circa quattro mesi prima per siti "3D scroll" da un solo prompt. Analis
 
 ## Scelta del proprietario: livello del sito e spesa proporzionata
 
-All'avvio si sceglie il livello del sito (G1): Low Quality (sito normale), Standard (bel sito moderno) o High Quality (mozzafiato, tanto motion graphics). Studio AI si può usare a ogni livello con un budget base proporzionato; le generazioni in più si chiedono prima, spiegando che il sito resta allo stesso livello; al livello High Quality una spesa più alta deve dare un risultato mozzafiato. Dove si trova: regole d'oro 9 e 10, Fase 0, domanda G1 in [domande.md](domande.md) §0, [contenuti-visivi.md](contenuti-visivi.md) §12.
+All'avvio si sceglie il livello del sito (G1): Low Quality (sito normale), Standard (bel sito moderno) o High Quality (livello premium, esperienza immersiva con motion graphics avanzato). Studio AI si può usare a ogni livello con un budget base proporzionato; le generazioni in più si chiedono prima, spiegando che il sito resta allo stesso livello; al livello High Quality una spesa più alta deve dare un risultato di livello premium. Dove si trova: regole d'oro 9 e 10, Fase 0, domanda G1 in [domande.md](domande.md) §0, [contenuti-visivi.md](contenuti-visivi.md) §12.
 
-## Scelta del proprietario: il wow è motion graphics in codice
+## Scelta del proprietario: l'impatto visivo nasce dal motion graphics in codice
 
-Ogni sito ha un momento firma in motion graphics costruito in codice, con metodo, ricettario e revisione su registrazione: [motion-graphics.md](motion-graphics.md), regola d'oro 9, Fasi 4, 5 e 6, domanda M4. Studio AI serve il wow e non lo sostituisce: prima si prova in codice, e ogni spesa deve contribuire all'effetto wow o a una fotografia indispensabile; mai per un sito normale.
+Ogni sito ha un momento firma in motion graphics costruito in codice, con metodo, ricettario e revisione su registrazione: [motion-graphics.md](motion-graphics.md), regola d'oro 9, Fasi 4, 5 e 6, domanda M4. Studio AI è al servizio dell'esperienza d'impatto e non la sostituisce: prima si prova in codice, e ogni spesa deve contribuire all'esperienza d'impatto o a una fotografia indispensabile; mai per un sito normale.
 
 ## Scelta del proprietario: prima il codice
 

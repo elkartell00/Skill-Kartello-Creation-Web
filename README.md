@@ -8,7 +8,7 @@ poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 
 ## Come funziona
 
-0. **Modalità e livello**: scegli l'intervista Rapida, Standard o Approfondita e il livello del sito: Low Quality (normale), Standard (moderno) o High Quality (mozzafiato, con tanto motion graphics). La spesa con Studio AI è proporzionata al livello e ogni generazione in più si chiede prima.
+0. **Modalità e livello**: scegli l'intervista Rapida, Standard o Approfondita e il livello del sito: Low Quality (normale), Standard (moderno) o High Quality (livello premium, con motion graphics avanzato). La spesa con Studio AI è proporzionata al livello e ogni generazione in più si chiede prima.
 1. **Brief base**: idea del sito, pagine, stile e palette colori, tipografia (Display, H1–H6, testi, bottoni) fissata e approvata.
 2. **Approfondimento mirato**: conversione, prove, tono, forme, animazioni, navigazione, SEO; solo ciò che serve al tipo di sito. La tecnologia viene raccomandata in base al sito, ma la scegli tu.
 3. **Blocco dei parametri**: scrive `docs/brief-sito.md` e `docs/design-system.md` nel progetto e aggiunge al suo `CLAUDE.md` la regola che li rende fissi.
@@ -31,7 +31,7 @@ Avvio: `/creation-web` (skill di progetto) oppure `/kartello-creation-web:creati
 │       └── skills/
 │           └── creation-web/
 │               ├── SKILL.md          # flusso a fasi e regole d'oro
-│               ├── references/       # domande, design system, stili, strategia, motion, contenuti visivi, scroll cinematico, volo in prima persona, SEO, effetti wow, siti 3D scroll, qualità, checklist, fonti
+│               ├── references/       # domande, design system, stili, strategia, motion, contenuti visivi, scroll cinematico, volo in prima persona, SEO, effetti firma, siti 3D scroll, qualità, checklist, fonti
 │               ├── assets/           # motori dello scroll cinematico e del 3D scroll
 │               └── templates/        # modelli di brief, design system e piano del sito
 └── .claude/

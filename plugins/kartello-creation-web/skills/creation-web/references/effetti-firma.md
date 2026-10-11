@@ -1,4 +1,4 @@
-# Effetti firma ("wow")
+# Effetti firma
 
 L'effetto firma è la cosa che il visitatore ricorda. **Uno per pagina**, scelto nel piano e realizzato fino in fondo, preso da questo catalogo e non dalla prima idea che viene in mente [F5]. C'è **sempre**, salvo che l'utente dica di non volerlo (domanda M4): la skill propone 2–3 idee, consiglia la migliore e l'utente sceglie (regola d'oro 11). Metodo e ricettario del motion graphics in codice: [motion-graphics.md](motion-graphics.md). Gli effetti si realizzano **in codice** ([grafica-in-codice.md](grafica-in-codice.md)); Studio AI solo per le immagini e i video che il codice non può fare, come fotografie e riprese dal vero ([contenuti-visivi.md](contenuti-visivi.md)).
 
@@ -6,7 +6,7 @@ L'effetto firma è la cosa che il visitatore ricorda. **Uno per pagina**, scelto
 
 1. **L'effetto mette in scena l'idea del sito**: una "precisione" vuole messa a fuoco e fisica esatta; una "salita" vuole profondità e parallasse; un "archivio" vuole pagine che si sfogliano. Scrivi nel piano una frase che giustifichi l'abbinamento.
 2. **Mai lo stesso effetto del sito precedente** fatto in questa conversazione (vedi "Diversità tra siti"). Se l'idea lo richiede davvero, cambia soggetto, asse o risultato.
-3. Livello di spettacolo: di norma un effetto firma più comparse motivate; nei siti più spettacolari un secondo momento a metà pagina, di famiglia diversa.
+3. Livello di spettacolo: di norma un effetto firma più comparse motivate; nei siti di livello più alto un secondo momento a metà pagina, di famiglia diversa.
 4. Ogni effetto ha lo stato iniziale già completo (la pagina è finita anche prima dell'interazione), una versione statica per `prefers-reduced-motion` e una versione mobile dichiarata nel piano (pin più corto, effetti del cursore sostituiti da equivalenti allo scroll).
 5. Se un effetto non si può finire bene, meglio una pagina statica pulita che un effetto a metà [F5].
 

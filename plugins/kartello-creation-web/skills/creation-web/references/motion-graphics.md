@@ -1,12 +1,12 @@
-# Motion graphics in codice: l'effetto wow
+# Motion graphics in codice: l'esperienza d'impatto
 
-**Il cuore della skill.** Ogni sito di livello **High Quality** (G1) ha un **momento firma in motion graphics fatto in codice**: la cosa che fa dire "come è possibile?". Si costruisce solo con il codice (HTML, CSS, SVG, Canvas, WebGL, GSAP, Three.js), senza app esterne e senza costi. Si salta solo se l'utente dice esplicitamente di non volerlo.
+**Il cuore della skill.** Ogni sito di livello **High Quality** (G1) ha un **momento firma in motion graphics fatto in codice**: l'elemento distintivo che il visitatore ricorda e che qualifica il sito come lavoro di livello premium. Si costruisce solo con il codice (HTML, CSS, SVG, Canvas, WebGL, GSAP, Three.js), senza app esterne e senza costi. Si salta solo se l'utente dice esplicitamente di non volerlo.
 
-**Studio AI al servizio del wow, mai al posto del wow** (scelta del proprietario). Prima si prova sempre in codice. Se il codice non arriva al livello (per esempio serve una ripresa realistica dentro la scena, come nelle ricette di [siti-3d-scroll.md](siti-3d-scroll.md)), Studio AI va bene, con stima e sì dell'utente, e al livello High Quality si può investire di più. Ma la spesa deve tradursi in un risultato mozzafiato: se dopo tante generazioni il sito sarebbe comunque normale, non si spende ([contenuti-visivi.md](contenuti-visivi.md) §12).
+**Studio AI al servizio dell'esperienza d'impatto, mai al suo posto** (scelta del proprietario). Prima si prova sempre in codice. Se il codice non arriva al livello (per esempio serve una ripresa realistica dentro la scena, come nelle ricette di [siti-3d-scroll.md](siti-3d-scroll.md)), Studio AI va bene, con stima e sì dell'utente, e al livello High Quality si può investire di più. Ma la spesa deve tradursi in un risultato di livello premium: se dopo tante generazioni il sito sarebbe comunque normale, non si spende ([contenuti-visivi.md](contenuti-visivi.md) §12).
 
-## §1 Il metodo (come si arriva al wow)
+## §1 Il metodo (come si arriva all'esperienza d'impatto)
 
-Il wow non arriva al primo colpo: arriva da un'idea forte, da una coreografia precisa e da più giri di revisione guardando il risultato in movimento.
+L'impatto non arriva al primo colpo: arriva da un'idea forte, da una coreografia precisa e da più giri di revisione guardando il risultato in movimento.
 
 1. **L'idea.** Una frase che mette in scena l'attività con il movimento: "il caffè che si versa diventa il logo", "le linee della planimetria disegnano la casa e la casa si accende", "le lettere del nome si assemblano come ingranaggi". Prendila dal mondo materiale dell'attività (acciaio, farina, vapore, carta, luce) e dall'obiettivo del sito. Proponi 2–3 idee diverse e consiglia la migliore (regola d'oro 11).
 2. **Lo storyboard.** 5–8 battute con i tempi, come un piccolo film: cosa entra, cosa succede, come si trasforma, dove finisce. Esempio: "0–0,8 s il fondo si accende con un gradiente fluido · 0,8–2 s il titolo si compone lettera per lettera da sotto una maschera · 2–3,5 s una forma del settore nasce da particelle · 3,5 s la camera si avvicina e la forma diventa lo sfondo della sezione successiva". Mostralo all'utente nel piano (Fase 4).
@@ -15,7 +15,7 @@ Il wow non arriva al primo colpo: arriva da un'idea forte, da una coreografia pr
 5. **La revisione sul movimento, non sul codice.** Registra la scena (§6), guarda la registrazione e i fotogrammi chiave, critica come un direttore creativo: è sorprendente? è fluida? ha ritmo? si capisce l'idea? Poi migliora. **Almeno tre giri**, e ogni giro alza il livello (più profondità, più dettaglio secondario, ritmo migliore, transizioni più intelligenti).
 6. **L'ottimizzazione.** 60 fotogrammi al secondo su desktop, versione leggera su mobile, versione statica composta per `prefers-reduced-motion`.
 
-## §2 Grammatica del movimento che fa wow
+## §2 Grammatica del movimento d'impatto
 
 - **Coreografia, non comparse.** Ogni elemento ha un'entrata, un'azione e un'uscita, e passa il testimone al successivo. Niente elementi che appaiono e restano morti.
 - **Sovrapposizione.** Le animazioni si accavallano (l'una parte quando l'altra è a metà, circa 30–50%): è ciò che rende il movimento fluido e "costoso".
@@ -50,7 +50,7 @@ Scegli la ricetta che mette in scena l'idea; combinale per il momento firma e pe
 | R12 | **Transizioni tra sezioni e pagine**: maschere, tende, wipe, l'elemento che vola da una pagina all'altra | `clip-path`, View Transitions API, GSAP Flip | Siti multipagina |
 | R13 | **Cursore e interazione**: luce che segue il cursore, forme magnetiche, superfici che si deformano al passaggio | Canvas/WebGL, `pointermove` con molle | Portfolio, creativi, tecnologia |
 
-Le ricette "3D scroll" di [siti-3d-scroll.md](siti-3d-scroll.md) e gli effetti di [effetti-wow.md](effetti-wow.md) si realizzano allo stesso modo: in codice, con Studio AI solo per ciò che deve sembrare fotografato.
+Le ricette "3D scroll" di [siti-3d-scroll.md](siti-3d-scroll.md) e gli effetti di [effetti-firma.md](effetti-firma.md) si realizzano allo stesso modo: in codice, con Studio AI solo per ciò che deve sembrare fotografato.
 
 **Video promozionale in motion graphics** (facoltativo, da offrire): con la stessa scena si può produrre un video MP4 per i social o la presentazione del sito, con Remotion oppure registrando l'animazione fotogramma per fotogramma ([grafica-in-codice.md](grafica-in-codice.md) §4). Nessuna app esterna, nessun costo di generazione.
 
@@ -62,7 +62,7 @@ Le ricette "3D scroll" di [siti-3d-scroll.md](siti-3d-scroll.md) e gli effetti d
 - **Remotion** per esportare video MP4 dal codice (verifica la licenza per le aziende).
 - Tutto installato nel progetto, niente CDN in produzione.
 
-## §5 Prestazioni e accessibilità (il wow non deve rompere il sito)
+## §5 Prestazioni e accessibilità (l'impatto non deve rompere il sito)
 
 - Le scene si fermano quando non sono visibili; densità di pixel limitata a 2; geometrie e particelle ridotte su mobile e su dispositivi deboli.
 - Nessun salto di layout; il contenuto principale (titolo, CTA) è HTML leggibile da subito, anche prima che la scena parta.
@@ -96,7 +96,7 @@ Domande di ogni giro: si capisce l'idea in 3 secondi? c'è un momento che sorpre
 ## §7 Checklist del momento firma
 
 - [ ] Un'idea che mette in scena l'attività, con storyboard approvato
-- [ ] Costruito solo in codice, nessuna chiamata a Studio AI per il wow
+- [ ] Costruito solo in codice, nessuna chiamata a Studio AI per il momento firma
 - [ ] Almeno tre giri di revisione su registrazione video
 - [ ] Coreografia con sovrapposizioni, profondità e ritmo; nessun elemento morto
 - [ ] Colori, font e curve dal design system

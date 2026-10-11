@@ -37,8 +37,8 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Tono di voce e "tu" o "lei" coerenti in tutto il sito
 
 ## Momento firma
-- [ ] Livello High Quality: momento firma in motion graphics costruito in codice e rivisto su registrazione almeno tre volte ([motion-graphics.md](motion-graphics.md) §7); il sito è davvero mozzafiato
-- [ ] Nessuna chiamata a Studio AI senza elenco, motivo, stima e sì dell'utente; budget base del livello rispettato, e ogni generazione in più chiesta prima spiegando che il sito resta allo stesso livello; al livello High Quality una spesa più alta ha prodotto un sito mozzafiato
+- [ ] Livello High Quality: momento firma in motion graphics costruito in codice e rivisto su registrazione almeno tre volte ([motion-graphics.md](motion-graphics.md) §7); il risultato è di livello premium
+- [ ] Nessuna chiamata a Studio AI senza elenco, motivo, stima e sì dell'utente; budget base del livello rispettato, e ogni generazione in più chiesta prima spiegando che il sito resta allo stesso livello; al livello High Quality una spesa più alta ha prodotto un risultato di livello premium
 
 ## Contenuti visivi
 - [ ] Grafica, logo, icone, animazioni e video di motion graphics creati prima in codice; Studio AI usato solo dove il codice non bastava, con il motivo nel piano degli asset; foto reali del cliente dove servono fotografie; segnaposto etichettati se Studio AI non era collegato
