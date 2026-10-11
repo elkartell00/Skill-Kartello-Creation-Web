@@ -28,12 +28,14 @@ CTA nell'header:
 - Provenienza del traffico e consapevolezza del visitatore:
 - Prove disponibili:
 - Riduzione del rischio:
+- Layout della landing (L1) e motivo:
 
 ## Tono e stile
 - Tono di voce; tu o lei:
 - Direzione stilistica:
 - Densità, angoli, gradienti:
 - Movimento, navigazione, tagline reveal:
+- Priorità mobile (V7):
 
 ## SEO e tecnica
 - Indicizzazione:

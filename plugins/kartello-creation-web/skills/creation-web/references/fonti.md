@@ -16,7 +16,8 @@ Sistema completo per landing page ad alta conversione: domande iniziali, struttu
 
 | Parte originale | Dove si trova ora |
 |---|---|
-| A1 Intake | [domande.md](domande.md) §2.1–2.3, §2.6 (K, R, V, W1) |
+| Scope | `SKILL.md` regola d'oro 3 (priorità utente > design system > skill > framework) |
+| A1 Intake | [domande.md](domande.md) I4, V3 (Giro 3) e §2.1–2.3 (K, R, V1, V7); `SKILL.md` regola d'oro 5; la raccolta "in un solo blocco" è diventata giri di 4–6 domande secondo le modalità ([domande.md](domande.md) §0) |
 | A2 Struttura della pagina | [strategia-e-struttura.md](strategia-e-struttura.md) §2, estesa alla Home multipagina (§3) |
 | A3 Scelta del layout | [strategia-e-struttura.md](strategia-e-struttura.md) §5 e domanda L1 |
 | A4 Regole di conversione | [strategia-e-struttura.md](strategia-e-struttura.md) §6 |
@@ -24,7 +25,7 @@ Sistema completo per landing page ad alta conversione: domande iniziali, struttu
 | A6 Ordine di costruzione | `SKILL.md` Fase 5 |
 | A7 SEO e AEO | [strategia-e-struttura.md](strategia-e-struttura.md) §8 e domanda W1 |
 | A8 Errori | [strategia-e-struttura.md](strategia-e-struttura.md) §9 |
-| B1 Tipografia | [design-system.md](design-system.md) §3 |
+| B1 Tipografia | [design-system.md](design-system.md) §3; trattini e parole orfane anche in [contenuti-e-qualita.md](contenuti-e-qualita.md) §1 |
 | B2 Spaziature | [design-system.md](design-system.md) §4 |
 | B3 Raggi | [design-system.md](design-system.md) §5 |
 | B4 Bordi e sfondi | [design-system.md](design-system.md) §2 e §6 |
@@ -40,7 +41,7 @@ Sistema completo per landing page ad alta conversione: domande iniziali, struttu
 
 ### Regole rimaste regole
 
-Scala tipografica Tailwind e arrotondamento al gradino inferiore, scala delle spaziature, formula dei raggi annidati, bordi tutto intorno, niente parole orfane, sentence case, larghezza della hero a 680px, contenuti realistici, stati, requisiti di consegna, curve di movimento personalizzate, IntersectionObserver al posto dei listener di scroll, struttura e regole di conversione, ordine di costruzione, piano prima del codice.
+Scala tipografica Tailwind e arrotondamento al gradino inferiore, tetto di peso a 700 (mai 800 né 900), scala delle spaziature, formula dei raggi annidati, bordi delle card tutto intorno o niente, niente trattini usati come punteggiatura dentro le frasi (con la precisazione in "Aggiunte Kartello"), niente parole orfane, sentence case, larghezza della hero a 680px (token `--container-hero`), contenuti realistici, stati, requisiti di consegna, curve di movimento personalizzate, IntersectionObserver al posto dei listener di scroll, struttura e regole di conversione, ordine di costruzione, piano prima del codice.
 
 ### Regole diventate opzioni
 
@@ -48,9 +49,12 @@ La skill originale impone un'estetica unica. Per servire qualsiasi settore, ques
 
 | Regola originale | Ora |
 |---|---|
-| Solo Geist, Manrope, Geist Mono, Poppins | Suggerimenti in [design-system.md](design-system.md) §3.1; obbligatori solo nello stile Minimal tech |
+| Solo Geist, Manrope, Geist Mono, Poppins | Suggerimenti in [design-system.md](design-system.md) §3.1; default dello stile Minimal tech, modificabili |
+| Mai Inter, Roboto, Arial, Open Sans, Helvetica | Da evitare salvo font di brand ([design-system.md](design-system.md) §3.1) |
 | Una sola famiglia di font | Default; domanda T3 |
-| Mai corsivo, mai 900 | Default; corsivo d'accento ammesso negli stili editoriale e lusso |
+| Mai corsivo | Default; corsivo d'accento ammesso negli stili editoriale e lusso, se approvato |
+| Bottoni principali 8/12 px | Default; variante grande 12/24 px per la CTA della hero (aggiunta Kartello) |
+| Icone solo Phosphor, Solar o Iconamoon, mai Material | Default Phosphor lineare; alternative Solar o Iconamoon; altre librerie solo su richiesta esplicita; Material Icons e Material Symbols da evitare salvo richiesta ([design-system.md](design-system.md) §7) |
 | Mai gradienti negli sfondi | Default; domanda V6 |
 | Gradiente sul titolo della hero | Opzione di V6; default nello stile Minimal tech |
 | Sfondi scuri fissi | Suggeriti per il tema scuro |
@@ -63,6 +67,7 @@ La skill originale impone un'estetica unica. Per servire qualsiasi settore, ques
 ### Non integrato
 
 - Il rimando alla skill compagna `redesign-existing-projects` ([elayadesign/redesign-skill](https://github.com/elayadesign/redesign-skill)), pensata per rifare siti esistenti. Si potrà integrare in futuro.
+- L'uso della skill per modificare o rivedere UI, componenti e dashboard esistenti (Scope).
 
 ### Licenza F1
 
@@ -89,3 +94,28 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+---
+
+## Aggiunte Kartello
+
+Regole e parti che non vengono da nessuna fonte integrata. Nei file sono senza codice di fonte; dove potrebbero sembrare di F1 sono marcate "(aggiunta Kartello)" o "(precisazione Kartello)".
+
+| Aggiunta | Dove si trova |
+|---|---|
+| Fase base: brief in quattro giri (idea, pagine, stile e palette, tipografia), pagine tipiche per settore, palette in ruoli, tabella tipografica da approvare | `SKILL.md` Fase 1; [domande.md](domande.md) §1 |
+| Modalità dell'intervista: Rapida, Standard, Approfondita | [domande.md](domande.md) §0; `SKILL.md` Fase 0 |
+| Raccomandazione dello stack: nessuno stack predefinito, Claude raccomanda e l'utente sceglie (W4) | [domande.md](domande.md) §2.6; `SKILL.md` regola d'oro 8 |
+| Cliché italiani, nomi e marchi segnaposto italiani, formato italiano di numeri e prezzi | [contenuti-e-qualita.md](contenuti-e-qualita.md) §1 |
+| Segnaposto onesti: tutto ciò che è inventato va in "Contenuti da sostituire" e si ricorda alla consegna | [contenuti-e-qualita.md](contenuti-e-qualita.md) §1; `SKILL.md` regola d'oro 6 |
+| Obblighi legali italiani nel footer | [contenuti-e-qualita.md](contenuti-e-qualita.md) §3; domanda W5 |
+| Cookie: quando serve il banner, analytics anonimizzati, contenuti di terze parti caricati dopo il consenso (F1 dice solo "dove la legge lo richiede") | [contenuti-e-qualita.md](contenuti-e-qualita.md) §3 |
+| Accessibilità: contrasti AA, tastiera, etichette dei campi, aree toccabili di 44px, `lang` | [contenuti-e-qualita.md](contenuti-e-qualita.md) §4; [design-system.md](design-system.md) §2 e §4 |
+| Prestazioni: immagini, font, librerie leggere; elemento principale della hero mai a opacity 0 | [contenuti-e-qualita.md](contenuti-e-qualita.md) §5; [motion.md](motion.md) §2 |
+| Reduced motion e contenuto visibile senza JavaScript | [motion.md](motion.md) §2 |
+| Token `line-strong` per bordi di campi e controlli (almeno 3:1) | [design-system.md](design-system.md) §2 e §9 |
+| Variante grande del bottone, 12/24 px, per la CTA della hero | [design-system.md](design-system.md) §4 |
+| Precisazione sui trattini: restano ammessi in parole composte, nomi propri e marchi (Emilia-Romagna, Wi-Fi, e-commerce) e il trattino medio negli intervalli di dati come orari, prezzi e date (Lun–Ven 9:00–19:00) | [contenuti-e-qualita.md](contenuti-e-qualita.md) §1 |
+| Piano del sito salvato in `docs/piano-sito.md`, con lo stato di ogni pagina e sezione | `SKILL.md` Fasi 0, 4 e 5; [templates/piano-sito.md](../templates/piano-sito.md) |
+
+Le altre precisazioni tecniche marcate "(aggiunta Kartello)" nei file (es. raggi dentro un contenitore `rounded-full`, parole della tagline tutte attive a fine pagina) completano regole di F1 senza cambiarne il senso.

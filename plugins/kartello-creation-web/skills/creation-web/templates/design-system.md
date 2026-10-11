@@ -1,6 +1,6 @@
 # Design system — {Nome}
 
-Stato: approvato il {gg/mm/aaaa}. Questi valori sono fissi: si cambiano solo su richiesta esplicita, aggiornando prima questo file e poi i token in codice.
+Stato: {bozza | approvato il gg/mm/aaaa}. Una volta approvati, questi valori sono fissi: si cambiano solo su richiesta esplicita, aggiornando prima questo file e poi i token in codice.
 
 ## Colori
 
@@ -14,16 +14,18 @@ Tema: {chiaro | scuro | entrambi | chiaro con sezioni scure} · Quantità di col
 | Testo | `ink` | | | Testo principale |
 | Testo secondario | `ink-muted` | | | Testo secondario |
 | Linee | `line` | | | Bordi e divisori |
+| Linee dei controlli | `line-strong` | | | Bordi di campi, checkbox e controlli: almeno 3:1 su `background` e `surface` |
 | Primario | `primary` | | | CTA, link |
 | Testo su primario | `primary-ink` | | | Testo sopra il primario |
+| Secondario | `secondary` | | | Facoltativo: con C4 Bilanciato o Ricco |
 | Accento | `accent` | | | Dettagli |
 | Successo · Avviso · Errore · Info | `success` · `warning` · `error` · `info` | | | Stati |
 
-Contrasti verificati: `ink` su `background` {x:1} · `ink-muted` su `background` {x:1} · `primary-ink` su `primary` {x:1}
+Contrasti verificati (ripeti la riga per il tema scuro se C3 lo prevede): `ink` su `background` {x:1} · `ink` su `surface` {x:1} · `ink-muted` su `background` {x:1} · `ink-muted` su `surface` {x:1} · `primary-ink` su `primary` {x:1} · `line-strong` su `background` {x:1} · `line-strong` su `surface` {x:1} · anello di focus su `background` {x:1} · anello di focus su `surface` {x:1}
 
 ## Tipografia
 
-Font: {titoli} · {testi} · Scala: {compatta | equilibrata | d'impatto} · Caricamento: {metodo}
+Font: {titoli} · {testi} · Scala: {compatta | equilibrata | d'impatto} · Caricamento: {metodo} · Corsivo d'accento: {no | sì, solo …}
 
 | Stile | Classe | Tag tipico | Desktop | Mobile | Interlinea | Peso |
 |---|---|---|---|---|---|---|
@@ -53,15 +55,15 @@ Densità: {compatta | bilanciata | ariosa} · Padding delle sezioni: {mobile / d
 
 Stile: {squadrati | morbidi | arrotondati | pillola} · Bottoni: {} · Campi: {} · Card: {} · Immagini: {} · Contenitori grandi: {}
 
-Raggi annidati: raggio interno = raggio esterno − spazio, se lo spazio è sotto 32px e il risultato supera 2.
+Raggi annidati: raggio interno = raggio esterno − spazio, se lo spazio è sotto 32px e il risultato supera 2. Se il risultato non è sulla scala, si scende al gradino inferiore; dentro un contenitore `rounded-full` anche l'elemento interno è `rounded-full`.
 
 ## Bordi, sfondi e ombre
 
-Gradienti: {mai | solo sul titolo della hero | ammessi negli sfondi} · Bordi: sempre tutto intorno · Ombre: {fino a tre livelli}
+Gradienti: {mai | solo sul titolo della hero | ammessi negli sfondi} · Gradiente del titolo hero: {da → a} · Bordi delle card: tutto intorno o niente · Ombre: {fino a tre livelli}
 
 ## Icone
 
-Libreria: {Phosphor | Solar | Iconamoon} · Stile: {lineare | pieno | duotone} · Misure: 16, 20, 24px
+Libreria: {Phosphor | Solar | Iconamoon | altra, solo su richiesta esplicita} · Stile: {lineare | pieno | duotone} · Misure: 16, 20, 24px
 
 ## Movimento
 
@@ -80,6 +82,7 @@ Blocco da copiare nel `CLAUDE.md` del progetto:
 
 - Il design system approvato è in `docs/design-system.md`, il brief in `docs/brief-sito.md`.
 - Ogni colore, misura di testo, spaziatura, raggio e animazione deriva da lì. Niente valori arbitrari.
-- I testi usano le classi tipografiche `type-*`; i colori usano i ruoli (`bg-background`, `text-ink`, `bg-primary`, …).
+- I testi usano le classi tipografiche `type-*`; i colori usano i ruoli del design system (con Tailwind `bg-background`, `text-ink`, …; senza Tailwind `var(--color-background)`, …).
 - Per cambiare un valore serve una richiesta esplicita: si aggiorna prima `docs/design-system.md`, poi i token in codice.
+- Per nuove pagine o sezioni usa la skill creation-web; il piano approvato e lo stato di costruzione sono in `docs/piano-sito.md`.
 ```

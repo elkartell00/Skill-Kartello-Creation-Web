@@ -1,6 +1,6 @@
 # Banca domande
 
-Ogni domanda ha un ID, le opzioni e un default da usare se l'utente risponde "decidi tu". Tra parentesi quadre la fonte da cui deriva la domanda (vedi [fonti.md](fonti.md)); senza parentesi è una domanda della fase base Kartello.
+Ogni domanda ha un ID, le opzioni e un default da usare se l'utente risponde "decidi tu": il default vale solo per quella domanda. Tra parentesi quadre la fonte da cui deriva la domanda (vedi [fonti.md](fonti.md)); senza parentesi è una domanda della fase base Kartello.
 
 Regole d'uso: chiedi solo ciò che manca, a giri di 4–6 domande, e dopo ogni giro riepiloga ciò che è stato fissato.
 
@@ -12,11 +12,11 @@ L'utente sceglie la modalità all'avvio. In tutte le modalità le risposte già 
 
 | Modalità | Per chi | Domande |
 |---|---|---|
-| **Rapida** | Ha fretta, o vuole vedere subito una bozza | Un solo giro: I1, I3, I5, la proposta di pagine (P1), colori (C1, o C2 con tre palette), scala tipografica (T4) e tecnologia (W4). Tutto il resto con i default, dichiarati |
-| **Standard** | La maggior parte dei casi | I quattro giri del §1, poi uno o due giri del §2 con i soli blocchi pertinenti al tipo di sito e all'obiettivo. Circa 15–25 domande in tutto |
+| **Rapida** | Ha fretta, o vuole vedere subito una bozza | Due giri brevi: (1) I1, I3, I5 e C1, saltando ciò che l'idea già dice; (2) proposta di pagine (P1), stile dedotto (V3) dichiarato prima delle palette, tre palette adatte a settore e stile se C1 è "proponimi tu" (senza chiedere C2), scala tipografica (T4) e tecnologia (W4) con raccomandazione. Tutto il resto, L1 compreso, con i default dichiarati |
+| **Standard** | La maggior parte dei casi | I quattro giri del §1, poi uno o due giri del §2 con i soli blocchi pertinenti al tipo di sito e all'obiettivo. Circa 20–30 domande in tutto, meno quelle a cui l'idea iniziale risponde già |
 | **Approfondita** | Progetti importanti, massimo controllo | Tutte le domande del §1 e del §2 pertinenti al tipo di sito, giro per giro, comprese quelle che nelle altre modalità prendono il default. Revisione della tabella tipografica e della palette prima di fissarle |
 
-Default se l'utente risponde "decidi tu": Standard.
+Default se l'utente risponde "decidi tu" a questa domanda: Standard. La richiesta di procedere senza domande ("niente domande", "fai tutto tu") segue invece la regola d'oro 1 di `SKILL.md`.
 
 ---
 
@@ -24,7 +24,7 @@ Default se l'utente risponde "decidi tu": Standard.
 
 ### Giro 1 — Idea
 
-Domande aperte, in chat.
+Domande aperte, in chat, in due parti: prima I1–I5, poi I6–I8.
 
 | ID | Domanda | Default |
 |---|---|---|
@@ -37,7 +37,7 @@ Domande aperte, in chat.
 | I7 | Siti che ti piacciono (e cosa ti piace), siti che non ti piacciono, concorrenti. | Nessuno |
 | I8 | Cosa hai già: logo, colori, font, testi, foto, video, dominio, sito attuale. | Niente |
 
-I3 decide la CTA principale di tutto il sito. Se I5 è "landing page singola", usa la struttura landing ([strategia-e-struttura.md](strategia-e-struttura.md) §2) e chiedi anche L1.
+I3 decide la CTA principale di tutto il sito. Se I5 è "landing page singola", usa la struttura landing ([strategia-e-struttura.md](strategia-e-struttura.md) §2).
 
 ### Giro 2 — Pagine
 
@@ -59,16 +59,19 @@ Proponi un elenco partendo dalla tabella qui sotto, adattato a I1–I5.
 | P2 | Per ogni pagina: obiettivo e contenuti indispensabili. | Dedotti dal settore |
 | P3 | Menu: quali pagine nel menu principale (massimo 5–6), quali solo nel footer, quale CTA nell'header. | Pagine principali nel menu, legali nel footer, CTA = azione di I3 |
 
-### Giro 3 — Palette colori
+Se I5 è landing page singola o one page: P1 propone la pagina unica, le pagine legali, la 404 ed eventualmente una pagina di ringraziamento. Al posto di P3 chiedi se il menu ha ancore alle sezioni o nessun menu (landing di conversione). La scaletta delle sezioni si fa nella Fase 4.
+
+### Giro 3 — Stile e palette
 
 | ID | Domanda | Opzioni | Default |
 |---|---|---|---|
+| V3 | Direzione stilistica [F1] | Le 2–3 più adatte da [stili.md](stili.md), con anteprima | La prima proposta |
 | C1 | Hai già colori di brand? | Sì, ho i codici hex · Prendili dal logo · Li descrivo a parole · No, proponimi tu | Proponimi tu |
 | C2 | Che sensazione devono trasmettere? (solo se servono proposte) | Calda e accogliente · Fresca e pulita · Elegante e lussuosa · Naturale · Energica e audace · Tecnologica e precisa · Seria e affidabile | Dedotta dal settore |
 | C3 | Tema | Chiaro · Scuro · Entrambi con interruttore · Chiaro con sezioni scure | Chiaro |
 | C4 | Quanto colore? | Sobrio (neutri più un accento) · Bilanciato (primario più secondario) · Ricco (molto colore, sezioni colorate) | Sobrio |
 
-Con C2 proponi **tre palette** (nome, sensazione, perché è adatta, hex per ogni ruolo) secondo [design-system.md](design-system.md) §2. Con AskUserQuestion mostra i codici nell'anteprima di ogni opzione.
+Chiedi V3 per prima: lo stile scelto fornisce i default di C, T, V e M. Con C2 proponi **tre palette** (nome, sensazione, perché è adatta, hex per ogni ruolo) secondo [design-system.md](design-system.md) §2. Con AskUserQuestion mostra i codici nell'anteprima di ogni opzione.
 
 ### Giro 4 — Tipografia
 
@@ -78,7 +81,7 @@ Con C2 proponi **tre palette** (nome, sensazione, perché è adatta, hex per ogn
 | T2 | Che carattere devono avere i font? | Geometrico moderno · Neutro e pulito · Serif elegante · Editoriale · Morbido e amichevole · Espressivo d'impatto · Tecnico | Dedotto da settore e stile |
 | T3 | Quanti font? | Uno solo per tutto · Due: uno per i titoli e uno per i testi | Uno solo [F1] |
 | T4 | Scala dei titoli | Compatta · Equilibrata · D'impatto | Equilibrata |
-| T5 | Peso dei titoli | Leggero (400–500) · Medio (600) · Deciso (700) | Medio; mai 900 [F1] |
+| T5 | Peso dei titoli | Leggero (400–500) · Medio (600) · Deciso (700) | Medio; mai oltre 700 [F1] |
 
 Per T4 mostra come anteprima la colonna corrispondente di [design-system.md](design-system.md) §3.3. Alla fine del giro presenta la tabella tipografica definitiva (Display, H1–H6, testo grande, testo, testo piccolo, didascalia, etichetta, bottoni, link di navigazione) e chiedi l'approvazione: da quel momento è fissa.
 
@@ -90,7 +93,7 @@ Scegli solo i blocchi pertinenti.
 
 ### 2.1 Conversione [F1]
 
-Se I3 è vendita, contatti, prenotazioni o lead.
+Se I3 è vendita, contatti, prenotazioni o lead. In due giri: K1–K4, poi K5–K7.
 
 | ID | Domanda | Default |
 |---|---|---|
@@ -108,7 +111,7 @@ Se I3 è vendita, contatti, prenotazioni o lead.
 |---|---|---|
 | R1 | Quali prove hai? Loghi clienti, recensioni, numeri, casi studio, certificazioni, premi, articoli. | Segnaposto da sostituire |
 | R2 | Materiali visivi: foto reali (luogo, team, prodotti), screenshot, video demo, illustrazioni. | Segnaposto indicati |
-| R3 | Come riduciamo il rischio per il cliente? Prova gratuita, piano gratuito, senza carta di credito, disdici quando vuoi, soddisfatti o rimborsati, preventivo o sopralluogo gratuito, garanzia. | Almeno una nei siti che vendono |
+| R3 | Come riduciamo il rischio per il cliente? Prova gratuita, piano gratuito, senza carta di credito, disdici quando vuoi, soddisfatti o rimborsati, preventivo o sopralluogo gratuito, garanzia. | Almeno una in ogni landing e nelle pagine di conversione |
 
 ### 2.3 Tono e stile [F1]
 
@@ -116,7 +119,6 @@ Se I3 è vendita, contatti, prenotazioni o lead.
 |---|---|---|---|
 | V1 | Tono di voce | Professionale · Informale · Caldo e vicino · Tecnico · Autorevole | Dedotto dal settore |
 | V2 | Dare del tu o del lei? | Tu · Lei | Tu; lei per settori legali, medici, istituzionali e lusso |
-| V3 | Direzione stilistica | Le 2–3 più adatte da [stili.md](stili.md), con anteprima | La prima proposta |
 | V4 | Quanto spazio? | Compatto · Bilanciato · Arioso | Bilanciato |
 | V5 | Angoli | Squadrati · Morbidi · Arrotondati · Pillola | Morbidi |
 | V6 | Gradienti | Mai · Solo sul titolo della hero · Ammessi negli sfondi | Mai [F1] |
@@ -134,7 +136,7 @@ Dettagli in [motion.md](motion.md).
 
 ### 2.5 Landing page [F1]
 
-Solo se I5 è landing page singola.
+Solo se I5 è landing page singola, dopo K6 e K7. Se non viene chiesto (Rapida, Standard senza questo blocco), proponilo con il motivo nella Fase 4; default A.
 
 | ID | Domanda | Opzioni | Default |
 |---|---|---|---|
@@ -149,19 +151,19 @@ Dettagli in [strategia-e-struttura.md](strategia-e-struttura.md) §5.
 | W1 | Indicizzare su Google? [F1] | Sì (pagine stabili) · No (campagne pubblicitarie, offerte a tempo) | Sì |
 | W2 | Parole chiave e zona geografica principali | Aperta | Dedotte da I1 e I4 |
 | W3 | Dove devono arrivare le richieste? | Email · Servizio per moduli · WhatsApp · Sistema di prenotazione · CRM | Email |
-| W4 | Tecnologia | Vedi sotto | Nessuno: si chiede sempre |
-| W5 | Dati legali per il footer (attività italiana): ragione sociale, P.IVA, sede | Aperta | Segnaposto in "Contenuti da sostituire" |
+| W4 | Tecnologia | Vedi sotto | Nessuno stack fisso: si chiede sempre. Se l'utente risponde "decidi tu", applica l'opzione (Consigliato) e scrivila in Assunzioni |
+| W5 | Dati legali per il footer (attività italiana): quelli elencati in [contenuti-e-qualita.md](contenuti-e-qualita.md) §3 | Aperta | Segnaposto in "Contenuti da sostituire" |
 
 ### W4 — Come raccomandare la tecnologia
 
-W4 si chiede in **ogni** modalità e la scelta finale è sempre dell'utente. Valuta il brief, proponi l'opzione più adatta come prima scelta con "(Consigliato)" e il motivo in una o due righe, poi le alternative valide.
+W4 si chiede in **ogni** modalità e la scelta finale è sempre dell'utente. Valuta il brief, proponi l'opzione più adatta come prima scelta con "(Consigliato)" e il motivo in una o due righe, poi le alternative valide. Prima di raccomandare, se il brief non lo dice, chiedi in una riga chi aggiornerà i contenuti dopo la consegna (l'utente, uno sviluppatore, quasi nessuno) e se servono aree riservate o funzioni dinamiche.
 
 | Situazione emersa dal brief | Raccomandazione |
 |---|---|
 | Il progetto ha già un framework | Mantenerlo |
 | Sito vetrina, contenuti, blog; priorità a velocità e SEO | Astro più Tailwind |
 | Sito destinato a crescere: aree riservate, funzioni dinamiche, integrazioni, app | Next.js più Tailwind |
-| Landing singola o sito di poche pagine da consegnare come file, senza build | HTML più Tailwind statico |
+| Landing singola o sito di poche pagine da consegnare come file | HTML statico con il CSS di Tailwind compilato una volta dalla CLI (`npx @tailwindcss/cli -i input.css -o style.css --minify`), mai il Play CDN in produzione; senza strumenti, HTML con CSS puro e i token come variabili su `:root` |
 | Il cliente vuole aggiornare i contenuti da solo | Aggiungere un CMS (es. un CMS headless con Astro o Next.js, oppure WordPress) |
 | Negozio online con catalogo ampio | Valutare una piattaforma e-commerce dedicata (es. Shopify) |
 
