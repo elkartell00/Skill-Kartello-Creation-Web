@@ -9,7 +9,7 @@ Piano approvato nella Fase 4. Lo stato di ogni voce è {da fare | fatta}, tranne
 | Costruzione | Stato |
 |---|---|
 | Fondamenta: progetto, font, token del design system | da fare |
-| Contenuti visivi: generazione e approvazione del Piano degli asset (vedi sotto) | da fare |
+| Contenuti visivi: creazione in codice, poi eventuali generazioni con Studio AI, e approvazione del Piano degli asset (vedi sotto) | da fare |
 | Struttura globale: header e navigazione, footer, 404, pagine legali | da fare |
 | Pagine, sezione per sezione (vedi sotto) | da fare |
 | Animazioni secondo il livello scelto | da fare |
@@ -66,19 +66,19 @@ Ripeti il blocco "Pagina" per ogni pagina della mappa. Nelle pagine interne tien
 
 ## Piano degli asset
 
-Stile salvato in Studio AI: {nome} · Cartella delle immagini: `{public/img}` · Studio AI: {collegato | non collegato: segnaposto etichettati}
+Cartella delle immagini: `{public/img}` · Stile salvato in Studio AI (solo se usato): {nome} · Studio AI: {collegato | non collegato: segnaposto etichettati}
 
-Un solo piano per tutto il sito, approvato insieme al resto del piano: ogni voce serve uno slot preciso, niente immagini in più. Preset, formati e dimensioni si verificano nel `CATALOGO.md` di Studio AI. Le immagini si generano insieme in un solo lotto; un video solo dopo l'approvazione della sua immagine di partenza e il via dell'utente sulla stima dei costi. Per le foto reali del cliente scrivi "foto del cliente" al posto del preset; il ritocco solo se il consenso è registrato nel brief. Stato di ogni voce: {da generare | generato | approvato | da sostituire}.
+Un solo piano per tutto il sito, approvato insieme al resto del piano: ogni voce serve uno slot preciso, niente immagini in più. **Prima il codice** ([grafica-in-codice.md](../references/grafica-in-codice.md)): grafica, logo, icone, sfondi, animazioni e video di motion graphics nascono in codice; fotografie dal cliente; Studio AI solo per ciò che il codice non può fare, con il motivo scritto. Per le voci di Studio AI preset, formati e dimensioni si verificano nel suo `CATALOGO.md`; le immagini si generano insieme in un solo lotto e un video solo dopo l'approvazione della sua immagine di partenza e il via sulla stima. Il ritocco delle foto del cliente solo se il consenso è registrato nel brief. Stato di ogni voce: {da creare | creato | approvato | da sostituire}.
 
-| Pagina | Slot | Preset | Formato e dimensioni | Nome file | Dipende da | Essenziale o facoltativo | Stato |
-|---|---|---|---|---|---|---|---|
-| Home | Hero | `hero-sito` | 16:9 · 2000×1125 | `hero.webp` | Stile salvato | essenziale | da generare |
-| Tutte | Logo, solo il simbolo (se il cliente non ha un logo) | `logo-sito` | 1:1 · PNG trasparente | `logo-simbolo.png` | Palette approvata | essenziale | da generare |
-| Tutte | Favicon | `icona-sito` | 1:1 · sorgente di almeno 512 px | `favicon.png` | Logo | essenziale | da generare |
-| {Servizi} | Icone illustrative dei servizi (se previste) | `icona-sito` | 1:1 · PNG trasparente | `icona-{servizio}.png` | Stile salvato | facoltativo | da generare |
-| Tutte | Immagine di condivisione (OG) | `social-sito` | 1200×630 | `og.webp` | Stile salvato | essenziale | da generare |
-| Home | Video della hero (solo se scelto con A3) | `genera_video` | 16:9 · 8 s · muto | `hero.mp4`, `hero-mobile.mp4` | `hero.webp` approvata | facoltativo | da generare |
+| Pagina | Slot | Come nasce | Tecnica o preset | Formato e dimensioni | Nome file | Dipende da | Essenziale o facoltativo | Stato |
+|---|---|---|---|---|---|---|---|---|
+| Tutte | Logo (se il cliente non ha un logo) | Codice | SVG: simbolo e nome con il font del sito | Vettoriale | `logo.svg` | Palette approvata | essenziale | da creare |
+| Tutte | Favicon e icone dell'app | Codice | Dal simbolo SVG | SVG, PNG 180/192/512, ICO 32 | `favicon.svg` | Logo | essenziale | da creare |
+| {Servizi} | Icone illustrative dei servizi (se previste) | Codice | Set SVG coerente | 48×48, vettoriali | `icona-{servizio}.svg` | Design system | facoltativo | da creare |
+| Tutte | Immagine di condivisione (OG) | Codice | Pagina HTML salvata in PNG | 1200×630 | `og.png` | Logo, design system | essenziale | da creare |
+| Home | Hero | {Codice: animazione WebGL/Canvas · Cliente: foto · Studio AI: `hero-sito`, perché serve una fotografia realistica} | | 16:9 · 2000×1125 | `hero.webp` | | essenziale | da creare |
+| Home | Video della hero (solo se scelto con A3) | {Codice: animazione dal vivo o Remotion · Studio AI: `anima_immagine`, perché serve una ripresa dal vero} | | 16:9 · 8 s · muto | `hero.mp4`, `hero-mobile.mp4` | Hero approvata | facoltativo | da creare |
 
-Costo stimato: {importo o crediti}, mostrato il {gg/mm/aaaa}, via dell'utente il {gg/mm/aaaa} · Consuntivo: {importo o crediti} (da `riepilogo_spese`)
+Costo stimato di Studio AI: {importo o crediti, oppure 0 se tutto è in codice}, mostrato il {gg/mm/aaaa}, via dell'utente il {gg/mm/aaaa} · Consuntivo: {importo o crediti} (da `riepilogo_spese`)
 
 Recensioni, nomi e numeri inventati nei testi approvati, i segnaposto delle immagini e gli asset in stato "da sostituire" vanno anche in `docs/brief-sito.md`, sezione "Contenuti da sostituire".

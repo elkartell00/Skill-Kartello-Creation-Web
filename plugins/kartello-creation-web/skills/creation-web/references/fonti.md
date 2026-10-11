@@ -274,6 +274,10 @@ Skill di circa quattro mesi prima per siti "3D scroll" da un solo prompt. Analis
 
 **Non integrato:** il codice e i modelli (nessuna licenza), il flusso Higgsfield (`declined_preset_id`, modelli di riserva), l'installazione automatica di ffmpeg, il componente React e il lanciatore per macOS.
 
+## Scelta del proprietario: prima il codice
+
+Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e video di motion graphics si creano **in codice**; Studio AI è l'ultimo passaggio, solo dove il codice non arriva (fotografie realistiche, riprese dal vero). Dove si trova: [grafica-in-codice.md](grafica-in-codice.md), regola d'oro 9 di `SKILL.md`, [contenuti-visivi.md](contenuti-visivi.md) §1, §7 e §9, domande A3 e A6, modello `piano-sito.md`. Modifica la regola F2 sulle "illustrazioni SVG al posto delle foto": le illustrazioni in codice sono ammesse e preferite quando sono di livello; resta vietato sostituire una fotografia necessaria con un disegno povero.
+
 ## Aggiunte Kartello
 
 Regole e parti che non vengono da nessuna fonte integrata. Nei file sono senza codice di fonte; dove potrebbero sembrare di F1 sono marcate "(aggiunta Kartello)" o "(precisazione Kartello)".

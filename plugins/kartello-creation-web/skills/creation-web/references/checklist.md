@@ -37,11 +37,11 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Tono di voce e "tu" o "lei" coerenti in tutto il sito
 
 ## Contenuti visivi
-- [ ] Immagini, icone illustrative, favicon, video e audio creati solo con Studio AI, o foto reali del cliente; segnaposto etichettati se Studio AI non era collegato
+- [ ] Grafica, logo, icone, animazioni e video di motion graphics creati prima in codice; Studio AI usato solo dove il codice non bastava, con il motivo nel piano degli asset; foto reali del cliente dove servono fotografie; segnaposto etichettati se Studio AI non era collegato
 - [ ] Stile salvato con `salva_stile` e usato in tutte le immagini; immagini coerenti viste tutte insieme
 - [ ] Foto del cliente ritoccate o usate come riferimento solo con i consensi registrati nel brief
-- [ ] Logo del cliente intatto; logo nuovo come simbolo più nome in SVG con il font del sito
-- [ ] Icone d'interfaccia dalla libreria, icone illustrative da Studio AI, mai mescolate nella stessa zona
+- [ ] Logo del cliente intatto; logo nuovo in SVG (in codice, oppure simbolo di Studio AI più nome in SVG)
+- [ ] Icone d'interfaccia dalla libreria, icone illustrative come set SVG in codice (Studio AI solo se serviva), mai mescolate nella stessa zona
 - [ ] Video solo se scelto con A3 e approvato sulla stima; muto, con poster
 - [ ] File nel progetto con nomi parlanti; `width`, `height` reali e `alt` in italiano nel markup
 - [ ] Immagine OG e favicon presenti; costo totale riepilogato all'utente

@@ -18,7 +18,9 @@ Il "3D scroll" **non è un motore 3D**: è una sequenza di immagini su canvas. U
 6. **Strumenti legati al film.** Indicatori che reagiscono a ciò che si vede (decibel, strati, hertz, altitudine, gradi) trasformano un bel filmato in qualcosa che sembra ingegnerizzato.
 7. **Verifica a metà scroll.** Controlla ogni capitolo nel mezzo del suo scroll, non solo l'inizio della pagina.
 
-## §3 Con Studio AI
+## §3 Codice o Studio AI
+
+**Prima il codice** ([grafica-in-codice.md](grafica-in-codice.md)): se il soggetto può essere costruito in 3D o in motion graphics (forme, oggetti stilizzati, tipografia, particelle, prodotti semplici), si crea la scena con Three.js, la si renderizza fotogramma per fotogramma e la si passa a `frame-scrub.js`, senza costi. Studio AI serve quando il soggetto deve sembrare fotografato (il croissant vero, la casa reale, l'auto, il diamante con la sua luce): in quel caso:
 
 | Passo | Come |
 |---|---|

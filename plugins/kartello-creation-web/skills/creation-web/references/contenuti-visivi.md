@@ -2,12 +2,13 @@
 
 Le regole marcate [SA] vengono dalle istruzioni Studio AI del proprietario; quelle marcate [F2] sono pratiche ricavate da altre skill di generazione e riscritte per Studio AI (vedi [fonti.md](fonti.md)). Parametri, preset, prezzi e codici di errore esatti stanno nel `CATALOGO.md` della skill `studio-ai`: questo file non li ricopia, li usa.
 
-## §1 Regola di base: Studio AI sempre
+## §1 Regola di base: prima il codice, Studio AI per ultimo
 
-- Immagini, logo, icone illustrative, favicon, video e audio del sito si creano **sempre e solo con Studio AI** (server MCP `studio-ai`) [SA]. Mai altri generatori, mai chiamate dirette alle API dei modelli, mai foto di repertorio o immagini prese da servizi esterni.
-- **Ordine di preferenza** per ogni slot: 1) foto e file reali del cliente; 2) immagini generate con Studio AI; 3) segnaposto etichettato con slot, formato e dimensioni (es. "foto prodotto hero 1920×1080"), elencato in "Contenuti da sostituire" [F2].
+- **Prima il codice** (scelta del proprietario): grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e video di motion graphics si creano con il codice ([grafica-in-codice.md](grafica-in-codice.md)). Questo file vale per ciò che il codice non può fare.
+- Quando serve una generazione (tipicamente fotografie realistiche e riprese dal vero), si usa **solo Studio AI** (server MCP `studio-ai`) [SA]. Mai altri generatori, mai chiamate dirette alle API dei modelli, mai foto di repertorio o immagini prese da servizi esterni.
+- **Ordine di preferenza** per ogni slot: 1) codice, per tutto ciò che è grafico o animato; 2) foto e file reali del cliente, quando servono fotografie vere; 3) Studio AI, solo se codice e cliente non bastano; 4) segnaposto etichettato con slot, formato e dimensioni (es. "foto prodotto hero 1920×1080"), elencato in "Contenuti da sostituire" [F2].
 - **Se Studio AI non risponde** nella sessione (es. sessione cloud senza il server collegato): non ripiegare su altro. Usa segnaposto etichettati, elencali in "Contenuti da sostituire", spiega all'utente che le immagini si generano dove Studio AI è collegato (nell'app: Impostazioni → Collega a Claude Code, poi riaprire la sessione) e prosegui con il resto del sito [SA].
-- Nel sito consegnato non restano illustrazioni SVG disegnate a mano al posto delle foto, finti screenshot fatti con `div` o hero composte solo da un gradiente. Anche un sito minimal ha almeno 2–3 immagini vere [F2].
+- Mai una fotografia necessaria sostituita da un disegno povero, mai finti screenshot fatti con `div`, mai hero composte solo da un gradiente. Le illustrazioni e le animazioni in codice sono ammesse e preferite quando sono di livello e coerenti con lo stile. Anche un sito minimal ha almeno 2–3 elementi visivi veri, in codice o fotografici [F2, scelta del proprietario].
 
 ## §2 Prima di generare: skill studio-ai e CATALOGO
 
@@ -66,13 +67,13 @@ Ogni slot ha il suo formato fin dalla generazione, mai un formato unico ritaglia
 ## §7 Logo, favicon e icone
 
 - **Logo esistente**: si usa il file del cliente, mai ridisegnato o rigenerato. Le varianti (bianca, nera, monocolore) si ricavano dal file originale [F2].
-- **Logo nuovo** (solo se manca): con `logo-sito` Studio AI genera **solo il simbolo, senza testo**. Il nome del marchio si compone in SVG o HTML con il font del sito, così è sempre esatto e modificabile. *Scelta del proprietario: prevale sull'indicazione del catalogo di scrivere il nome tra virgolette nel prompt di `logo-sito`.* Prima si approva la palette, poi tre candidati con parametri identici (`varianti: 3`), ognuno con un solo concetto; l'utente sceglie [F2].
+- **Logo nuovo** (solo se manca): prima **in codice**, simbolo e nome in SVG ([grafica-in-codice.md](grafica-in-codice.md) §2). Solo se il simbolo in codice non basta, con `logo-sito` Studio AI genera **solo il simbolo, senza testo**. Il nome del marchio si compone in SVG o HTML con il font del sito, così è sempre esatto e modificabile. *Scelta del proprietario: prevale sull'indicazione del catalogo di scrivere il nome tra virgolette nel prompt di `logo-sito`.* Prima si approva la palette, poi tre candidati con parametri identici (`varianti: 3`), ognuno con un solo concetto; l'utente sceglie [F2].
 - **Icone, modello misto** (scelta del proprietario):
   - icone d'interfaccia semplici (lente, frecce, telefono, busta, menu, chiusura) da una sola libreria pronta, quella del design system ([design-system.md](design-system.md) §7);
-  - icone illustrative dei servizi (es. un dente per un dentista, una forchetta per un ristorante) con `icona-sito`, nello stile salvato, come un unico set coerente: stesso tratto, palette, prospettiva e peso [F2];
+  - icone illustrative dei servizi (es. un dente per un dentista, una forchetta per un ristorante) prima come **set SVG in codice**, con `icona-sito` di Studio AI solo se il codice non basta; in ogni caso un unico set coerente: stesso tratto, palette, prospettiva e peso [F2];
   - mai mescolate nella stessa zona della pagina.
-- **Favicon** con `icona-sito` (512×512 PNG), poi `favicon.ico` 32 px, `apple-touch-icon` 180 px e le icone 192/512 per il manifest, ricavate in locale [F2].
-- **Immagine OG** con `social-sito` (1200×630), composta apposta nel linguaggio del marchio, non un ritaglio della hero; una per ogni pagina principale nei siti multipagina [F2].
+- **Favicon** dal simbolo del logo in SVG (oppure, se il logo viene da Studio AI, con `icona-sito` 512×512 PNG), poi `favicon.ico` 32 px, `apple-touch-icon` 180 px e le icone 192/512 per il manifest, ricavate in locale [F2].
+- **Immagine OG** composta in codice (pagina HTML 1200×630 salvata in PNG, [grafica-in-codice.md](grafica-in-codice.md) §4), oppure con `social-sito` se serve una fotografia; in ogni caso composta apposta nel linguaggio del marchio, non un ritaglio della hero; una per ogni pagina principale nei siti multipagina [F2].
 
 ## §8 Foto reali del cliente e persone
 
@@ -86,7 +87,7 @@ Ogni slot ha il suo formato fin dalla generazione, mai un formato unico ritaglia
 
 ## §9 Video
 
-- **Il video nella hero si chiede sempre** (domanda A3), senza default e con la stima dei costi: nessun video, loop di sfondo, oppure video guidato dallo scroll, cioè lo scroll cinematico ([scroll-cinematico.md](scroll-cinematico.md)) [scelta del proprietario].
+- **Il video nella hero si chiede sempre** (domanda A3), senza default: nessun video, **animazione in codice** (consigliata quando il soggetto non deve essere fotografico: nessun costo, nitida a ogni risoluzione), loop di sfondo, oppure video guidato dallo scroll, cioè lo scroll cinematico ([scroll-cinematico.md](scroll-cinematico.md)). Per le opzioni che passano da Studio AI mostra la stima [scelta del proprietario].
 - **Prima l'immagine, poi il video**: si genera e si approva il fotogramma di partenza (di solito la hero), poi lo si anima con `anima_immagine` come primo fotogramma. Il prompt del video descrive solo il movimento della camera e del soggetto [F2].
 - **Loop di sfondo** [SA]: `genera_video` o `anima_immagine` in 16:9, 8 s, `audio: false`, livello standard; nel markup `autoplay muted loop playsinline` con l'immagine hero come `poster`.
 - **Requisiti per il web** [F2]: un solo movimento di camera continuo e lento, senza tagli; soggetto centrato con spazio per il testo; esposizione e colore costanti; grade e palette uguali alle immagini.

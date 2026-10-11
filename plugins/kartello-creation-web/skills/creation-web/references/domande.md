@@ -173,16 +173,16 @@ I token del design system ([design-system.md](design-system.md) §9) si adattano
 
 ### 2.7 Contenuti visivi [SA]
 
-Quando il sito ha immagini, cioè quasi sempre. Immagini, logo, icone illustrative, favicon, video e audio si creano solo con Studio AI ([contenuti-visivi.md](contenuti-visivi.md) §1); prima di questo giro leggi la skill `studio-ai` e il suo `CATALOGO.md` (§2). Se Studio AI non è disponibile nella sessione, fai comunque le domande: il sito usa segnaposto etichettati e le immagini si generano poi dove Studio AI è collegato. Attività, pubblico, colori e logo esistente hanno già una risposta in I1, I4, C1 e I8: riusala, non richiederla. Le domande vanno in un solo giro, saltando quelle che hanno già una risposta [F2].
+Quando il sito ha immagini, cioè quasi sempre. Grafica, logo, icone, animazioni e video di motion graphics si creano prima in codice ([grafica-in-codice.md](grafica-in-codice.md)); fotografie e riprese dal vero dal cliente o, solo se servono, con Studio AI ([contenuti-visivi.md](contenuti-visivi.md) §1); prima di questo giro leggi la skill `studio-ai` e il suo `CATALOGO.md` (§2). Se Studio AI non è disponibile nella sessione, fai comunque le domande: il sito usa segnaposto etichettati e le immagini si generano poi dove Studio AI è collegato. Attività, pubblico, colori e logo esistente hanno già una risposta in I1, I4, C1 e I8: riusala, non richiederla. Le domande vanno in un solo giro, saltando quelle che hanno già una risposta [F2].
 
 | ID | Domanda | Opzioni | Default |
 |---|---|---|---|
 | A1 | Stile delle immagini e atmosfera | Fotografico realistico · Illustrato · Minimal/flat · 3D; più l'atmosfera (calda, tecnica, lussuosa…) | Dedotto dalla direzione stilistica (V3) |
 | A2 | Possono comparire persone nelle immagini? | Sì, sempre inventate · No · Solo dettagli (mani, gesti) | Dedotto dal settore |
-| A3 | Video nella hero [F2] | Nessun video · Loop di sfondo · Video guidato dallo scroll | Nessun default: si chiede sempre, in ogni modalità, con la stima dei costi |
+| A3 | Video nella hero [F2] | Nessun video · Animazione in codice (gratis, consigliata se il soggetto non è fotografico) · Loop di sfondo con Studio AI · Video guidato dallo scroll | Nessun default: si chiede sempre, in ogni modalità; stima dei costi per le opzioni con Studio AI |
 | A4 | Qualità delle immagini | Standard (consigliata) · High per hero e logo | Standard |
 | A5 | Foto reali del cliente: quali ci sono? Il cliente acconsente al ritocco? Le persone ritratte acconsentono a comparire in nuove immagini? [F2] | Elenco delle foto · Ritocco sì o no · Nuove immagini sì o no | Usate così come sono, ottimizzate per il web, nessun ritocco |
-| A6 | C'è già un logo? (collegata a I8) | Sì: chiedi il file, meglio se vettoriale · No | Se manca: simbolo generato con Studio AI e nome del marchio in SVG con il font del sito |
+| A6 | C'è già un logo? (collegata a I8) | Sì: chiedi il file, meglio se vettoriale · No | Se manca: logo in SVG creato in codice (simbolo e nome con il font del sito); Studio AI per il simbolo solo se il codice non basta |
 
 - **A1** fornisce lo stile da salvare in Studio AI e usare in tutte le immagini del sito ([contenuti-visivi.md](contenuti-visivi.md) §4).
 - **A2**: le persone generate da zero sono sempre inventate, mai somiglianti a persone reali; le persone reali arrivano solo dalle foto del cliente (A5).

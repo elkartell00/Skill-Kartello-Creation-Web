@@ -68,7 +68,7 @@ Le cose che si dimenticano e fanno sembrare un sito non finito:
 
 ## §5 Prestazioni
 
-- Immagini in formato moderno (WebP o AVIF), con `width` e `height` reali; caricamento differito sotto la piega, mai sull'immagine della hero. Immagini, video e audio si creano solo con Studio AI, mai foto di repertorio ([contenuti-visivi.md](contenuti-visivi.md))
+- Immagini in formato moderno (WebP o AVIF), con `width` e `height` reali; caricamento differito sotto la piega, mai sull'immagine della hero. Grafica e animazioni prima in codice ([grafica-in-codice.md](grafica-in-codice.md)); fotografie dal cliente o, solo se servono, con Studio AI; mai foto di repertorio ([contenuti-visivi.md](contenuti-visivi.md))
 - Font: solo i pesi usati, `font-display: swap`
 - Nessuna libreria pesante per effetti che si ottengono con poche righe di CSS o JavaScript
 

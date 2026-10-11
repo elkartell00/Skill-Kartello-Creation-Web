@@ -38,14 +38,14 @@ CTA nell'header:
 - Priorità mobile (V7):
 
 ## Contenuti visivi
-Immagini, logo, icone illustrative, favicon e video si creano solo con Studio AI. Il dettaglio di ogni immagine è nel Piano degli asset di `docs/piano-sito.md`.
+Grafica, logo, icone, animazioni e video di motion graphics si creano prima in codice; fotografie dal cliente; Studio AI solo per ciò che il codice non può fare. Il dettaglio di ogni elemento è nel Piano degli asset di `docs/piano-sito.md`.
 
 - Studio AI: {collegato | non collegato in questa sessione: segnaposto etichettati, da generare dove è collegato}
 - Stile delle immagini e atmosfera (A1):
 - Persone nelle immagini (A2): {sì, sempre inventate | no | solo dettagli}
-- Video nella hero (A3): {nessuno | loop di sfondo | guidato dallo scroll} · Stima mostrata: · Via dell'utente il:
+- Video nella hero (A3): {nessuno | animazione in codice | loop di sfondo con Studio AI | guidato dallo scroll} · Stima mostrata (solo Studio AI): · Via dell'utente il:
 - Qualità (A4): {standard | high per hero e logo}
-- Logo (A6): {file del cliente: percorso | nuovo: simbolo con Studio AI e nome in SVG con il font del sito}
+- Logo (A6): {file del cliente: percorso | nuovo in SVG creato in codice | simbolo con Studio AI e nome in SVG, perché il codice non bastava}
 - Nome dello stile salvato in Studio AI:
 
 Foto reali del cliente (A5). Hanno la precedenza sulle immagini generate. Senza consenso registrato qui si usano solo ottimizzate per il web.

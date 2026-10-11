@@ -1,6 +1,6 @@
 # Effetti firma ("wow")
 
-L'effetto firma è la cosa che il visitatore ricorda. **Uno per pagina**, scelto nel piano e realizzato fino in fondo, preso da questo catalogo e non dalla prima idea che viene in mente [F5]. È un'opzione da proporre (domanda M4), mai un obbligo: la skill consiglia, l'utente sceglie (regola d'oro 10). Le immagini e i video degli effetti si creano con Studio AI ([contenuti-visivi.md](contenuti-visivi.md)).
+L'effetto firma è la cosa che il visitatore ricorda. **Uno per pagina**, scelto nel piano e realizzato fino in fondo, preso da questo catalogo e non dalla prima idea che viene in mente [F5]. È un'opzione da proporre (domanda M4), mai un obbligo: la skill consiglia, l'utente sceglie (regola d'oro 10). Gli effetti si realizzano **in codice** ([grafica-in-codice.md](grafica-in-codice.md)); Studio AI solo per le immagini e i video che il codice non può fare, come fotografie e riprese dal vero ([contenuti-visivi.md](contenuti-visivi.md)).
 
 ## Come scegliere [F5]
 
