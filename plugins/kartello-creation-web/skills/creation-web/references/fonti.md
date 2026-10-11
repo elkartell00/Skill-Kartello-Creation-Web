@@ -276,7 +276,7 @@ Skill di circa quattro mesi prima per siti "3D scroll" da un solo prompt. Analis
 
 ## Scelta del proprietario: livello del sito e spesa proporzionata
 
-All'avvio si sceglie il livello del sito (G1): Normale o Wow. Studio AI si può usare a entrambi i livelli, con una spesa proporzionata: poche generazioni per un sito normale; di più per un sito wow, solo se il risultato è mozzafiato. Dove si trova: regole d'oro 9 e 10, Fase 0, domanda G1 in [domande.md](domande.md) §0, [contenuti-visivi.md](contenuti-visivi.md) §12.
+All'avvio si sceglie il livello del sito (G1): Base (sito normale), Standard (bel sito moderno) o Wow (alta qualità, tanto motion graphics). Studio AI si può usare a ogni livello con un budget base proporzionato; le generazioni in più si chiedono prima, spiegando che il sito resta allo stesso livello; al livello Wow una spesa più alta deve dare un risultato mozzafiato. Dove si trova: regole d'oro 9 e 10, Fase 0, domanda G1 in [domande.md](domande.md) §0, [contenuti-visivi.md](contenuti-visivi.md) §12.
 
 ## Scelta del proprietario: il wow è motion graphics in codice
 

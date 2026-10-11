@@ -31,7 +31,7 @@ CTA nell'header:
 - Layout della landing (L1) e motivo:
 
 ## Livello del sito
-- Livello (G1): {Wow | Normale} · Budget indicativo per Studio AI:
+- Livello (G1): {Base | Standard | Wow} · Budget base per Studio AI: · Generazioni in più approvate dall'utente: {nessuna | quali, il gg/mm/aaaa}
 
 ## Tono e stile
 - Tono di voce; tu o lei:
