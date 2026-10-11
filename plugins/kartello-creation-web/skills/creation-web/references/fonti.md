@@ -286,6 +286,10 @@ Ogni sito di livello High Quality ha una scena d'impatto in motion graphics cost
 
 Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e video di motion graphics si creano **in codice**; Studio AI è l'ultimo passaggio, solo dove il codice non arriva (fotografie realistiche, riprese dal vero). Dove si trova: [grafica-in-codice.md](grafica-in-codice.md), regola d'oro 10 di `SKILL.md`, [contenuti-visivi.md](contenuti-visivi.md) §1, §7 e §9, domande A3 e A6, modello `piano-sito.md`. Modifica la regola F2 sulle "illustrazioni SVG al posto delle foto": le illustrazioni in codice sono ammesse e preferite quando sono di livello; resta vietato sostituire una fotografia necessaria con un disegno povero.
 
+## Scelta del proprietario: imparare dagli esempi
+
+La skill impara dai siti di esempio indicati dall'utente: li analizza da sola nel browser (basta l'indirizzo), ne ricava struttura, layout, grafica, immagini e motion graphics, registra i punti forti scelti dall'utente e li cataloga per tipologia in una libreria personale fuori dal plugin (`~/.claude/kartello/libreria-siti/`). Nei siti nuovi i riferimenti si adattano al brand e non si copia nulla. Dove si trova: [libreria-esempi.md](libreria-esempi.md), script `assets/analisi-sito/analizza-sito.mjs` (codice originale), modello `templates/scheda-esempio.md`, regola d'oro 12 e Fase 0 di `SKILL.md`, domande I7 e V0 in [domande.md](domande.md), brief e checklist.
+
 ## Aggiunte Kartello
 
 Regole e parti che non vengono da nessuna fonte integrata. Nei file sono senza codice di fonte; dove potrebbero sembrare di F1 sono marcate "(aggiunta Kartello)" o "(precisazione Kartello)".

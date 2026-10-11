@@ -12,7 +12,7 @@ L'utente sceglie la modalità all'avvio. In tutte le modalità le risposte già 
 
 | Modalità | Per chi | Domande |
 |---|---|---|
-| **Rapida** | Ha fretta, o vuole vedere subito una bozza | Due giri brevi: (1) I1, I3, I5 e C1, saltando ciò che l'idea già dice; (2) proposta di pagine (P1), stile dedotto (V3) dichiarato prima delle palette, tre palette adatte a settore e stile se C1 è "proponimi tu" (senza chiedere C2), scala tipografica (T4), tecnologia (W4) con raccomandazione e video nella hero (A3) con la stima dei costi. A5 e A6 solo se I8 o l'idea iniziale indicano foto o un logo del cliente. Tutto il resto, L1, A1, A2 e A4 compresi, con i default dichiarati |
+| **Rapida** | Ha fretta, o vuole vedere subito una bozza | Due giri brevi: (1) I1, I3, I5 e C1, saltando ciò che l'idea già dice; (2) proposta di pagine (P1), riferimento della libreria (V0) se ce n'è uno pertinente, stile dedotto (V3) dichiarato prima delle palette, tre palette adatte a settore e stile se C1 è "proponimi tu" (senza chiedere C2), scala tipografica (T4), tecnologia (W4) con raccomandazione e video nella hero (A3) con la stima dei costi. A5 e A6 solo se I8 o l'idea iniziale indicano foto o un logo del cliente. Tutto il resto, L1, A1, A2 e A4 compresi, con i default dichiarati |
 | **Standard** | La maggior parte dei casi | I quattro giri del §1, poi uno o due giri del §2 con i soli blocchi pertinenti al tipo di sito e all'obiettivo; il blocco 2.7 quando il sito ha immagini, A3 in ogni caso. Circa 20–30 domande in tutto, meno quelle a cui l'idea iniziale risponde già |
 | **Approfondita** | Progetti importanti, massimo controllo | Tutte le domande del §1 e del §2 pertinenti al tipo di sito (blocco 2.7 compreso), giro per giro, anche quelle che nelle altre modalità prendono il default. Revisione della tabella tipografica e della palette prima di fissarle |
 
@@ -50,7 +50,7 @@ Domande aperte, in chat, in due parti: prima I1–I5, poi I6–I8.
 | I4 | Chi è il cliente ideale? Chi è, dove si trova, cosa cerca. | Dedotto da I1 |
 | I5 | Tipo di sito: multipagina, landing page singola, one page a sezioni, portfolio, blog, e-commerce leggero. | Multipagina |
 | I6 | Lingua o lingue del sito. | Lingua dell'utente |
-| I7 | Siti che ti piacciono (e cosa ti piace), siti che non ti piacciono, concorrenti. | Nessuno |
+| I7 | Siti che ti piacciono (e cosa ti piace), siti che non ti piacciono, concorrenti. Basta l'indirizzo: la skill li analizza da sola ([libreria-esempi.md](libreria-esempi.md) §3) e chiede se salvarli nella libreria. | Nessuno |
 | I8 | Cosa hai già: logo, colori, font, testi, foto, video, dominio, sito attuale. | Niente |
 
 I3 decide la CTA principale di tutto il sito. Se I5 è "landing page singola", usa la struttura landing ([strategia-e-struttura.md](strategia-e-struttura.md) §2). Se I8 indica foto o un logo, approfondisci con A5 e A6 (§2.7).
@@ -81,13 +81,14 @@ Se I5 è landing page singola o one page: P1 propone la pagina unica, le pagine 
 
 | ID | Domanda | Opzioni | Default |
 |---|---|---|---|
+| V0 | Vuoi partire da un riferimento della tua libreria? (solo se ha esempi pertinenti) | 1–3 riferimenti pertinenti (tipologia, esempio, punti forti) · Combina due riferimenti · Nessuno, proponimi gli stili | Il riferimento più pertinente |
 | V3 | Direzione stilistica [F1] | Le 2–3 più adatte da [stili.md](stili.md), con anteprima | La prima proposta |
 | C1 | Hai già colori di brand? | Sì, ho i codici hex · Prendili dal logo · Li descrivo a parole · No, proponimi tu | Proponimi tu |
 | C2 | Che sensazione devono trasmettere? (solo se servono proposte) | Calda e accogliente · Fresca e pulita · Elegante e lussuosa · Naturale · Energica e audace · Tecnologica e precisa · Seria e affidabile | Dedotta dal settore |
 | C3 | Tema | Chiaro · Scuro · Entrambi con interruttore · Chiaro con sezioni scure | Chiaro |
 | C4 | Quanto colore? | Sobrio (neutri più un accento) · Bilanciato (primario più secondario) · Ricco (molto colore, sezioni colorate) | Sobrio |
 
-Chiedi V3 per prima: lo stile scelto fornisce i default di C, T, V e M. Con C2 proponi **tre palette** (nome, sensazione, perché è adatta, hex per ogni ruolo) secondo [design-system.md](design-system.md) §2. Con AskUserQuestion mostra i codici nell'anteprima di ogni opzione.
+Se la libreria degli esempi ha riferimenti pertinenti, chiedi prima V0 ([libreria-esempi.md](libreria-esempi.md) §5): il riferimento scelto orienta le direzioni proposte con V3 e le scelte di struttura, layout e movimento, mentre colori e font restano del brand. Poi chiedi V3: lo stile scelto fornisce i default di C, T, V e M. Con C2 proponi **tre palette** (nome, sensazione, perché è adatta, hex per ogni ruolo) secondo [design-system.md](design-system.md) §2. Con AskUserQuestion mostra i codici nell'anteprima di ogni opzione.
 
 ### Giro 4 — Tipografia
 

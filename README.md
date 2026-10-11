@@ -16,6 +16,8 @@ poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 5. **Costruzione**: al livello High Quality prima la **scena d'impatto in motion graphics fatta in codice** (rivista su registrazione video), poi il resto sezione per sezione. Grafica, logo, icone, animazioni e motion graphics si creano **in codice**; **Studio AI** (server MCP `studio-ai`) solo per ciò che il codice non può fare, come le fotografie realistiche.
 6. **Controllo qualità** con checklist e consegna.
 
+**Impara dagli esempi.** Dai alla skill l'indirizzo di un sito che ti piace (`/creation-web impara https://…`): lo apre nel browser, lo scorre e lo fotografa da sola, ne ricava struttura, layout, grafica, immagini e motion graphics, ti chiede quali punti forti tenere e lo salva in una libreria personale divisa per tipologie (`~/.claude/kartello/libreria-siti/`, fuori dal plugin, così resta anche dopo gli aggiornamenti). Più esempi le dai, più le tipologie diventano precise. Quando crei un sito nuovo ti propone i riferimenti adatti e li adatta al tuo brand: colori, font, testi, immagini e SEO restano tuoi. Per l'analisi servono Node e Playwright (`npm install -g playwright`).
+
 Avvio: `/creation-web` (skill di progetto) oppure `/kartello-creation-web:creation-web` (plugin installato), eventualmente seguito dall'idea: `/creation-web sito per uno studio di fisioterapia a Bologna`.
 
 ## Struttura
@@ -31,9 +33,9 @@ Avvio: `/creation-web` (skill di progetto) oppure `/kartello-creation-web:creati
 │       └── skills/
 │           └── creation-web/
 │               ├── SKILL.md          # flusso a fasi e regole d'oro
-│               ├── references/       # domande, design system, stili, strategia, motion, contenuti visivi, scroll cinematico, volo in prima persona, SEO, effetti d'impatto, siti 3D scroll, qualità, checklist, fonti
-│               ├── assets/           # motori dello scroll cinematico e del 3D scroll
-│               └── templates/        # modelli di brief, design system e piano del sito
+│               ├── references/       # domande, design system, stili, strategia, motion, contenuti visivi, scroll cinematico, volo in prima persona, SEO, effetti d'impatto, siti 3D scroll, libreria degli esempi, qualità, checklist, fonti
+│               ├── assets/           # motori dello scroll cinematico e del 3D scroll, script di analisi dei siti di esempio
+│               └── templates/        # modelli di brief, design system, piano del sito e scheda di esempio
 └── .claude/
     └── skills/
         └── creation-web -> ../../plugins/kartello-creation-web/skills/creation-web

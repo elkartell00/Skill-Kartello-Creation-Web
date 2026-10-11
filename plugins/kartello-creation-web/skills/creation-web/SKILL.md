@@ -1,7 +1,7 @@
 ---
 name: creation-web
-description: Crea siti web da zero per qualsiasi settore (sito vetrina multipagina, landing page, one page, portfolio, sito per attività locali) guidando l'utente con domande mirate su idea, obiettivo, pagine, palette colori, tipografia H1–H6, stile e conversione. Fissa un design system che resta costante su tutto il sito, poi pianifica e costruisce sezione per sezione una prima bozza di livello professionale, con un'esperienza visiva d'impatto in motion graphics creata in codice e Studio AI solo come ultimo supporto. Usala quando l'utente chiede di creare, progettare o impostare un nuovo sito web o una landing page, oppure quando chiede di aggiungere pagine o sezioni a un sito che ha già `docs/brief-sito.md` e `docs/design-system.md`.
-argument-hint: "[idea del sito]"
+description: Crea siti web da zero per qualsiasi settore (sito vetrina multipagina, landing page, one page, portfolio, sito per attività locali) guidando l'utente con domande mirate su idea, obiettivo, pagine, palette colori, tipografia H1–H6, stile e conversione. Fissa un design system che resta costante su tutto il sito, poi pianifica e costruisce sezione per sezione una prima bozza di livello professionale, con un'esperienza visiva d'impatto in motion graphics creata in codice e Studio AI solo come ultimo supporto. Impara dai siti di esempio indicati dall'utente (basta l'indirizzo): li analizza nel browser, ne ricava struttura, layout, grafica e motion graphics e li cataloga in una libreria di stili da adattare ai nuovi brand. Usala quando l'utente chiede di creare, progettare o impostare un nuovo sito web o una landing page, oppure quando chiede di aggiungere pagine o sezioni a un sito che ha già `docs/brief-sito.md` e `docs/design-system.md`, o quando indica un sito di esempio da cui imparare.
+argument-hint: "[idea del sito | impara <indirizzo del sito>]"
 ---
 
 # Kartello Creation Web
@@ -25,6 +25,7 @@ Idea iniziale passata all'avvio (può essere vuota): $ARGUMENTS
 9. **Il livello del sito decide impatto visivo e budget.** All'avvio l'utente sceglie il livello (domanda G1): **Low Quality** (sito normale e semplice), **Standard** (bel sito moderno) o **High Quality** (livello premium, esperienza immersiva con motion graphics avanzato). Al livello High Quality ogni sito ha una **scena d'impatto in motion graphics** costruita in codice (idea, storyboard, timeline, almeno tre giri di revisione su registrazione video), che è la prima cosa che si costruisce ([references/motion-graphics.md](references/motion-graphics.md)); a Standard animazioni moderne e curate, scena d'impatto facoltativa; a Low Quality animazioni essenziali.
 10. **Prima il codice, Studio AI proporzionato al livello.** Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e file video si creano prima **con il codice** (SVG, Canvas, WebGL, GSAP, Three.js, Remotion), e Claude Code ci prova davvero ([references/grafica-in-codice.md](references/grafica-in-codice.md)); le foto vere del cliente si usano quando servono fotografie. L'app **Studio AI** (server MCP `studio-ai`; mai altri servizi né foto di repertorio) si può usare a ogni livello, con un **budget base proporzionato al livello** ([references/contenuti-visivi.md](references/contenuti-visivi.md) §12). Se servirebbero più generazioni del budget base, **prima si chiede**: cosa aggiungono, quanto costano e che il sito **resta allo stesso livello**, solo più completo; decide l'utente. Al livello High Quality si può spendere di più, ma il risultato deve essere di livello premium. Le richieste a Studio AI partono senza conferme, quindi la skill propone sempre l'elenco con il motivo e la stima (`stima_costo`) e genera solo dopo il sì. Se Studio AI non è collegato, segnaposto etichettati e si prosegue.
 11. **Proponi, consiglia, decide l'utente.** Ogni sito è diverso. Per le scelte che danno carattere al sito (stile, struttura e layout, navigazione, animazioni, video e scroll cinematico, tecnologia) proponi 2–3 opzioni davvero diverse tra loro, ragionando su settore, obiettivo e pubblico; indica quella che consigli e spiega perché in una riga. La scelta finale è sempre dell'utente.
+12. **Impara dagli esempi, adatta al brand.** Quando l'utente indica un sito di esempio, la skill lo analizza da sola (basta l'indirizzo: lo apre nel browser, lo scorre e lo fotografa), ne ricava struttura, layout, grafica, immagini e motion graphics, registra i punti forti che piacciono all'utente e lo salva nella libreria personale, catalogato per tipologia. Nei siti nuovi propone i riferimenti pertinenti e li adatta al brand: colori, font, testi, immagini e SEO restano del brand e non si copia nulla ([references/libreria-esempi.md](references/libreria-esempi.md)).
 
 ## Come fare le domande
 
@@ -42,13 +43,14 @@ La banca completa delle domande, con opzioni e default, è in [references/domand
 
 ### Fase 0 — Avvio
 
+0. Se l'utente vuole solo far imparare un sito (un indirizzo con "impara", "aggiungi alla libreria" o simili, anche come argomento di avvio), segui la modalità Impara ([references/libreria-esempi.md](references/libreria-esempi.md) §3) e fermati lì.
 1. Controlla se nel progetto esistono già `docs/brief-sito.md`, `docs/design-system.md` e `docs/piano-sito.md`.
    - Se brief e design system esistono e sono approvati: leggili insieme al file dei token, salta i punti 2–4 e non rifare l'intervista. Se la richiesta è già chiara, procedi senza chiedere conferma; altrimenti mostra un riepilogo e chiedi se continuare, modificare un parametro o aggiungere pagine.
    - Se esiste `docs/piano-sito.md`, riprendi dal primo elemento non completato.
    - Se esiste solo uno tra brief e design system, o uno dei due è in bozza, riprendi dalla fase corrispondente.
    - Per una nuova pagina: P2 per quella pagina, scaletta e testi (Fase 4 solo per lei) da approvare, costruzione (Fase 5, punto 6) riusando header, footer e componenti esistenti, Fase 6 su quella pagina; aggiorna la tabella Pagine del brief e `docs/piano-sito.md`.
 2. Controlla se il progetto ha già un framework (`package.json`, `astro.config.*`, `next.config.*`, ecc.). Se c'è, annotalo: con W4 raccomanderai di mantenerlo, ma la scelta resta all'utente.
-3. Leggi l'idea iniziale e deduci tutto quello che puoi: settore, tipo di sito, obiettivo, pubblico.
+3. Leggi l'idea iniziale e deduci tutto quello che puoi: settore, tipo di sito, obiettivo, pubblico. Se esiste la libreria degli esempi (`~/.claude/kartello/libreria-siti/`), leggi `INDICE.md` e `tipologie.md`.
 4. Chiedi la modalità dell'intervista (Rapida, Standard, Approfondita) e il **livello del sito** (G1: Low Quality, Standard o High Quality), salvo che l'utente li abbia già indicati o abbia chiesto di procedere senza domande (regola d'oro 1). Se alla modalità risponde "decidi tu", vale Standard; per il livello vale High Quality.
 
 ### Fase 1 — Brief base (sempre)
@@ -57,7 +59,7 @@ Quattro giri, in quest'ordine (in modalità Rapida diventano due giri brevi con 
 
 1. **Idea**: cosa è, settore e posizionamento, obiettivo principale, pubblico, tipo di sito, lingua, riferimenti, materiali esistenti.
 2. **Pagine**: proponi un elenco di pagine adatto al settore. L'utente conferma, toglie o aggiunge. Definisci l'obiettivo di ogni pagina e cosa va nel menu.
-3. **Stile e palette**: prima proponi 2–3 direzioni da [references/stili.md](references/stili.md) (V3); lo stile scelto fornisce i default di colori, tipografia, forme e animazioni (domande C, T, V, M). In modalità Rapida non chiedere lo stile: dichiara quello dedotto prima di proporre le palette. Poi colori di brand oppure tre proposte; tema chiaro o scuro; quanto colore. Costruisci i ruoli colore e verifica i contrasti secondo [references/design-system.md](references/design-system.md) §2.
+3. **Stile e palette**: se la libreria ha esempi pertinenti, proponi prima i riferimenti (V0, [references/libreria-esempi.md](references/libreria-esempi.md) §5); poi proponi 2–3 direzioni da [references/stili.md](references/stili.md) (V3); lo stile scelto fornisce i default di colori, tipografia, forme e animazioni (domande C, T, V, M). In modalità Rapida non chiedere lo stile: dichiara quello dedotto prima di proporre le palette. Poi colori di brand oppure tre proposte; tema chiaro o scuro; quanto colore. Costruisci i ruoli colore e verifica i contrasti secondo [references/design-system.md](references/design-system.md) §2.
 4. **Tipografia**: font e scala (compatta, equilibrata, d'impatto). Mostra la tabella con Display, H1–H6, testi e bottoni, con misure desktop e mobile, e falla approvare: da qui in poi è fissa. Vedi [references/design-system.md](references/design-system.md) §3.
 
 ### Fase 2 — Approfondimento mirato
@@ -127,5 +129,6 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/seo.md](references/seo.md) | Fasi 4 e 6: title, meta, dati strutturati, contenuti citabili dalle AI, controllo SEO |
 | [references/effetti-impatto.md](references/effetti-impatto.md) | Fasi 2 e 4: effetto d'impatto (M4) e diversità tra siti |
 | [references/siti-3d-scroll.md](references/siti-3d-scroll.md) | Se l'effetto d'impatto è un "3D scroll" (famiglia E): ricette E1–E7 e motore in `assets/scroll-3d/` |
+| [references/libreria-esempi.md](references/libreria-esempi.md) | Modalità Impara, domanda V0 e uso dei riferimenti; script in `assets/analisi-sito/` |
 | [references/checklist.md](references/checklist.md) | Fase 6 |
 | [references/fonti.md](references/fonti.md) | Origine delle regole integrate e licenze |
