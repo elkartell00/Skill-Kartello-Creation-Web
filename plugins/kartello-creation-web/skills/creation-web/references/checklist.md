@@ -36,6 +36,10 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Tutti i segnaposto elencati in "Contenuti da sostituire"
 - [ ] Tono di voce e "tu" o "lei" coerenti in tutto il sito
 
+## Momento firma
+- [ ] Momento firma in motion graphics costruito in codice e rivisto su registrazione almeno tre volte ([motion-graphics.md](motion-graphics.md) §7)
+- [ ] Nessuna chiamata a Studio AI senza elenco, motivo, stima e sì dell'utente; ogni generazione serve il momento wow o una fotografia indispensabile, mai immagini qualsiasi
+
 ## Contenuti visivi
 - [ ] Grafica, logo, icone, animazioni e video di motion graphics creati prima in codice; Studio AI usato solo dove il codice non bastava, con il motivo nel piano degli asset; foto reali del cliente dove servono fotografie; segnaposto etichettati se Studio AI non era collegato
 - [ ] Stile salvato con `salva_stile` e usato in tutte le immagini; immagini coerenti viste tutte insieme

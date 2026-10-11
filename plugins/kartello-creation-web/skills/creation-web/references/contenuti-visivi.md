@@ -115,7 +115,8 @@ Ogni slot ha il suo formato fin dalla generazione, mai un formato unico ritaglia
 
 ## §12 Costi e approvazioni
 
-- **Immagini**: il piano degli asset si approva nella Fase 4 insieme alla stima (`stima_costo`, o la stima del lotto). Dopo l'approvazione le immagini del piano si generano senza chiedere altro [F2].
+- **Ogni spesa deve servire il wow** (scelta del proprietario): Studio AI si usa quando aiuta a raggiungere l'effetto wow del sito ([motion-graphics.md](motion-graphics.md)) o per una fotografia indispensabile che il cliente non ha; mai per immagini qualsiasi che porterebbero a un sito normale: quelle si fanno in codice o si lasciano come segnaposto.
+- **Studio AI non parte mai da solo** (scelta del proprietario): la prima versione del sito si costruisce in codice e con le foto del cliente. A sito costruito, le immagini di Studio AI eventualmente necessarie si propongono come elenco (slot, motivo per cui il codice non basta, stima con `stima_costo`) e si generano solo dopo il sì esplicito dell'utente.
 - **Video e catene di video**: si propongono, si mostra la stima (`stima_costo`, più circa il 15% di margine per le rigenerazioni) e si generano solo dopo un sì esplicito dell'utente. Il silenzio non vale come approvazione [F2].
 - `genera_lotto` controlla il costo totale prima di partire: o partono tutte le voci o nessuna [SA].
 - **A fine lavoro** riassumi all'utente: file creati, dove sono, a cosa servono, cosa resta da sostituire e il costo totale (`riepilogo_spese`) [SA].

@@ -1,6 +1,6 @@
 ---
 name: creation-web
-description: Crea siti web da zero per qualsiasi settore (sito vetrina multipagina, landing page, one page, portfolio, sito per attività locali) guidando l'utente con domande mirate su idea, obiettivo, pagine, palette colori, tipografia H1–H6, stile e conversione. Fissa un design system che resta costante su tutto il sito, poi pianifica e costruisce sezione per sezione una prima bozza di livello professionale, con grafica e motion graphics creati in codice e Studio AI come ultimo passaggio. Usala quando l'utente chiede di creare, progettare o impostare un nuovo sito web o una landing page, oppure quando chiede di aggiungere pagine o sezioni a un sito che ha già `docs/brief-sito.md` e `docs/design-system.md`.
+description: Crea siti web da zero per qualsiasi settore (sito vetrina multipagina, landing page, one page, portfolio, sito per attività locali) guidando l'utente con domande mirate su idea, obiettivo, pagine, palette colori, tipografia H1–H6, stile e conversione. Fissa un design system che resta costante su tutto il sito, poi pianifica e costruisce sezione per sezione una prima bozza di livello professionale, con un effetto wow in motion graphics creato in codice e Studio AI solo come ultimo supporto. Usala quando l'utente chiede di creare, progettare o impostare un nuovo sito web o una landing page, oppure quando chiede di aggiungere pagine o sezioni a un sito che ha già `docs/brief-sito.md` e `docs/design-system.md`.
 argument-hint: "[idea del sito]"
 ---
 
@@ -22,8 +22,9 @@ Idea iniziale passata all'avvio (può essere vuota): $ARGUMENTS
 6. **Bozza realistica ma onesta.** Scrivi testi veri, mai Lorem Ipsum. Recensioni, nomi, numeri e loghi inventati sono segnaposto: elencali in `docs/brief-sito.md`, sezione "Contenuti da sostituire", perché vanno rimpiazzati con dati reali prima della pubblicazione.
 7. **Lingua.** Fai le domande nella lingua dell'utente. I testi del sito vanno nella lingua scelta nel brief.
 8. **La tecnologia la sceglie l'utente.** Non esiste uno stack predefinito: in base al brief raccomanda quello più adatto al sito, spiega perché in poche righe, e lascia la decisione all'utente (domanda W4). Se risponde "decidi tu", applica l'opzione consigliata e scrivila in "Assunzioni" nel brief.
-9. **Prima il codice, Studio AI per ultimo.** Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e anche file video si creano **con il codice** (SVG, Canvas, WebGL, GSAP, Three.js, Remotion): Claude Code ci prova in ogni modo ([references/grafica-in-codice.md](references/grafica-in-codice.md)). Le foto vere del cliente si usano quando servono fotografie. Solo se il codice non arriva alla qualità richiesta (tipicamente fotografie realistiche e riprese dal vero) si usa l'app **Studio AI** (server MCP `studio-ai`), mai altri servizi o foto di repertorio; le sue richieste partono senza conferme, quindi stima e via dell'utente li chiede la skill ([references/contenuti-visivi.md](references/contenuti-visivi.md)). Se Studio AI non è collegato, segnaposto etichettati e si prosegue.
-10. **Proponi, consiglia, decide l'utente.** Ogni sito è diverso. Per le scelte che danno carattere al sito (stile, struttura e layout, navigazione, animazioni, video e scroll cinematico, tecnologia) proponi 2–3 opzioni davvero diverse tra loro, ragionando su settore, obiettivo e pubblico; indica quella che consigli e spiega perché in una riga. La scelta finale è sempre dell'utente.
+9. **Il wow è motion graphics in codice.** Ogni sito ha un **momento firma in motion graphics** costruito solo con il codice (idea, storyboard, timeline, almeno tre giri di revisione su registrazione video), salvo che l'utente dica di non volerlo: è la prima cosa che si costruisce e il punto di forza del sito ([references/motion-graphics.md](references/motion-graphics.md)).
+10. **Prima il codice, Studio AI per ultimo.** Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e anche file video si creano **con il codice** (SVG, Canvas, WebGL, GSAP, Three.js, Remotion): Claude Code ci prova in ogni modo ([references/grafica-in-codice.md](references/grafica-in-codice.md)). Le foto vere del cliente si usano quando servono fotografie. Solo se il codice non arriva alla qualità richiesta (tipicamente fotografie realistiche e riprese dal vero) si usa l'app **Studio AI** (server MCP `studio-ai`), mai altri servizi o foto di repertorio; le sue richieste partono senza conferme, quindi stima e via dell'utente li chiede la skill ([references/contenuti-visivi.md](references/contenuti-visivi.md)). **Studio AI non parte mai da solo e serve il wow, non lo sostituisce**: si prova sempre prima in codice; Studio AI si usa quando serve a raggiungere l'effetto wow (o per una fotografia indispensabile che il cliente non ha), mai per fare un sito normale con immagini qualsiasi. Le generazioni si propongono come elenco con motivo e costo e partono solo dopo il sì dell'utente. Se Studio AI non è collegato, segnaposto etichettati e si prosegue.
+11. **Proponi, consiglia, decide l'utente.** Ogni sito è diverso. Per le scelte che danno carattere al sito (stile, struttura e layout, navigazione, animazioni, video e scroll cinematico, tecnologia) proponi 2–3 opzioni davvero diverse tra loro, ragionando su settore, obiettivo e pubblico; indica quella che consigli e spiega perché in una riga. La scelta finale è sempre dell'utente.
 
 ## Come fare le domande
 
@@ -45,7 +46,7 @@ La banca completa delle domande, con opzioni e default, è in [references/domand
    - Se brief e design system esistono e sono approvati: leggili insieme al file dei token, salta i punti 2–4 e non rifare l'intervista. Se la richiesta è già chiara, procedi senza chiedere conferma; altrimenti mostra un riepilogo e chiedi se continuare, modificare un parametro o aggiungere pagine.
    - Se esiste `docs/piano-sito.md`, riprendi dal primo elemento non completato.
    - Se esiste solo uno tra brief e design system, o uno dei due è in bozza, riprendi dalla fase corrispondente.
-   - Per una nuova pagina: P2 per quella pagina, scaletta e testi (Fase 4 solo per lei) da approvare, costruzione (Fase 5, punto 5) riusando header, footer e componenti esistenti, Fase 6 su quella pagina; aggiorna la tabella Pagine del brief e `docs/piano-sito.md`.
+   - Per una nuova pagina: P2 per quella pagina, scaletta e testi (Fase 4 solo per lei) da approvare, costruzione (Fase 5, punto 6) riusando header, footer e componenti esistenti, Fase 6 su quella pagina; aggiorna la tabella Pagine del brief e `docs/piano-sito.md`.
 2. Controlla se il progetto ha già un framework (`package.json`, `astro.config.*`, `next.config.*`, ecc.). Se c'è, annotalo: con W4 raccomanderai di mantenerlo, ma la scelta resta all'utente.
 3. Leggi l'idea iniziale e deduci tutto quello che puoi: settore, tipo di sito, obiettivo, pubblico.
 4. Chiedi la modalità dell'intervista (Rapida, Standard, Approfondita), salvo che l'utente l'abbia già indicata o abbia chiesto di procedere senza domande (regola d'oro 1). Se a questa domanda risponde "decidi tu", vale Standard.
@@ -81,8 +82,9 @@ Prima di scrivere codice presenta, in quest'ordine:
 5. **Come funziona**: tre passaggi, se pertinente.
 6. **FAQ**: da sei a dodici domande e risposte, se pertinente.
 7. **SEO**: indicizzare o no, title e meta description per pagina, dati strutturati ([references/seo.md](references/seo.md)).
-8. **Layout** delle landing: A, B, C, D o E, con il motivo; **effetto firma** della pagina, se scelto con M4 ([references/effetti-wow.md](references/effetti-wow.md)).
-9. **Piano degli asset**: ogni immagine, icona illustrativa, logo e video del sito, con come nasce (codice, cliente o Studio AI, e per Studio AI perché il codice non basta), formato e nome file, più la stima dei costi di ciò che passa da Studio AI ([references/grafica-in-codice.md](references/grafica-in-codice.md), [references/contenuti-visivi.md](references/contenuti-visivi.md) §3 e §12).
+8. **Layout** delle landing: A, B, C, D o E, con il motivo.
+9. **Momento firma in motion graphics**: 2–3 idee diverse, quella consigliata, e lo storyboard in 5–8 battute con i tempi ([references/motion-graphics.md](references/motion-graphics.md) §1, [references/effetti-wow.md](references/effetti-wow.md)).
+10. **Piano degli asset**: ogni immagine, icona illustrativa, logo e video del sito, con come nasce (codice, cliente o Studio AI, e per Studio AI perché il codice non basta), formato e nome file, più la stima dei costi di ciò che passa da Studio AI ([references/grafica-in-codice.md](references/grafica-in-codice.md), [references/contenuti-visivi.md](references/contenuti-visivi.md) §3 e §12).
 
 Scrivi i testi secondo [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §6–§7 e [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §1; per SEO e layout segui [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §8 e §5.
 
@@ -91,18 +93,20 @@ Attendi l'approvazione o le correzioni. Dopo l'approvazione salva il piano in `d
 ### Fase 5 — Costruzione
 
 1. **Fondamenta**: progetto, font, token del design system in codice (colori, classi tipografiche `type-*`, spaziature, raggi, easing) come da [references/design-system.md](references/design-system.md) §9. Se il generatore rifiuta una cartella non vuota (create-next-app non accetta `CLAUDE.md`), crea il progetto in una sottocartella temporanea e spostane i file nella radice, senza sovrascrivere `docs/` e `CLAUDE.md`.
-2. **Contenuti visivi**: prima crea in codice tutto ciò che il piano assegna al codice (logo SVG, icone, sfondi, animazioni, 3D, video di motion graphics) e controllalo con uno screenshot; poi, solo per le voci assegnate a Studio AI, salva lo stile con `salva_stile` e lancia in un solo `genera_lotto` le immagini; mentre Studio AI lavora prosegui con i punti seguenti, poi controlla le anteprime e rigenera solo ciò che non va. I video si generano solo dopo l'approvazione della loro immagine di partenza e il via sulla stima ([references/contenuti-visivi.md](references/contenuti-visivi.md)).
-3. **Struttura globale**: header e navigazione, footer, pagina 404, pagine legali.
-4. **Home, sezione per sezione**: hero → benefici → come funziona → prove → FAQ → CTA finale, adattando l'ordine alla scaletta approvata.
-5. **Altre pagine**, una alla volta.
-6. **Animazioni** secondo il livello scelto ([references/motion.md](references/motion.md)).
+2. **Momento firma in motion graphics**, subito dopo le fondamenta: costruiscilo in codice secondo lo storyboard approvato, registralo, guardalo e miglioralo almeno tre volte finché non è all'altezza di un sito premiato ([references/motion-graphics.md](references/motion-graphics.md)).
+3. **Grafica in codice**: logo SVG, icone, sfondi, illustrazioni, OG, altre animazioni del piano; controlla ogni elemento con uno screenshot ([references/grafica-in-codice.md](references/grafica-in-codice.md)). Dove servono fotografie usa quelle del cliente; altrimenti segnaposto etichettati.
+4. **Struttura globale**: header e navigazione, footer, pagina 404, pagine legali.
+5. **Home, sezione per sezione**: hero → benefici → come funziona → prove → FAQ → CTA finale, adattando l'ordine alla scaletta approvata.
+6. **Altre pagine**, una alla volta.
+7. **Animazioni** secondo il livello scelto ([references/motion.md](references/motion.md)).
+8. **Studio AI, solo se serve**: a sito costruito, se mancano fotografie che il codice non può fare e che il cliente non ha, proponi l'elenco con il motivo e la stima (`stima_costo`); genera solo dopo il sì, con le regole di [references/contenuti-visivi.md](references/contenuti-visivi.md).
 
 Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla volta, così le modifiche restano controllabili. Dopo ogni sezione completata aggiorna lo stato in `docs/piano-sito.md`. Durante tutta la costruzione valgono [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) e il design system del progetto.
 
 ### Fase 6 — Controllo qualità e consegna
 
 1. Passa la [checklist](references/checklist.md), compreso il controllo meccanico e il controllo SEO, e correggi ciò che non va.
-2. Se possibile avvia il sito e controllalo a 375px, 768px e 1280px di larghezza (telefoni in dettaglio: [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §6). Nella consegna distingui i controlli fatti da quelli non fatti.
+2. Registra il momento firma e la Home in video e rivedili ([references/motion-graphics.md](references/motion-graphics.md) §6). Se possibile avvia il sito e controllalo a 375px, 768px e 1280px di larghezza (telefoni in dettaglio: [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §6). Nella consegna distingui i controlli fatti da quelli non fatti.
 3. Consegna: cosa è stato fatto, come avviarlo, i file creati con Studio AI e dove sono, il costo totale (`riepilogo_spese`), l'elenco "Contenuti da sostituire", i punti aperti e i prossimi passi consigliati.
 
 ## Riferimenti
@@ -115,7 +119,8 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/strategia-e-struttura.md](references/strategia-e-struttura.md) | Fasi 4 e 5: struttura delle pagine, conversione, testi, SEO |
 | [references/motion.md](references/motion.md) | Animazioni, navigazione, sezione tagline |
 | [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) | Fasi 4 e 5: scrittura dei testi e costruzione |
-| [references/grafica-in-codice.md](references/grafica-in-codice.md) | Fasi 4 e 5: prima il codice per grafica, motion graphics, 3D e video |
+| [references/motion-graphics.md](references/motion-graphics.md) | Fasi 4, 5 e 6: il momento firma in motion graphics, metodo, ricettario, revisione |
+| [references/grafica-in-codice.md](references/grafica-in-codice.md) | Fasi 4 e 5: prima il codice per grafica, 3D e video |
 | [references/contenuti-visivi.md](references/contenuti-visivi.md) | Fasi 2, 4 e 5: foto del cliente e Studio AI come ultimo passaggio |
 | [references/scroll-cinematico.md](references/scroll-cinematico.md) e [references/scroll-cinematico-prompt.md](references/scroll-cinematico-prompt.md) | Solo se A3 = video guidato dallo scroll o L1 = E: scroll cinematico con il motore in `assets/scroll-cinematico/` |
 | [references/volo-in-prima-persona.md](references/volo-in-prima-persona.md) | Solo se X3 = volo in prima persona nei locali |

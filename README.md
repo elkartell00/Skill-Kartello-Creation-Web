@@ -13,7 +13,7 @@ poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 2. **Approfondimento mirato**: conversione, prove, tono, forme, animazioni, navigazione, SEO; solo ciò che serve al tipo di sito. La tecnologia viene raccomandata in base al sito, ma la scegli tu.
 3. **Blocco dei parametri**: scrive `docs/brief-sito.md` e `docs/design-system.md` nel progetto e aggiunge al suo `CLAUDE.md` la regola che li rende fissi.
 4. **Piano**: mappa del sito, scaletta delle pagine, testi della hero, benefici, FAQ, SEO; salvato in `docs/piano-sito.md` con lo stato di ogni pagina e sezione.
-5. **Costruzione** sezione per sezione, con le regole di qualità della skill. Grafica, logo, icone, animazioni e motion graphics si creano **in codice**; **Studio AI** (server MCP `studio-ai`) solo per ciò che il codice non può fare, come le fotografie realistiche.
+5. **Costruzione**: prima il **momento firma in motion graphics fatto in codice** (l'effetto wow, rivisto su registrazione video), poi il resto sezione per sezione. Grafica, logo, icone, animazioni e motion graphics si creano **in codice**; **Studio AI** (server MCP `studio-ai`) solo per ciò che il codice non può fare, come le fotografie realistiche.
 6. **Controllo qualità** con checklist e consegna.
 
 Avvio: `/creation-web` (skill di progetto) oppure `/kartello-creation-web:creation-web` (plugin installato), eventualmente seguito dall'idea: `/creation-web sito per uno studio di fisioterapia a Bologna`.

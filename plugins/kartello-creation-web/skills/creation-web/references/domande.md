@@ -131,7 +131,7 @@ Se I3 è vendita, contatti, prenotazioni o lead. In due giri: K1–K4, poi K5–
 | M1 | Quanto movimento? | Nessuno (solo stati) · Sottile · Fluido · Cinematografico | Fluido |
 | M2 | Navigazione | Barra classica fissa · Isola fluttuante in vetro · Trasparente sopra la hero · Menu laterale | Barra classica fissa |
 | M3 | Sezione "tagline reveal": una frase grande che si accende parola per parola durante lo scroll | Sì · No | Sì per landing e stile Minimal tech, altrimenti no |
-| M4 | Effetto firma della pagina, quello che il visitatore ricorda [F5] | 2–3 effetti adatti all'idea del sito da [effetti-wow.md](effetti-wow.md), più "Nessun effetto firma" | Il primo consigliato; nessuno se il movimento è "Nessuno" |
+| M4 | Momento firma in motion graphics, quello che il visitatore ricorda [F5] | 2–3 idee in codice adatte all'attività ([motion-graphics.md](motion-graphics.md), [effetti-wow.md](effetti-wow.md)), più "Nessun effetto firma" | Sempre l'idea consigliata, in ogni modalità; nessuno solo se l'utente lo chiede |
 
 Dettagli in [motion.md](motion.md).
 
@@ -179,7 +179,7 @@ Quando il sito ha immagini, cioè quasi sempre. Grafica, logo, icone, animazioni
 |---|---|---|---|
 | A1 | Stile delle immagini e atmosfera | Fotografico realistico · Illustrato · Minimal/flat · 3D; più l'atmosfera (calda, tecnica, lussuosa…) | Dedotto dalla direzione stilistica (V3) |
 | A2 | Possono comparire persone nelle immagini? | Sì, sempre inventate · No · Solo dettagli (mani, gesti) | Dedotto dal settore |
-| A3 | Video nella hero [F2] | Nessun video · Animazione in codice (gratis, consigliata se il soggetto non è fotografico) · Loop di sfondo con Studio AI · Video guidato dallo scroll | Nessun default: si chiede sempre, in ogni modalità; stima dei costi per le opzioni con Studio AI |
+| A3 | Video nella hero [F2] | Animazione in codice (gratis, consigliata) · Nessun video · Loop di sfondo con Studio AI · Video guidato dallo scroll | Si chiede sempre, consigliando l'animazione in codice; stima dei costi per le opzioni con Studio AI |
 | A4 | Qualità delle immagini | Standard (consigliata) · High per hero e logo | Standard |
 | A5 | Foto reali del cliente: quali ci sono? Il cliente acconsente al ritocco? Le persone ritratte acconsentono a comparire in nuove immagini? [F2] | Elenco delle foto · Ritocco sì o no · Nuove immagini sì o no | Usate così come sono, ottimizzate per il web, nessun ritocco |
 | A6 | C'è già un logo? (collegata a I8) | Sì: chiedi il file, meglio se vettoriale · No | Se manca: logo in SVG creato in codice (simbolo e nome con il font del sito); Studio AI per il simbolo solo se il codice non basta |

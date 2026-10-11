@@ -152,7 +152,7 @@ SOFTWARE.
 
 ## SA — Istruzioni Studio AI del proprietario
 
-Il blocco "Contenuti visivi del sito: Studio AI" e il `CATALOGO.md` dell'app Studio AI (modelli Google, OpenAI ed ElevenLabs, server MCP `studio-ai`). Sono finiti in [contenuti-visivi.md](contenuti-visivi.md), nelle domande A1–A6 di [domande.md](domande.md) §2.7, nella regola d'oro 9 e nelle Fasi 2, 4, 5 e 6 di `SKILL.md`. I parametri esatti non si ricopiano: si leggono nel catalogo.
+Il blocco "Contenuti visivi del sito: Studio AI" e il `CATALOGO.md` dell'app Studio AI (modelli Google, OpenAI ed ElevenLabs, server MCP `studio-ai`). Sono finiti in [contenuti-visivi.md](contenuti-visivi.md), nelle domande A1–A6 di [domande.md](domande.md) §2.7, nella regola d'oro 10 e nelle Fasi 2, 4, 5 e 6 di `SKILL.md`. I parametri esatti non si ricopiano: si leggono nel catalogo.
 
 Scelte del proprietario che modificano il blocco:
 - **Logo nuovo**: Studio AI genera solo il simbolo; il nome si compone in SVG con il font del sito (il catalogo prevede il nome tra virgolette nel prompt di `logo-sito`).
@@ -274,9 +274,13 @@ Skill di circa quattro mesi prima per siti "3D scroll" da un solo prompt. Analis
 
 **Non integrato:** il codice e i modelli (nessuna licenza), il flusso Higgsfield (`declined_preset_id`, modelli di riserva), l'installazione automatica di ffmpeg, il componente React e il lanciatore per macOS.
 
+## Scelta del proprietario: il wow è motion graphics in codice
+
+Ogni sito ha un momento firma in motion graphics costruito in codice, con metodo, ricettario e revisione su registrazione: [motion-graphics.md](motion-graphics.md), regola d'oro 9, Fasi 4, 5 e 6, domanda M4. Studio AI serve il wow e non lo sostituisce: prima si prova in codice, e ogni spesa deve contribuire all'effetto wow o a una fotografia indispensabile; mai per un sito normale.
+
 ## Scelta del proprietario: prima il codice
 
-Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e video di motion graphics si creano **in codice**; Studio AI è l'ultimo passaggio, solo dove il codice non arriva (fotografie realistiche, riprese dal vero). Dove si trova: [grafica-in-codice.md](grafica-in-codice.md), regola d'oro 9 di `SKILL.md`, [contenuti-visivi.md](contenuti-visivi.md) §1, §7 e §9, domande A3 e A6, modello `piano-sito.md`. Modifica la regola F2 sulle "illustrazioni SVG al posto delle foto": le illustrazioni in codice sono ammesse e preferite quando sono di livello; resta vietato sostituire una fotografia necessaria con un disegno povero.
+Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e video di motion graphics si creano **in codice**; Studio AI è l'ultimo passaggio, solo dove il codice non arriva (fotografie realistiche, riprese dal vero). Dove si trova: [grafica-in-codice.md](grafica-in-codice.md), regola d'oro 10 di `SKILL.md`, [contenuti-visivi.md](contenuti-visivi.md) §1, §7 e §9, domande A3 e A6, modello `piano-sito.md`. Modifica la regola F2 sulle "illustrazioni SVG al posto delle foto": le illustrazioni in codice sono ammesse e preferite quando sono di livello; resta vietato sostituire una fotografia necessaria con un disegno povero.
 
 ## Aggiunte Kartello
 
