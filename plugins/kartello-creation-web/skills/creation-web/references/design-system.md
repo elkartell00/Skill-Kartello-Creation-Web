@@ -23,6 +23,7 @@ Ogni palette si esprime in ruoli, non in colori sparsi.
 | `ink-muted` | Testo secondario, didascalie |
 | `line` | Bordi e divisori |
 | `line-strong` | Bordi di campi, checkbox e controlli: almeno 3:1 su `background` e `surface` |
+| `focus` | Anello di focus: di default uguale a `primary`; almeno 3:1 su `background` e `surface` (aggiunta Kartello) |
 | `primary` | CTA principali, link, elementi chiave |
 | `primary-ink` | Testo e icone sopra `primary` |
 | `secondary` | Facoltativo: secondo colore di brand |
@@ -35,7 +36,7 @@ Con tema scuro (o doppio tema) definisci gli stessi ruoli anche per lo scuro.
 
 - **Proporzioni 60/30/10:** neutri circa 60%, superfici e secondario circa 30%, primario e accento circa 10%. Con C4 "Ricco" il colore può salire.
 - **Un solo colore per le CTA principali** in tutto il sito.
-- **Contrasto WCAG AA, sempre verificato:** testo normale almeno 4.5:1; testo grande (da 24px, o da 18.66px in grassetto) e componenti dell'interfaccia almeno 3:1. Controlla almeno `ink` e `ink-muted` su `background` e `surface`, `primary-ink` su `primary`, e `line-strong` e l'anello di focus su `background` e `surface` (almeno 3:1). Calcola il rapporto con la formula WCAG della luminanza relativa, se serve con un breve script; se non passa, correggi il colore e dillo.
+- **Contrasto WCAG AA, sempre verificato:** testo normale almeno 4.5:1; testo grande (da 24px, o da 18.66px in grassetto) e componenti dell'interfaccia almeno 3:1. Controlla almeno `ink` e `ink-muted` su `background` e `surface`, `primary-ink` su `primary`, e `line-strong` e `focus` su `background` e `surface` (almeno 3:1). Calcola il rapporto con la formula WCAG della luminanza relativa, se serve con un breve script; se non passa, correggi il colore e dillo.
 - **Sfondi piatti di default** [F1]. I gradienti si usano solo se V6 lo consente (§6).
 - **Sfondi scuri consigliati** per il tema scuro [F1]: `#000000` · `#181818` · `#1F1F1F` · `#272727` · `#313131` · `#131209`.
 
@@ -197,7 +198,7 @@ Solo questi valori per padding, margin e gap. Niente in mezzo, niente fuori.
 - **Gradienti (V6):**
   - *Mai* (default) [F1]: sfondi e superfici piatti.
   - *Solo sul titolo della hero* [F1]: gradiente sul testo, da sinistra a destra. Tema scuro `#FFFFFF` → `#9B9B9B`; tema chiaro `#000000` → `#666666`. È l'unico gradiente del sito, solo sul testo, mai sullo sfondo. Definiscilo come token (`--color-hero-from`, `--color-hero-to`).
-  - *Ammessi negli sfondi*: solo se lo stile li prevede (es. Glass UI), definiti come token, mai improvvisati.
+  - *Ammessi negli sfondi*: se scelti con V6 (di default nel solo stile Glass UI), definiti come token, mai improvvisati.
 - **Ombre:** al massimo tre livelli definiti nei token (es. card, menu, finestra modale). Nessuna ombra creata al momento.
 
 ## §7 Icone
@@ -230,6 +231,7 @@ Esempio con Tailwind v4 e scala equilibrata:
   --color-ink-muted: #5B5B57;
   --color-line: #E3E2DC;
   --color-line-strong: #8A8984;
+  --color-focus: #1F4D3A;          /* di default uguale a primary */
   --color-primary: #1F4D3A;
   --color-primary-ink: #FFFFFF;
   /* --color-secondary: …;  solo se C4 lo prevede */
@@ -262,4 +264,4 @@ Esempio con Tailwind v4 e scala equilibrata:
 }
 ```
 
-Con questi token Tailwind genera classi come `bg-background`, `bg-surface`, `text-ink`, `text-ink-muted`, `border-line`, `border-line-strong`, `bg-primary`, `text-primary-ink`, `max-w-hero`, `ease-fluid`. Con Tailwind v3 o senza Tailwind usa le stesse variabili CSS su `:root` e collegale nella configurazione del framework.
+Con questi token Tailwind genera classi come `bg-background`, `bg-surface`, `text-ink`, `text-ink-muted`, `border-line`, `border-line-strong`, `outline-focus`, `bg-primary`, `text-primary-ink`, `max-w-hero`, `ease-fluid`. Con Tailwind v3 o senza Tailwind usa le stesse variabili CSS su `:root` e collegale nella configurazione del framework.

@@ -14,11 +14,11 @@ Questi sono i segnali che una pagina è stata generata e non progettata.
 - **Titoli in sentence case**, non Con Tutte Le Iniziali Maiuscole.
 - **Forma attiva.** "Non siamo riusciti a salvare le modifiche", non "Si è verificato un errore".
 - **Niente punti esclamativi nei messaggi di successo e niente "Ops!" negli errori.** Diretti: "Connessione non riuscita. Riprova."
-- **Niente trattini dentro le frasi** (`-`, `–`, `—`) in testi, titoli ed etichette: riscrivi la frase.
+- **Niente trattini usati come punteggiatura dentro le frasi** (`-`, `–`, `—` per incisi e lineette) in testi, titoli ed etichette: riscrivi la frase. Restano ammessi i trattini delle parole composte, dei nomi propri e dei marchi (Emilia-Romagna, Wi-Fi, e-commerce) e il trattino medio negli intervalli di dati come orari, prezzi e date, es. "Lun–Ven 9:00–19:00" (precisazione Kartello).
 - **Nessuna parola orfana** sull'ultima riga (vedi [design-system.md](design-system.md) §3.2).
 - **Avatar diversi** per ogni persona e **date varie** per gli articoli del blog.
 
-### Segnaposto onesti
+### Segnaposto onesti (aggiunta Kartello)
 
 Il realismo serve alla bozza, non a ingannare. Testimonianze, recensioni, numeri di risultato, loghi di clienti, premi, certificazioni e dati di contatto inventati sono **segnaposto**:
 
@@ -46,14 +46,14 @@ Le cose che si dimenticano e fanno sembrare un sito non finito:
 - Una pagina 404 personalizzata e coerente con il brand
 - Validazione dei moduli lato client: formato email e campi obbligatori
 - Un link "salta al contenuto" per chi usa la tastiera
-- Banner dei cookie dove la legge lo richiede (in UE: se si usano cookie non tecnici, come analytics o pixel pubblicitari)
+- Banner dei cookie dove la legge lo richiede, cioè se il sito usa cookie o strumenti di tracciamento non tecnici: pixel pubblicitari, analytics non anonimizzati, contenuti incorporati di terze parti (Google Maps, YouTube, widget social). In Italia gli analytics anonimizzati secondo le Linee guida del Garante (10/06/2021) sono equiparati ai tecnici. Mappe e video incorporati si caricano dopo il consenso, con un'anteprima statica e un clic per attivarli (precisazione Kartello)
 - Una favicon del brand
 - `<title>`, meta description, `og:image` e tag per la condivisione sui social
 - Testo alternativo su ogni immagine significativa
 - HTML semantico: `<nav>`, `<main>`, `<article>`, `<aside>`, `<section>`
 - Un modo per tornare indietro da ogni pagina
 
-**Attività italiane:** ragione sociale, P.IVA e sede nel footer; privacy policy e cookie policy conformi al GDPR. Se i dati mancano, vanno in "Contenuti da sostituire".
+**Attività italiane** (aggiunta Kartello): nel footer denominazione o ragione sociale, sede, P.IVA ed email di contatto; per le società anche registro delle imprese e numero REA; per S.r.l., S.p.A. e S.a.p.a. anche capitale sociale versato, eventuale socio unico ed eventuale stato di liquidazione (art. 2250 c.c.); per le professioni regolamentate ordine o albo, numero di iscrizione e titolo professionale (D.Lgs. 70/2003, art. 7). Privacy policy e cookie policy conformi al GDPR. Se i dati mancano, vanno in "Contenuti da sostituire".
 
 ## §4 Accessibilità
 

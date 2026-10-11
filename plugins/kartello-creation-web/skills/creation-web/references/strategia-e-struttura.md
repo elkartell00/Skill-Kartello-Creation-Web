@@ -30,7 +30,7 @@ Nei siti multipagina vale lo stesso principio per ogni pagina: ogni pagina ha un
 11. Riduzione del rischio: prova, disdetta libera, garanzia
 12. CTA finale, identica a quella in alto
 
-Se M3 è "sì", la sezione tagline reveal ([motion.md](motion.md) §5) va a metà dell'argomentazione, di solito dopo la hero (non attaccata) o dopo i benefici.
+Se M3 è "sì", la sezione tagline reveal ([motion.md](motion.md) §5) va a metà dell'argomentazione, mai come sezione subito dopo la hero: di solito dopo "Dal problema alla soluzione" o dopo i benefici.
 
 ## §3 Struttura della Home in un sito multipagina
 
@@ -100,7 +100,7 @@ Scegline uno e spiega perché.
 
 **Elenchi di benefici.** Beneficio in grassetto, poi la prova o il dettaglio. Esempio: **Iterazioni più rapide**: tre varianti di layout con un solo clic.
 
-Valgono anche le regole di scrittura di [contenuti-e-qualita.md](contenuti-e-qualita.md) §1: niente trattini dentro le frasi, nessuna parola orfana, niente cliché.
+Valgono anche le regole di scrittura di [contenuti-e-qualita.md](contenuti-e-qualita.md) §1: niente trattini usati come punteggiatura dentro le frasi, nessuna parola orfana, niente cliché.
 
 ## §8 SEO e AEO [F1]
 

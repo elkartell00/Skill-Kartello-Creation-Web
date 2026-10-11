@@ -54,12 +54,12 @@ Quattro giri, in quest'ordine (in modalità Rapida diventano due giri brevi con 
 
 1. **Idea**: cosa è, settore e posizionamento, obiettivo principale, pubblico, tipo di sito, lingua, riferimenti, materiali esistenti.
 2. **Pagine**: proponi un elenco di pagine adatto al settore. L'utente conferma, toglie o aggiunge. Definisci l'obiettivo di ogni pagina e cosa va nel menu.
-3. **Stile e palette**: prima proponi 2–3 direzioni da [references/stili.md](references/stili.md) (V3); lo stile scelto fornisce i default di colori, tipografia e animazioni. In modalità Rapida non chiedere lo stile: dichiara quello dedotto prima di proporre le palette. Poi colori di brand oppure tre proposte; tema chiaro o scuro; quanto colore. Costruisci i ruoli colore e verifica i contrasti secondo [references/design-system.md](references/design-system.md) §2.
+3. **Stile e palette**: prima proponi 2–3 direzioni da [references/stili.md](references/stili.md) (V3); lo stile scelto fornisce i default di colori, tipografia, forme e animazioni (domande C, T, V, M). In modalità Rapida non chiedere lo stile: dichiara quello dedotto prima di proporre le palette. Poi colori di brand oppure tre proposte; tema chiaro o scuro; quanto colore. Costruisci i ruoli colore e verifica i contrasti secondo [references/design-system.md](references/design-system.md) §2.
 4. **Tipografia**: font e scala (compatta, equilibrata, d'impatto). Mostra la tabella con Display, H1–H6, testi e bottoni, con misure desktop e mobile, e falla approvare: da qui in poi è fissa. Vedi [references/design-system.md](references/design-system.md) §3.
 
 ### Fase 2 — Approfondimento mirato
 
-Scegli dalla banca domande ([references/domande.md](references/domande.md) §2) i blocchi pertinenti al tipo di sito e all'obiettivo: conversione e prove (se il sito deve vendere, raccogliere contatti o prenotazioni), tono di voce, animazioni, navigazione, SEO e tecnica. Quanti blocchi e quante domande dipende dalla modalità ([references/domande.md](references/domande.md) §0). In ogni modalità chiedi la tecnologia (W4) con la tua raccomandazione motivata.
+Scegli dalla banca domande ([references/domande.md](references/domande.md) §2) i blocchi pertinenti al tipo di sito e all'obiettivo: conversione e prove (se il sito deve vendere, raccogliere contatti o prenotazioni), tono di voce e forme (spazio, angoli, gradienti), animazioni, navigazione, layout delle landing, SEO e tecnica. Quanti blocchi e quante domande dipende dalla modalità ([references/domande.md](references/domande.md) §0). In ogni modalità chiedi la tecnologia (W4) con la tua raccomandazione motivata.
 
 ### Fase 3 — Brief e design system (blocco dei parametri)
 

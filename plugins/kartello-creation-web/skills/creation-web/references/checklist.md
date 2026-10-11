@@ -11,19 +11,19 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Raggi dallo stile scelto; raggi annidati secondo la formula [F1]
 
 ## Strategia
-- [ ] Ogni pagina ha un obiettivo e una sola CTA principale [F1]
+- [ ] Ogni pagina ha un obiettivo e una sola CTA principale; ogni landing ha un'offerta, un pubblico e un'azione principale [F1]
 - [ ] Nessuna CTA in competizione sopra la piega [F1]
 - [ ] Numeri specifici al posto di verbi vaghi [F1]
-- [ ] Almeno una riduzione del rischio, nei siti che vendono [F1]
+- [ ] Almeno una riduzione del rischio in ogni landing e in ogni pagina con una CTA di conversione (vendita, contatto, prenotazione, iscrizione) [F1]
 - [ ] Le prove stanno accanto all'affermazione che sostengono [F1]
 - [ ] Layout delle landing scelto con un motivo [F1]
 
 ## Visivo
-- [ ] Font come da design system; niente corsivo né 900, salvo scelta esplicita [F1]
-- [ ] Niente trattini nei testi, nessuna parola orfana [F1]
+- [ ] Font come da design system; nessun peso oltre 700; niente corsivo salvo l'accento approvato negli stili editoriale e lusso [F1]
+- [ ] Niente trattini usati come punteggiatura dentro le frasi [F1], ammessi solo in parole composte, nomi propri, marchi e intervalli di dati come orari, prezzi e date (precisazione Kartello); nessuna parola orfana [F1]
 - [ ] Nessun bordo su un solo lato delle card; gradienti solo come deciso con V6 [F1]
-- [ ] Titolo e sottotitolo della hero entro 680px, a capo nei punti di senso [F1]
-- [ ] Icone da una sola libreria tra Phosphor, Solar e Iconamoon [F1]
+- [ ] Titolo e sottotitolo della hero entro 680px (token `--container-hero`), a capo nei punti di senso [F1]
+- [ ] Icone da una sola libreria, quella del design system (default Phosphor lineare, alternative Solar o Iconamoon); niente Material Icons o Symbols salvo richiesta [F1]
 
 ## Movimento
 - [ ] Ogni transizione usa la curva `--ease-fluid`, mai quelle di default [F1]
@@ -41,5 +41,5 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Nessun link morto; pagina corrente indicata nel menu [F1]
 - [ ] 404, link legali, validazione dei moduli, favicon, meta tag, testi alternativi [F1]
 - [ ] Link "salta al contenuto", HTML semantico, banner cookie se serve [F1]
-- [ ] Dati legali nel footer (attività italiane)
+- [ ] Dati legali nel footer (attività italiane, vedi [contenuti-e-qualita.md](contenuti-e-qualita.md) §3)
 - [ ] Controllo visivo a 375px, 768px e 1280px

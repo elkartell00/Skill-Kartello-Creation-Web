@@ -1,6 +1,6 @@
 # Direzioni stilistiche
 
-Catalogo di stili da proporre con la domanda V3. Nessuno è obbligatorio: proponi i 2–3 più adatti a settore e posizionamento, spiega in una riga perché, e lascia che l'utente li mescoli. Ogni stile è solo un insieme di **default** per le altre domande (C, T, V, M): l'utente può cambiare qualsiasi voce.
+Catalogo di stili da proporre con la domanda V3, all'inizio del Giro 3 e quindi prima di palette e tipografia. Nessuno è obbligatorio: proponi i 2–3 più adatti a settore e posizionamento, spiega in una riga perché, e lascia che l'utente li mescoli. Ogni stile è solo un insieme di **default** per le altre domande (C, T, V, M): l'utente può cambiare qualsiasi voce.
 
 Le regole tecniche del [design system](design-system.md) (scale, contrasti, formula dei raggi, contenuti realistici) valgono con ogni stile.
 
@@ -14,14 +14,14 @@ Lo stile completo della skill `landing-page-design`.
 |---|---|
 | Settori | SaaS, startup, app, intelligenza artificiale, prodotti digitali, agenzie digitali |
 | Palette | Neutri più un accento. Tema scuro con sfondi `#000000` · `#181818` · `#1F1F1F` · `#272727` · `#313131` · `#131209`, oppure chiaro |
-| Font | Una sola famiglia tra Geist, Manrope e Poppins; Geist Mono solo per dati e codice. Niente corsivo, mai 900 |
+| Font | Una sola famiglia tra Geist, Manrope e Poppins; Geist Mono solo per dati e codice. Niente corsivo, mai oltre 700 |
 | Scala | Equilibrata o d'impatto |
 | Angoli | Morbidi o arrotondati, con formula dei raggi annidati |
 | Gradienti | Solo sul titolo della hero (`#FFFFFF` → `#9B9B9B` su scuro, `#000000` → `#666666` su chiaro). Sfondi piatti |
 | Movimento | Fluido |
 | Navigazione | Isola fluttuante in vetro |
 | Tagline reveal | Sì |
-| Icone | Phosphor, Solar o Iconamoon |
+| Icone | Phosphor lineare; alternative Solar o Iconamoon |
 | Segni distintivi | Screenshot del prodotto nella hero, striscia di loghi clienti, numeri specifici, sezioni pulite |
 
 ## 2. Minimal editoriale [F1]
@@ -37,7 +37,7 @@ Citato come direzione in `landing-page-design`.
 | Angoli | Squadrati |
 | Gradienti | Mai |
 | Movimento | Sottile |
-| Navigazione | Barra classica minimale |
+| Navigazione | Barra classica fissa, minimale |
 | Segni distintivi | Molto spazio bianco (densità ariosa), griglie asimmetriche, immagini grandi, sezioni numerate |
 
 ## 3. Playful 3D [F1]
@@ -51,7 +51,7 @@ Citato come direzione in `landing-page-design`.
 | Font | Morbido e amichevole o espressivo, titoli decisi (massimo 700) |
 | Scala | D'impatto |
 | Angoli | Arrotondati o pillola |
-| Gradienti | Solo dentro illustrazioni e oggetti 3D, sfondi piatti |
+| Gradienti | Mai (sfumature solo dentro illustrazioni e oggetti 3D) |
 | Movimento | Fluido, con piccoli effetti molla su hover |
 | Navigazione | Barra classica o isola |
 | Segni distintivi | Illustrazioni o oggetti 3D, badge, sezioni colorate a fasce |
@@ -67,7 +67,7 @@ Citato come direzione in `landing-page-design`.
 | Font | Geometrico moderno o neutro |
 | Scala | Equilibrata |
 | Angoli | Arrotondati |
-| Gradienti | Ammessi negli sfondi: macchie di colore sfocate dietro le superfici in vetro. È l'unico stile che sospende "sfondi piatti", da confermare con V6 |
+| Gradienti | Ammessi negli sfondi: macchie di colore sfocate dietro le superfici in vetro. È l'unico stile che di default sospende "sfondi piatti", da confermare con V6 |
 | Movimento | Fluido |
 | Navigazione | Isola fluttuante in vetro |
 | Segni distintivi | Superfici traslucide con `backdrop-blur`, bordi sottili semitrasparenti tutto intorno, luci e riflessi |
@@ -127,7 +127,7 @@ Gli stili seguenti sono una base Kartello per coprire altri settori, da arricchi
 | Font | Espressivo d'impatto |
 | Scala | D'impatto |
 | Angoli | Squadrati o pillola |
-| Gradienti | Da decidere con V6 |
+| Gradienti | Mai (sfondi a tutto colore); con V6 si possono ammettere negli sfondi |
 | Movimento | Cinematografico |
-| Navigazione | Isola o menu a schermo intero |
+| Navigazione | Isola fluttuante in vetro |
 | Segni distintivi | Tipografia gigante, layout che rompono la griglia, sezioni a tutto colore |

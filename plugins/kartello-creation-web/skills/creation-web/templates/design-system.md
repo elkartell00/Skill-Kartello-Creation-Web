@@ -15,13 +15,14 @@ Tema: {chiaro | scuro | entrambi | chiaro con sezioni scure} · Quantità di col
 | Testo secondario | `ink-muted` | | | Testo secondario |
 | Linee | `line` | | | Bordi e divisori |
 | Linee dei controlli | `line-strong` | | | Bordi di campi, checkbox e controlli: almeno 3:1 su `background` e `surface` |
+| Anello di focus | `focus` | | | Di default uguale a `primary`; almeno 3:1 su `background` e `surface` |
 | Primario | `primary` | | | CTA, link |
 | Testo su primario | `primary-ink` | | | Testo sopra il primario |
 | Secondario | `secondary` | | | Facoltativo: con C4 Bilanciato o Ricco |
 | Accento | `accent` | | | Dettagli |
 | Successo · Avviso · Errore · Info | `success` · `warning` · `error` · `info` | | | Stati |
 
-Contrasti verificati (ripeti la riga per il tema scuro se C3 lo prevede): `ink` su `background` {x:1} · `ink` su `surface` {x:1} · `ink-muted` su `background` {x:1} · `ink-muted` su `surface` {x:1} · `primary-ink` su `primary` {x:1} · `line-strong` su `background` {x:1} · `line-strong` su `surface` {x:1} · anello di focus su `background` {x:1} · anello di focus su `surface` {x:1}
+Contrasti verificati (ripeti la riga per il tema scuro se C3 lo prevede): `ink` su `background` {x:1} · `ink` su `surface` {x:1} · `ink-muted` su `background` {x:1} · `ink-muted` su `surface` {x:1} · `primary-ink` su `primary` {x:1} · `line-strong` su `background` {x:1} · `line-strong` su `surface` {x:1} · `focus` su `background` {x:1} · `focus` su `surface` {x:1}
 
 ## Tipografia
 
