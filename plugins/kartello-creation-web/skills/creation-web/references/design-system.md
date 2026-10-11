@@ -206,6 +206,7 @@ Solo questi valori per padding, margin e gap. Niente in mezzo, niente fuori.
 - Una sola libreria per sito, scelta tra **Phosphor**, **Solar** e **Iconamoon** [F1]. Default: Phosphor, stile lineare (aggiunta Kartello), da dichiarare in Assunzioni. Altre librerie solo su richiesta esplicita dell'utente.
 - Material Icons e Material Symbols da evitare, salvo richiesta esplicita [F1].
 - Stile coerente (lineare, pieno o duotone) e misure fisse: 16, 20, 24px.
+- **Modello misto** (scelta del proprietario): la libreria serve per le icone d'interfaccia (lente, frecce, telefono, busta, menu, chiusura); le icone illustrative dei servizi e la favicon si creano con Studio AI nello stile del sito ([contenuti-visivi.md](contenuti-visivi.md) §7). Mai mescolate nella stessa zona.
 
 ## §8 Movimento
 

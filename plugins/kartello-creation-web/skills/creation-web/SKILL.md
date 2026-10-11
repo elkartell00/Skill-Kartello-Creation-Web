@@ -22,6 +22,7 @@ Idea iniziale passata all'avvio (può essere vuota): $ARGUMENTS
 6. **Bozza realistica ma onesta.** Scrivi testi veri, mai Lorem Ipsum. Recensioni, nomi, numeri e loghi inventati sono segnaposto: elencali in `docs/brief-sito.md`, sezione "Contenuti da sostituire", perché vanno rimpiazzati con dati reali prima della pubblicazione.
 7. **Lingua.** Fai le domande nella lingua dell'utente. I testi del sito vanno nella lingua scelta nel brief.
 8. **La tecnologia la sceglie l'utente.** Non esiste uno stack predefinito: in base al brief raccomanda quello più adatto al sito, spiega perché in poche righe, e lascia la decisione all'utente (domanda W4). Se risponde "decidi tu", applica l'opzione consigliata e scrivila in "Assunzioni" nel brief.
+9. **Immagini, video e audio solo con Studio AI.** Si generano sempre e solo con l'app Studio AI (server MCP `studio-ai`), mai con altri servizi o foto di repertorio. Le foto del cliente hanno la precedenza. Se Studio AI non è collegato, usa segnaposto etichettati e prosegui. Le richieste a Studio AI partono senza conferme: la stima e il via dell'utente li chiede la skill. Tutto in [references/contenuti-visivi.md](references/contenuti-visivi.md).
 
 ## Come fare le domande
 
@@ -43,7 +44,7 @@ La banca completa delle domande, con opzioni e default, è in [references/domand
    - Se brief e design system esistono e sono approvati: leggili insieme al file dei token, salta i punti 2–4 e non rifare l'intervista. Se la richiesta è già chiara, procedi senza chiedere conferma; altrimenti mostra un riepilogo e chiedi se continuare, modificare un parametro o aggiungere pagine.
    - Se esiste `docs/piano-sito.md`, riprendi dal primo elemento non completato.
    - Se esiste solo uno tra brief e design system, o uno dei due è in bozza, riprendi dalla fase corrispondente.
-   - Per una nuova pagina: P2 per quella pagina, scaletta e testi (Fase 4 solo per lei) da approvare, costruzione (Fase 5, punto 4) riusando header, footer e componenti esistenti, Fase 6 su quella pagina; aggiorna la tabella Pagine del brief e `docs/piano-sito.md`.
+   - Per una nuova pagina: P2 per quella pagina, scaletta e testi (Fase 4 solo per lei) da approvare, costruzione (Fase 5, punto 5) riusando header, footer e componenti esistenti, Fase 6 su quella pagina; aggiorna la tabella Pagine del brief e `docs/piano-sito.md`.
 2. Controlla se il progetto ha già un framework (`package.json`, `astro.config.*`, `next.config.*`, ecc.). Se c'è, annotalo: con W4 raccomanderai di mantenerlo, ma la scelta resta all'utente.
 3. Leggi l'idea iniziale e deduci tutto quello che puoi: settore, tipo di sito, obiettivo, pubblico.
 4. Chiedi la modalità dell'intervista (Rapida, Standard, Approfondita), salvo che l'utente l'abbia già indicata o abbia chiesto di procedere senza domande (regola d'oro 1). Se a questa domanda risponde "decidi tu", vale Standard.
@@ -59,7 +60,7 @@ Quattro giri, in quest'ordine (in modalità Rapida diventano due giri brevi con 
 
 ### Fase 2 — Approfondimento mirato
 
-Scegli dalla banca domande ([references/domande.md](references/domande.md) §2) i blocchi pertinenti al tipo di sito e all'obiettivo: conversione e prove (se il sito deve vendere, raccogliere contatti o prenotazioni), tono di voce e forme (spazio, angoli, gradienti), animazioni, navigazione, layout delle landing, SEO e tecnica. Quanti blocchi e quante domande dipende dalla modalità ([references/domande.md](references/domande.md) §0). In ogni modalità chiedi la tecnologia (W4) con la tua raccomandazione motivata.
+Scegli dalla banca domande ([references/domande.md](references/domande.md) §2) i blocchi pertinenti al tipo di sito e all'obiettivo: conversione e prove (se il sito deve vendere, raccogliere contatti o prenotazioni), tono di voce e forme (spazio, angoli, gradienti), animazioni, navigazione, layout delle landing, SEO e tecnica. Quanti blocchi e quante domande dipende dalla modalità ([references/domande.md](references/domande.md) §0). In ogni modalità chiedi la tecnologia (W4) con la tua raccomandazione motivata e il video nella hero (A3). Prima del blocco sui contenuti visivi (A1–A6) leggi la skill `studio-ai` e il suo `CATALOGO.md`.
 
 ### Fase 3 — Brief e design system (blocco dei parametri)
 
@@ -80,6 +81,7 @@ Prima di scrivere codice presenta, in quest'ordine:
 6. **FAQ**: da sei a dodici domande e risposte, se pertinente.
 7. **SEO**: indicizzare o no, title e meta description per pagina.
 8. **Layout** delle landing: A, B, C o D, con il motivo.
+9. **Piano degli asset**: ogni immagine, icona illustrativa, logo e video del sito, con preset, formato e nome file, più la stima dei costi ([references/contenuti-visivi.md](references/contenuti-visivi.md) §3 e §12).
 
 Scrivi i testi secondo [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §6–§7 e [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §1; per SEO e layout segui [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §8 e §5.
 
@@ -88,10 +90,11 @@ Attendi l'approvazione o le correzioni. Dopo l'approvazione salva il piano in `d
 ### Fase 5 — Costruzione
 
 1. **Fondamenta**: progetto, font, token del design system in codice (colori, classi tipografiche `type-*`, spaziature, raggi, easing) come da [references/design-system.md](references/design-system.md) §9. Se il generatore rifiuta una cartella non vuota (create-next-app non accetta `CLAUDE.md`), crea il progetto in una sottocartella temporanea e spostane i file nella radice, senza sovrascrivere `docs/` e `CLAUDE.md`.
-2. **Struttura globale**: header e navigazione, footer, pagina 404, pagine legali.
-3. **Home, sezione per sezione**: hero → benefici → come funziona → prove → FAQ → CTA finale, adattando l'ordine alla scaletta approvata.
-4. **Altre pagine**, una alla volta.
-5. **Animazioni** secondo il livello scelto ([references/motion.md](references/motion.md)).
+2. **Contenuti visivi**: salva lo stile con `salva_stile` e lancia in un solo `genera_lotto` le immagini del piano degli asset; mentre Studio AI lavora prosegui con i punti seguenti, poi controlla le anteprime e rigenera solo ciò che non va. I video si generano solo dopo l'approvazione della loro immagine di partenza e il via sulla stima ([references/contenuti-visivi.md](references/contenuti-visivi.md)).
+3. **Struttura globale**: header e navigazione, footer, pagina 404, pagine legali.
+4. **Home, sezione per sezione**: hero → benefici → come funziona → prove → FAQ → CTA finale, adattando l'ordine alla scaletta approvata.
+5. **Altre pagine**, una alla volta.
+6. **Animazioni** secondo il livello scelto ([references/motion.md](references/motion.md)).
 
 Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla volta, così le modifiche restano controllabili. Dopo ogni sezione completata aggiorna lo stato in `docs/piano-sito.md`. Durante tutta la costruzione valgono [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) e il design system del progetto.
 
@@ -99,7 +102,7 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 
 1. Passa la [checklist](references/checklist.md) e correggi ciò che non va.
 2. Se possibile avvia il sito e controllalo a 375px, 768px e 1280px di larghezza.
-3. Consegna: cosa è stato fatto, come avviarlo, l'elenco "Contenuti da sostituire", i punti aperti e i prossimi passi consigliati.
+3. Consegna: cosa è stato fatto, come avviarlo, i file creati con Studio AI e dove sono, il costo totale (`riepilogo_spese`), l'elenco "Contenuti da sostituire", i punti aperti e i prossimi passi consigliati.
 
 ## Riferimenti
 
@@ -111,5 +114,6 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/strategia-e-struttura.md](references/strategia-e-struttura.md) | Fasi 4 e 5: struttura delle pagine, conversione, testi, SEO |
 | [references/motion.md](references/motion.md) | Animazioni, navigazione, sezione tagline |
 | [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) | Fasi 4 e 5: scrittura dei testi e costruzione |
+| [references/contenuti-visivi.md](references/contenuti-visivi.md) | Fasi 2, 4 e 5: immagini, logo, icone, video e audio con Studio AI |
 | [references/checklist.md](references/checklist.md) | Fase 6 |
 | [references/fonti.md](references/fonti.md) | Origine delle regole integrate e licenze |

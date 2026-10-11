@@ -5,6 +5,8 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | Codice | Skill | Origine | Licenza | Integrata il |
 |---|---|---|---|---|
 | F1 | `landing-page-design` | [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) | MIT | 2026-10-10 |
+| F2 | Pratiche di generazione da `higgsfield-generate`, `higgsfield-brandkit`, `higgsfield-product-photoshoot` e dal percorso website di `higgsfield-websites` | [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) v0.13.0, commit f83af0bc | MIT | 2026-10-11 |
+| SA | Istruzioni Studio AI del proprietario e `CATALOGO.md` dell'app | Proprietario | — | 2026-10-11 |
 
 ---
 
@@ -96,6 +98,62 @@ SOFTWARE.
 ```
 
 ---
+
+## F2 — Pratiche di generazione da Higgsfield
+
+Dal repository ufficiale Higgsfield sono state prese **solo pratiche indipendenti dallo strumento** per immagini, video e audio dei siti, riscritte per Studio AI: nella skill non si usa Higgsfield.
+
+| Cosa | Dove si trova ora |
+|---|---|
+| Piano degli asset, precedenza degli asset del cliente, scelta del preset per slot | [contenuti-visivi.md](contenuti-visivi.md) §1, §3, §5; modello `piano-sito.md` |
+| Scheda di stile (brand lock), un solo modo di guidare lo stile | [contenuti-visivi.md](contenuti-visivi.md) §4 |
+| Scrittura dei prompt (due parti, in positivo, testi in HTML, composizione centrata, divieti) | [contenuti-visivi.md](contenuti-visivi.md) §6 |
+| Logo, favicon, immagine OG, set di icone illustrative | [contenuti-visivi.md](contenuti-visivi.md) §7 |
+| Foto del cliente, persone e prodotti | [contenuti-visivi.md](contenuti-visivi.md) §8; domande A5 |
+| Video (prima l'immagine, movimento per settore, requisiti per il web, mobile) | [contenuti-visivi.md](contenuti-visivi.md) §9; domanda A3 |
+| Audio muto nei video del sito | [contenuti-visivi.md](contenuti-visivi.md) §10 |
+| Controllo, rigenerazioni, errori, file e markup | [contenuti-visivi.md](contenuti-visivi.md) §11 |
+| Stime, approvazioni, consuntivo | [contenuti-visivi.md](contenuti-visivi.md) §12 |
+
+**Non integrato:** CLI, crediti e modelli di Higgsfield, deploy e app su Cloudflare, giochi, 3D, Marketing Studio e annunci pubblicitari. Il resto del percorso website di `higgsfield-websites` (SEO, controllo pre-consegna, effetti "wow", scroll-scrub) è in coda come fonte da integrare.
+
+Le idee prese da `higgsfield-websites/references/design-taste-frontend.md` (MIT, autore Hermes Agent) sono solo principi riscritti, nessun testo copiato.
+
+### Licenza F2
+
+```
+MIT License
+
+Copyright (c) 2026 Higgsfield AI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+## SA — Istruzioni Studio AI del proprietario
+
+Il blocco "Contenuti visivi del sito: Studio AI" e il `CATALOGO.md` dell'app Studio AI (modelli Google, OpenAI ed ElevenLabs, server MCP `studio-ai`). Sono finiti in [contenuti-visivi.md](contenuti-visivi.md), nelle domande A1–A6 di [domande.md](domande.md) §2.7, nella regola d'oro 9 e nelle Fasi 2, 4, 5 e 6 di `SKILL.md`. I parametri esatti non si ricopiano: si leggono nel catalogo.
+
+Scelte del proprietario che modificano il blocco:
+- **Logo nuovo**: Studio AI genera solo il simbolo; il nome si compone in SVG con il font del sito (il catalogo prevede il nome tra virgolette nel prompt di `logo-sito`).
+- **Icone**: modello misto, libreria per l'interfaccia e Studio AI per icone illustrative e favicon.
+- **Video nella hero**: si chiede ogni volta (A3), senza default.
+- **Foto reali**: con il consenso del cliente si possono ritoccare; con il consenso anche delle persone ritratte possono fare da riferimento per nuove immagini.
 
 ## Aggiunte Kartello
 

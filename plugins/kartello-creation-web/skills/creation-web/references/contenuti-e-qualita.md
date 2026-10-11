@@ -49,7 +49,7 @@ Le cose che si dimenticano e fanno sembrare un sito non finito:
 - Banner dei cookie dove la legge lo richiede, cioè se il sito usa cookie o strumenti di tracciamento non tecnici: pixel pubblicitari, analytics non anonimizzati, contenuti incorporati di terze parti (Google Maps, YouTube, widget social). In Italia gli analytics anonimizzati secondo le Linee guida del Garante (10/06/2021) sono equiparati ai tecnici. Mappe e video incorporati si caricano dopo il consenso, con un'anteprima statica e un clic per attivarli (precisazione Kartello)
 - Una favicon del brand
 - `<title>`, meta description, `og:image` e tag per la condivisione sui social
-- Testo alternativo su ogni immagine significativa
+- Testo alternativo in italiano su ogni immagine significativa, `alt` vuoto sulle decorative ([contenuti-visivi.md](contenuti-visivi.md) §11)
 - HTML semantico: `<nav>`, `<main>`, `<article>`, `<aside>`, `<section>`
 - Un modo per tornare indietro da ogni pagina
 
@@ -66,6 +66,6 @@ Le cose che si dimenticano e fanno sembrare un sito non finito:
 
 ## §5 Prestazioni
 
-- Immagini in formato moderno (WebP o AVIF), con dimensioni dichiarate; caricamento differito sotto la piega, mai sull'immagine della hero
+- Immagini in formato moderno (WebP o AVIF), con `width` e `height` reali; caricamento differito sotto la piega, mai sull'immagine della hero. Immagini, video e audio si creano solo con Studio AI, mai foto di repertorio ([contenuti-visivi.md](contenuti-visivi.md))
 - Font: solo i pesi usati, `font-display: swap`
 - Nessuna libreria pesante per effetti che si ottengono con poche righe di CSS o JavaScript
