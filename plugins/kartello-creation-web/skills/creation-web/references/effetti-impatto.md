@@ -1,12 +1,12 @@
-# Effetti firma
+# Effetti d'impatto
 
-L'effetto firma è la cosa che il visitatore ricorda. **Uno per pagina**, scelto nel piano e realizzato fino in fondo, preso da questo catalogo e non dalla prima idea che viene in mente [F5]. C'è **sempre**, salvo che l'utente dica di non volerlo (domanda M4): la skill propone 2–3 idee, consiglia la migliore e l'utente sceglie (regola d'oro 11). Metodo e ricettario del motion graphics in codice: [motion-graphics.md](motion-graphics.md). Gli effetti si realizzano **in codice** ([grafica-in-codice.md](grafica-in-codice.md)); Studio AI solo per le immagini e i video che il codice non può fare, come fotografie e riprese dal vero ([contenuti-visivi.md](contenuti-visivi.md)).
+L'effetto d'impatto è la cosa che il visitatore ricorda. **Uno per pagina**, scelto nel piano e realizzato fino in fondo, preso da questo catalogo e non dalla prima idea che viene in mente [F5]. C'è **sempre**, salvo che l'utente dica di non volerlo (domanda M4): la skill propone 2–3 idee, consiglia la migliore e l'utente sceglie (regola d'oro 11). Metodo e ricettario del motion graphics in codice: [motion-graphics.md](motion-graphics.md). Gli effetti si realizzano **in codice** ([grafica-in-codice.md](grafica-in-codice.md)); Studio AI solo per le immagini e i video che il codice non può fare, come fotografie e riprese dal vero ([contenuti-visivi.md](contenuti-visivi.md)).
 
 ## Come scegliere [F5]
 
 1. **L'effetto mette in scena l'idea del sito**: una "precisione" vuole messa a fuoco e fisica esatta; una "salita" vuole profondità e parallasse; un "archivio" vuole pagine che si sfogliano. Scrivi nel piano una frase che giustifichi l'abbinamento.
 2. **Mai lo stesso effetto del sito precedente** fatto in questa conversazione (vedi "Diversità tra siti"). Se l'idea lo richiede davvero, cambia soggetto, asse o risultato.
-3. Livello di spettacolo: di norma un effetto firma più comparse motivate; nei siti di livello più alto un secondo momento a metà pagina, di famiglia diversa.
+3. Livello di spettacolo: di norma un effetto d'impatto più comparse motivate; nei siti di livello più alto un secondo momento a metà pagina, di famiglia diversa.
 4. Ogni effetto ha lo stato iniziale già completo (la pagina è finita anche prima dell'interazione), una versione statica per `prefers-reduced-motion` e una versione mobile dichiarata nel piano (pin più corto, effetti del cursore sostituiti da equivalenti allo scroll).
 5. Se un effetto non si può finire bene, meglio una pagina statica pulita che un effetto a metà [F5].
 
@@ -58,7 +58,7 @@ Ricette complete, con immagini, film e sito, da trasportare in qualsiasi settore
 | E6 | Dentro la luce: prodotto nel nero sotto un faro | Gioielli, orologi, cristallo |
 | E7 | Il cantiere che si costruisce da solo | Piscine, giardini, cucine, case |
 
-**Non sono effetti firma** (al massimo contorno): un loop di sfondo da solo, comparse generiche in dissolvenza, particelle dietro il testo senza interazione, strisce che scorrono, card che si inclinano al passaggio del mouse [F5].
+**Non sono effetti d'impatto** (al massimo contorno): un loop di sfondo da solo, comparse generiche in dissolvenza, particelle dietro il testo senza interazione, strisce che scorrono, card che si inclinano al passaggio del mouse [F5].
 
 ## Regole di realizzazione [F5]
 
@@ -73,7 +73,7 @@ Ogni sito deve avere una sua identità, non sembrare il fratello del precedente.
 1. famiglia di palette;
 2. abbinamento di font (mai lo stesso font dei titoli due volte di fila);
 3. architettura della hero (immagine a tutto schermo, divisa, a maschera, a binario…);
-4. effetto firma;
+4. effetto d'impatto;
 5. stile dei bottoni e delle CTA;
 6. linguaggio di angoli e bordi (squadrati, morbidi, pillola, filetti).
 

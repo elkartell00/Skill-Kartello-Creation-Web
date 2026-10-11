@@ -27,7 +27,7 @@
 | Motion graphics | **GSAP** (con ScrollTrigger) o Motion: animazioni a scroll, testo che si compone, maschere, morphing di forme SVG, contatori, linee che si disegnano |
 | 3D | **Three.js** o React Three Fiber: oggetti, materiali, luci, camera guidata dallo scroll; geometrie del prodotto quando è semplice (bottiglia, scatola, gioiello stilizzato) |
 | Grafici e dati | SVG o Canvas con la palette del sito |
-| Effetti firma ([effetti-firma.md](effetti-firma.md)) | Quasi tutti in codice: parallasse a strati, maschere, binari orizzontali, capitoli impilati, tipografia cinetica, particelle, increspature WebGL |
+| Effetti d'impatto ([effetti-impatto.md](effetti-impatto.md)) | Quasi tutti in codice: parallasse a strati, maschere, binari orizzontali, capitoli impilati, tipografia cinetica, particelle, increspature WebGL |
 | Sequenze per il "3D scroll" ([siti-3d-scroll.md](siti-3d-scroll.md)) | Se il soggetto non deve essere fotorealistico: scena Three.js renderizzata fotogramma per fotogramma (§4), poi `frame-scrub.js` |
 | Video di motion graphics (file MP4) | **Remotion** (video da React) oppure un'animazione HTML/Canvas registrata fotogramma per fotogramma (§4) |
 

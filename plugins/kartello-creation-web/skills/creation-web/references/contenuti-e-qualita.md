@@ -108,7 +108,7 @@ Sono default, non dogmi: uno stile scelto o una richiesta esplicita dell'utente 
 - **Rilettura prima della consegna**: ogni testo visibile riletto; riscrivi ciò che è sgrammaticato, ambiguo o "AI che cerca di sembrare profonda". Meglio un testo semplice e utile che uno brillante.
 
 **Movimento e interazione**
-- Un effetto firma per pagina ([effetti-firma.md](effetti-firma.md)) più comparse motivate. Prima di ogni animazione chiediti cosa comunica (gerarchia, racconto, risposta, stato): "era carino" non basta.
+- Un effetto d'impatto per pagina ([effetti-impatto.md](effetti-impatto.md)) più comparse motivate. Prima di ogni animazione chiediti cosa comunica (gerarchia, racconto, risposta, stato): "era carino" non basta.
 - Niente cursori personalizzati né animazioni infinite nelle sezioni informative.
 - Contrasto AA anche per i bottoni "fantasma" sopra le foto (con velatura o contorno). Nei moduli: etichetta sopra, errore sotto.
 

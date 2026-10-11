@@ -36,8 +36,8 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Tutti i segnaposto elencati in "Contenuti da sostituire"
 - [ ] Tono di voce e "tu" o "lei" coerenti in tutto il sito
 
-## Momento firma
-- [ ] Livello High Quality: momento firma in motion graphics costruito in codice e rivisto su registrazione almeno tre volte ([motion-graphics.md](motion-graphics.md) §7); il risultato è di livello premium
+## Scena d'impatto
+- [ ] Livello High Quality: scena d'impatto in motion graphics costruita in codice e rivista su registrazione almeno tre volte ([motion-graphics.md](motion-graphics.md) §7); il risultato è di livello premium
 - [ ] Nessuna chiamata a Studio AI senza elenco, motivo, stima e sì dell'utente; budget base del livello rispettato, e ogni generazione in più chiesta prima spiegando che il sito resta allo stesso livello; al livello High Quality una spesa più alta ha prodotto un risultato di livello premium
 
 ## Contenuti visivi
