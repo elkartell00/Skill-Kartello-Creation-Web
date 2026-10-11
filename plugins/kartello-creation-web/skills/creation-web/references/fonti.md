@@ -274,6 +274,10 @@ Skill di circa quattro mesi prima per siti "3D scroll" da un solo prompt. Analis
 
 **Non integrato:** il codice e i modelli (nessuna licenza), il flusso Higgsfield (`declined_preset_id`, modelli di riserva), l'installazione automatica di ffmpeg, il componente React e il lanciatore per macOS.
 
+## Scelta del proprietario: livello del sito e spesa proporzionata
+
+All'avvio si sceglie il livello del sito (G1): Normale o Wow. Studio AI si può usare a entrambi i livelli, con una spesa proporzionata: poche generazioni per un sito normale; di più per un sito wow, solo se il risultato è mozzafiato. Dove si trova: regole d'oro 9 e 10, Fase 0, domanda G1 in [domande.md](domande.md) §0, [contenuti-visivi.md](contenuti-visivi.md) §12.
+
 ## Scelta del proprietario: il wow è motion graphics in codice
 
 Ogni sito ha un momento firma in motion graphics costruito in codice, con metodo, ricettario e revisione su registrazione: [motion-graphics.md](motion-graphics.md), regola d'oro 9, Fasi 4, 5 e 6, domanda M4. Studio AI serve il wow e non lo sostituisce: prima si prova in codice, e ogni spesa deve contribuire all'effetto wow o a una fotografia indispensabile; mai per un sito normale.

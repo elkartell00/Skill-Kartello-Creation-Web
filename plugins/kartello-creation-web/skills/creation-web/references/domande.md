@@ -18,6 +18,16 @@ L'utente sceglie la modalità all'avvio. In tutte le modalità le risposte già 
 
 Default se l'utente risponde "decidi tu" a questa domanda: Standard. La richiesta di procedere senza domande ("niente domande", "fai tutto tu") segue invece la regola d'oro 1 di `SKILL.md`; anche in quel caso si chiede A3, che non ha default.
 
+### Livello del sito (G1)
+
+Si chiede all'avvio insieme alla modalità, in ogni modalità.
+
+| ID | Domanda | Opzioni | Default |
+|---|---|---|---|
+| G1 | Che livello di sito vuoi? | **Wow**: mozzafiato, da migliaia di dollari, con un momento firma in motion graphics fatto in codice; si può investire di più in generazioni con Studio AI, ma solo se servono al wow · **Normale**: pulito e professionale, animazioni curate, spesa bassa (indicativamente 2–3 immagini e al massimo un video con Studio AI) | Wow (consigliato) |
+
+Il livello decide il momento firma (M4), il livello di movimento consigliato (M1) e il budget di Studio AI ([contenuti-visivi.md](contenuti-visivi.md) §12).
+
 ---
 
 ## §1 Brief base (sempre)
@@ -131,7 +141,7 @@ Se I3 è vendita, contatti, prenotazioni o lead. In due giri: K1–K4, poi K5–
 | M1 | Quanto movimento? | Nessuno (solo stati) · Sottile · Fluido · Cinematografico | Fluido |
 | M2 | Navigazione | Barra classica fissa · Isola fluttuante in vetro · Trasparente sopra la hero · Menu laterale | Barra classica fissa |
 | M3 | Sezione "tagline reveal": una frase grande che si accende parola per parola durante lo scroll | Sì · No | Sì per landing e stile Minimal tech, altrimenti no |
-| M4 | Momento firma in motion graphics, quello che il visitatore ricorda [F5] | 2–3 idee in codice adatte all'attività ([motion-graphics.md](motion-graphics.md), [effetti-wow.md](effetti-wow.md)), più "Nessun effetto firma" | Sempre l'idea consigliata, in ogni modalità; nessuno solo se l'utente lo chiede |
+| M4 | Momento firma in motion graphics, quello che il visitatore ricorda [F5] | 2–3 idee in codice adatte all'attività ([motion-graphics.md](motion-graphics.md), [effetti-wow.md](effetti-wow.md)), più "Nessun effetto firma" | Livello Wow: sempre l'idea consigliata, nessuno solo se l'utente lo chiede. Livello Normale: facoltativo, si propone |
 
 Dettagli in [motion.md](motion.md).
 

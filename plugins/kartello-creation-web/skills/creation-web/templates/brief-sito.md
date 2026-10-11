@@ -30,6 +30,9 @@ CTA nell'header:
 - Riduzione del rischio:
 - Layout della landing (L1) e motivo:
 
+## Livello del sito
+- Livello (G1): {Wow | Normale} · Budget indicativo per Studio AI:
+
 ## Tono e stile
 - Tono di voce; tu o lei:
 - Direzione stilistica:

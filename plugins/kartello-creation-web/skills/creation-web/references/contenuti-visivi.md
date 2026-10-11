@@ -115,7 +115,7 @@ Ogni slot ha il suo formato fin dalla generazione, mai un formato unico ritaglia
 
 ## §12 Costi e approvazioni
 
-- **Ogni spesa deve servire il wow** (scelta del proprietario): Studio AI si usa quando aiuta a raggiungere l'effetto wow del sito ([motion-graphics.md](motion-graphics.md)) o per una fotografia indispensabile che il cliente non ha; mai per immagini qualsiasi che porterebbero a un sito normale: quelle si fanno in codice o si lasciano come segnaposto.
+- **Spesa proporzionata al livello del sito** (G1, scelta del proprietario): al livello **Normale** Studio AI si può usare con poche generazioni (indicativamente 2–3 immagini e al massimo un video), per un sito pulito e professionale a costo basso. Al livello **Wow** si può spendere di più, ma ogni generazione deve servire a rendere il sito mozzafiato ([motion-graphics.md](motion-graphics.md)): mai spendere tanto per poi consegnare un sito normale. In entrambi i casi prima si prova in codice.
 - **Studio AI non parte mai da solo** (scelta del proprietario): la prima versione del sito si costruisce in codice e con le foto del cliente. A sito costruito, le immagini di Studio AI eventualmente necessarie si propongono come elenco (slot, motivo per cui il codice non basta, stima con `stima_costo`) e si generano solo dopo il sì esplicito dell'utente.
 - **Video e catene di video**: si propongono, si mostra la stima (`stima_costo`, più circa il 15% di margine per le rigenerazioni) e si generano solo dopo un sì esplicito dell'utente. Il silenzio non vale come approvazione [F2].
 - `genera_lotto` controlla il costo totale prima di partire: o partono tutte le voci o nessuna [SA].
