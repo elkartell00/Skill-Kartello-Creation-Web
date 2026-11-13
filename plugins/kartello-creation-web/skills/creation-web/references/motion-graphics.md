@@ -11,7 +11,7 @@ L'impatto non arriva al primo colpo: arriva da un'idea forte, da una coreografia
 1. **L'idea.** Una frase che mette in scena l'attività con il movimento: "il caffè che si versa diventa il logo", "le linee della planimetria disegnano la casa e la casa si accende", "le lettere del nome si assemblano come ingranaggi". Prendila dal mondo materiale dell'attività (acciaio, farina, vapore, carta, luce) e dall'obiettivo del sito. Proponi 2–3 idee diverse e consiglia la migliore (regola d'oro 11).
 2. **Lo storyboard.** 5–8 battute con i tempi, come un piccolo film: cosa entra, cosa succede, come si trasforma, dove finisce. Esempio: "0–0,8 s il fondo si accende con un gradiente fluido · 0,8–2 s il titolo si compone lettera per lettera da sotto una maschera · 2–3,5 s una forma del settore nasce da particelle · 3,5 s la camera si avvicina e la forma diventa lo sfondo della sezione successiva". Mostralo all'utente nel piano (Fase 4).
 3. **Lo stile.** Colori, font, raggi e curve dal design system: il movimento è parte dell'identità, non un effetto aggiunto.
-4. **La costruzione.** Una **timeline** unica (GSAP timeline, oppure un orologio in Three.js) che governa tutto, così ogni elemento è sincronizzato e la scena si può riprodurre, mettere in pausa e legare allo scroll.
+4. **La costruzione.** Una **timeline** unica (GSAP timeline, oppure un orologio in Three.js) che governa tutto, così ogni elemento è sincronizzato e la scena si può riprodurre, mettere in pausa e legare allo scroll. Con GSAP ogni battuta dello storyboard diventa un'etichetta della timeline e i passaggi si collocano con il parametro di posizione, mai con catene di ritardi ([gsap.md](gsap.md) §4) [F8].
 5. **La revisione sul movimento, non sul codice.** Registra la scena (§6), guarda la registrazione e i fotogrammi chiave, critica come un direttore creativo: è sorprendente? è fluida? ha ritmo? si capisce l'idea? Poi migliora. **Almeno tre giri**, e ogni giro alza il livello (più profondità, più dettaglio secondario, ritmo migliore, transizioni più intelligenti).
 6. **L'ottimizzazione.** 60 fotogrammi al secondo su desktop, versione leggera su mobile, versione statica composta per `prefers-reduced-motion`.
 
@@ -56,9 +56,9 @@ Le ricette "3D scroll" di [siti-3d-scroll.md](siti-3d-scroll.md) e gli effetti d
 
 ## §4 Strumenti
 
-- **GSAP** con ScrollTrigger e i plugin per testo, tracciati e morph (SplitText, DrawSVG, MorphSVG, Flip): la base della coreografia. Oggi è gratuito, plugin compresi; verifica comunque i termini al momento dell'installazione.
+- **GSAP** con ScrollTrigger e i plugin per testo, tracciati e morph (SplitText, DrawSVG, MorphSVG, Flip): la base della coreografia. È gratuito, plugin compresi, dal pacchetto pubblico `gsap`. Impostazione, plugin giusto per ogni ricetta, uso nei framework ed errori da evitare: [gsap.md](gsap.md) [F8].
 - **Three.js** (o React Three Fiber con `@react-three/drei` e `postprocessing`) per 3D, particelle, shader e post-produzione.
-- **Motion** (ex Framer Motion) per le animazioni dei componenti React; **Lenis** per lo scroll morbido.
+- **Motion** (ex Framer Motion) per le animazioni dei componenti React; per lo scroll morbido **Lenis** oppure **ScrollSmoother** di GSAP, da proporre come opzione ([gsap.md](gsap.md) §5).
 - **Remotion** per esportare video MP4 dal codice (verifica la licenza per le aziende).
 - Tutto installato nel progetto, niente CDN in produzione.
 
@@ -66,7 +66,8 @@ Le ricette "3D scroll" di [siti-3d-scroll.md](siti-3d-scroll.md) e gli effetti d
 
 - Le scene si fermano quando non sono visibili; densità di pixel limitata a 2; geometrie e particelle ridotte su mobile e su dispositivi deboli.
 - Nessun salto di layout; il contenuto principale (titolo, CTA) è HTML leggibile da subito, anche prima che la scena parta.
-- `prefers-reduced-motion`: una versione statica composta e bella, non una pagina vuota.
+- `prefers-reduced-motion`: una versione statica composta e bella, non una pagina vuota. Con GSAP si gestisce con `gsap.matchMedia()`, che annulla da solo animazioni e ScrollTrigger quando la condizione cambia ([gsap.md](gsap.md) §2) [F8].
+- Nessuna animazione resta attiva dopo il cambio pagina o lo smontaggio di un componente: `revert()` del context ([gsap.md](gsap.md) §7) [F8].
 - I testi restano testi (selezionabili, leggibili dai motori di ricerca): la scena è dietro o intorno, non al posto del contenuto.
 
 ## §6 Registrare e rivedere

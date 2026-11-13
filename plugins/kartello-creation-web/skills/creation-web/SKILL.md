@@ -119,7 +119,7 @@ Attendi l'approvazione o le correzioni. Dopo l'approvazione salva il piano in `d
 
 ### Fase 5 — Costruzione
 
-1. **Fondamenta**: progetto, font, token del design system in codice (colori, classi tipografiche `type-*`, spaziature, raggi, easing) come da [references/design-system.md](references/design-system.md) §9. Se il generatore rifiuta una cartella non vuota (create-next-app non accetta `CLAUDE.md`), crea il progetto in una sottocartella temporanea e spostane i file nella radice, senza sovrascrivere `docs/` e `CLAUDE.md`.
+1. **Fondamenta**: progetto, font, token del design system in codice (colori, classi tipografiche `type-*`, spaziature, raggi, easing) come da [references/design-system.md](references/design-system.md) §9. Se si usa GSAP, un unico file di avvio delle animazioni: plugin registrati una volta, curva `fluid` dal token, `gsap.matchMedia()` per il movimento ridotto ([references/gsap.md](references/gsap.md) §2). Se il generatore rifiuta una cartella non vuota (create-next-app non accetta `CLAUDE.md`), crea il progetto in una sottocartella temporanea e spostane i file nella radice, senza sovrascrivere `docs/` e `CLAUDE.md`.
 2. **Scena d'impatto in motion graphics** (livello High Quality), subito dopo le fondamenta: costruiscila in codice secondo lo storyboard approvato, registrala, guardala e migliorala almeno tre volte finché non è all'altezza di un sito premiato ([references/motion-graphics.md](references/motion-graphics.md)).
 3. **Grafica in codice**: logo SVG, icone, sfondi, illustrazioni, OG, altre animazioni del piano; controlla ogni elemento con uno screenshot ([references/grafica-in-codice.md](references/grafica-in-codice.md)). Dove servono fotografie usa quelle del cliente; altrimenti segnaposto etichettati.
 4. **Struttura globale**: header e navigazione, footer, pagina 404, pagine legali.
@@ -154,6 +154,7 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/motion.md](references/motion.md) | Animazioni, navigazione, sezione tagline |
 | [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) | Fasi 4 e 5: scrittura dei testi e costruzione |
 | [references/motion-graphics.md](references/motion-graphics.md) | Fasi 4, 5 e 6: la scena d'impatto in motion graphics, metodo, ricettario, revisione |
+| [references/gsap.md](references/gsap.md) | Fasi 2, 5 e 6 quando si usa GSAP: impostazione, timeline, ScrollTrigger, plugin per ogni effetto, framework, prestazioni, errori da evitare |
 | [references/grafica-in-codice.md](references/grafica-in-codice.md) | Fasi 4 e 5: prima il codice per grafica, 3D e video |
 | [references/contenuti-visivi.md](references/contenuti-visivi.md) | Fasi 2, 4 e 5: foto del cliente e Studio AI come ultimo passaggio |
 | [references/scroll-cinematico.md](references/scroll-cinematico.md) e [references/scroll-cinematico-prompt.md](references/scroll-cinematico-prompt.md) | Solo se A3 = video guidato dallo scroll o L1 = E: scroll cinematico con il motore in `assets/scroll-cinematico/` |

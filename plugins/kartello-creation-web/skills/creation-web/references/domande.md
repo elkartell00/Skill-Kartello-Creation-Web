@@ -186,6 +186,8 @@ W4 si chiede in **ogni** modalità e la scelta finale è sempre dell'utente. Val
 | Il cliente vuole aggiornare i contenuti da solo | Aggiungere un CMS (es. un CMS headless con Astro o Next.js, oppure WordPress) |
 | Negozio online con catalogo ampio | Valutare una piattaforma e-commerce dedicata (es. Shopify) |
 
+**Libreria di animazione** (insieme a W4, stessa logica: raccomandi, decide l'utente): GSAP con ScrollTrigger quando il livello è Standard o High Quality, o quando servono scena d'impatto, scroll, sezioni bloccate, testo o SVG animati; solo CSS per il livello Low Quality con movimento Nessuno o Sottile; Motion se il sito è in React e servono solo animazioni di componenti. Scroll morbido: Lenis o ScrollSmoother, oppure nessuno ([gsap.md](gsap.md) §1 e §5) [F8].
+
 I token del design system ([design-system.md](design-system.md) §9) si adattano a qualsiasi scelta: con Tailwind via `@theme`, altrimenti come variabili CSS.
 
 ### 2.7 Contenuti visivi [SA]

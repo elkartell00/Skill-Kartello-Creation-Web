@@ -4,8 +4,18 @@ Skill per [Claude Code](https://code.claude.com) che crea siti web da zero per q
 Quando la avvii ti fa domande mirate, fissa un design system che resta costante su tutto il sito,
 poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 
-> Stato: **versione 2.0.0**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
+> Stato: **versione 2.1.0**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
 > e, dalla versione 2, imparando dalla **Repository dei template**: più template e tecniche ci metti, più diventa brava.
+
+## Novità della versione 2.1
+
+- **GSAP fatto bene**: integrate le skill ufficiali di GreenSock (`greensock/gsap-skills`, licenza MIT) in una guida unica, `references/gsap.md`. La scena d'impatto e le animazioni allo scroll seguono le regole corrette di GSAP:
+  - timeline con le battute dello storyboard come etichette;
+  - ScrollTrigger senza gli errori tipici (trigger annidati, pin animati, posizioni sbagliate dopo il caricamento dei font);
+  - il plugin giusto per ogni effetto (SplitText, DrawSVG, MorphSVG, Flip, Observer…), tutti gratuiti;
+  - movimento ridotto gestito con `gsap.matchMedia()`, pulizia delle animazioni in React, Next.js, Vue, Svelte e Astro.
+- **Stessa curva ovunque**: GSAP usa la curva del design system (`--ease-fluid`), così CSS e animazioni si muovono allo stesso modo.
+- **Scelta della libreria di animazione** insieme alla tecnologia (W4): la skill raccomanda, decidi tu; scroll morbido con Lenis o ScrollSmoother.
 
 ## Novità della versione 2
 

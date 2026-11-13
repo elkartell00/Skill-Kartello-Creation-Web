@@ -76,6 +76,8 @@ await browser.close();
 ffmpeg -framerate 30 -i frames/f-%04d.png -c:v libx264 -pix_fmt yuv420p -crf 18 -movflags +faststart animazione.mp4
 ```
 
+Con una timeline GSAP, `window.renderAt` è una riga: `scena.pause(0); window.renderAt = (t) => scena.time(t);` ([gsap.md](gsap.md) §4).
+
 Gli stessi fotogrammi, convertiti in WebP, alimentano direttamente `assets/scroll-3d/frame-scrub.js`. Con Remotion il procedimento è integrato (`npx remotion render`).
 
 ## §5 Quando si passa a Studio AI

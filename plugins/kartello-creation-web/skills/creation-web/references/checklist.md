@@ -77,6 +77,7 @@ grep -rn ' — ' src/ app/ 2>/dev/null                                          
 - [ ] Ogni file in `public/` è usato da una pagina; la hero usa un'immagine vera
 - [ ] Head completo: favicon (ico e png), `apple-touch-icon`, icone 192 e 512 con `site.webmanifest`, `theme-color`, blocco Open Graph e Twitter con URL assoluti
 - [ ] Nessun accesso a `window`, `document` o `localStorage` fuori dagli effetti nei framework con rendering lato server
+- [ ] Con GSAP: controllo del [gsap.md](gsap.md) §9 superato (plugin registrati, niente `markers` né strumenti di sviluppo in produzione, ScrollTrigger solo al primo livello, `refresh()` dopo i font, `matchMedia` con movimento ridotto, pulizia nei componenti) [F8]
 - [ ] Una sola etichetta per intento di CTA; CTA principali brevi
 - [ ] Sopratitoli entro il limite; tipi di sezione non ripetuti ([contenuti-e-qualita.md](contenuti-e-qualita.md) §7)
 - [ ] La pagina costruita corrisponde alla scaletta approvata in `docs/piano-sito.md`

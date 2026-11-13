@@ -19,6 +19,7 @@ Le regole marcate [F1] vengono da `landing-page-design` (vedi [fonti.md](fonti.m
 - **Per comparse, scroll e spostamenti anima solo** `transform` (con Tailwind v4 anche `translate`, `scale` e `rotate`), `opacity` e `filter`. Negli stati interattivi ([contenuti-e-qualita.md](contenuti-e-qualita.md) §2) e nella tagline reveal (§5) sono ammessi anche colore, sfondo e bordo.
 - **Rispetta `prefers-reduced-motion: reduce`**: niente spostamenti né sfocature, contenuto subito visibile.
 - **Senza JavaScript il contenuto resta visibile**: lo stato nascosto iniziale si applica solo quando lo script è attivo.
+- **Con GSAP** valgono le stesse regole, applicate come in [gsap.md](gsap.md): curva `fluid` creata dal token `--ease-fluid`, tutte le animazioni dentro `gsap.matchMedia()` con la condizione del movimento ridotto, comparse con `ScrollTrigger.batch()` al posto dell'`IntersectionObserver`. Unica eccezione alle curve personalizzate: le animazioni legate 1:1 allo scroll (`scrub`) usano `ease: "none"` sulla timeline esterna, perché lo richiede la tecnica ([gsap.md](gsap.md) §2) [F8].
 
 ## §3 Comparsa allo scroll [F1]
 
@@ -97,6 +98,7 @@ Una sezione di testo grande che enuncia il beneficio principale o la tagline, se
 - Le parole si attivano una alla volta quando superano una linea di attivazione, non tutto il blocco insieme. La transizione usa `--ease-fluid`, mai una dissolvenza lineare.
 - Implementazione: `IntersectionObserver` per parola, oppure un solo listener di scroll limitato con `requestAnimationFrame` e attivo solo mentre la sezione è visibile. Mai un listener di scroll senza limiti.
 - A fine scorrimento della pagina tutte le parole sono attive (aggiunta Kartello).
+- Se il progetto usa GSAP, la stessa resa si ottiene con SplitText e ScrollTrigger ([gsap.md](gsap.md) §6), che rifà la divisione quando cambiano font o larghezza [F8].
 
 Implementazione di riferimento (per andare a capo nei punti di senso usa `<br>` dentro il testo; lo script li conserva):
 

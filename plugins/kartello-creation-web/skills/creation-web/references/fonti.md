@@ -12,6 +12,7 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | F5 | Percorso website di `higgsfield-websites` (design-recipe, review-rubric, wow-catalog, seo) | [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) v0.13.0, commit f83af0bc | MIT (testo in F2) | 2026-10-11 |
 | F6 | *Build Award-Winning 3D Scroll Websites* (prompt pack PDF, settembre 2026) | Fornito dal proprietario | Nessuna licenza: solo tecniche e strutture riscritte | 2026-10-11 |
 | F7 | `scroll-cinematic` (skill più vecchia) | Fornita dal proprietario | Nessuna licenza: solo idee, nessun codice copiato | 2026-10-11 |
+| F8 | GSAP AI Skills ufficiali: `gsap-core`, `gsap-timeline`, `gsap-scrolltrigger`, `gsap-plugins`, `gsap-utils`, `gsap-react`, `gsap-frameworks`, `gsap-performance` | [greensock/gsap-skills](https://github.com/greensock/gsap-skills), commit aed9cfd3 | MIT | 2026-11-13 |
 
 ---
 
@@ -273,6 +274,54 @@ Pacchetto di 7 prompt per siti "3D scroll" (sequenze di fotogrammi su canvas) e 
 Skill di circa quattro mesi prima per siti "3D scroll" da un solo prompt. Analisi veloce come richiesto dal proprietario: quasi tutto è superato da F6 e dal motore Kartello. Tenuti solo come idee riscritte: i movimenti consigliati per tipo di sito, le regole del motore canvas (precaricamento, palco fissato da 420–600 vh, disegno solo quando cambia il fotogramma, adattamento "cover" e densità di pixel limitata a 2, finestre di comparsa dei testi), il trucco gratuito delle varianti di colore con il filtro `hue` di ffmpeg. Il motore `assets/scroll-3d/frame-scrub.js` è scritto da zero.
 
 **Non integrato:** il codice e i modelli (nessuna licenza), il flusso Higgsfield (`declined_preset_id`, modelli di riserva), l'installazione automatica di ffmpeg, il componente React e il lanciatore per macOS.
+
+## F8 — GSAP AI Skills (greensock/gsap-skills)
+
+Le skill ufficiali di GreenSock su come usare GSAP correttamente: API dei tween, timeline, ScrollTrigger, plugin, utilità, React, Vue, Svelte e Nuxt, prestazioni. Integrate perché GSAP è lo strumento principale del motion graphics in codice: rendono la scena d'impatto e lo scroll più affidabili (niente scatti, animazioni che restano attive dopo il cambio pagina, trigger fuori posto, accessibilità mancante). Testo riscritto in italiano, organizzato per argomento in un unico file e collegato al design system.
+
+| Parte di F8 | Dove è finita |
+|---|---|
+| `gsap-core`: quando usare GSAP, metodi, alias delle trasformazioni, `autoAlpha`, `clearProps`, `immediateRender`, stagger, valori relativi e da funzione, curve, `gsap.matchMedia()` | [gsap.md](gsap.md) §1–§3; raccomandazione della libreria in [domande.md](domande.md) W4 |
+| `gsap-timeline`: parametro di posizione, etichette, defaults, annidamento, controllo | [gsap.md](gsap.md) §4; [motion-graphics.md](motion-graphics.md) §1 punto 4 (battute dello storyboard come etichette) |
+| `gsap-scrolltrigger`: start ed end, scrub e toggleActions, pin, refresh e ordine, batch, containerAnimation, scrollerProxy, markers, pulizia | [gsap.md](gsap.md) §5; [motion.md](motion.md) §2 |
+| `gsap-plugins`: licenza gratuita, registrazione, SplitText, DrawSVG, MorphSVG, MotionPath, Flip, Observer, Draggable e Inertia, ScrambleText, CustomEase, ScrollToPlugin, ScrollSmoother, GSDevTools | [gsap.md](gsap.md) §1 e §6, con il plugin giusto per ogni ricetta del ricettario; tagline reveal con SplitText in [motion.md](motion.md) §5 |
+| `gsap-react` e `gsap-frameworks`: `useGSAP`, `scope`, `contextSafe`, SSR, `gsap.context()` con `revert()` in Vue, Nuxt e Svelte | [gsap.md](gsap.md) §7 |
+| `gsap-performance` e `gsap-utils`: trasformazioni, `will-change`, `quickTo`, letture e scritture, utilità | [gsap.md](gsap.md) §8 |
+| "Best practices" e "Do not" di tutte le skill | Controllo in [gsap.md](gsap.md) §9 e riga nel controllo meccanico di [checklist.md](checklist.md) |
+
+**Diventato opzione, non regola:** GSAP come libreria consigliata (decide l'utente con W4, regola d'oro 8); Lenis oppure ScrollSmoother per lo scroll morbido; Motion resta un'alternativa per i componenti React.
+
+**Aggiunte Kartello nel file:** la curva `fluid` creata con CustomEase dal token `--ease-fluid` e usata come default di GSAP; `window.renderAt` con la timeline in pausa per registrare la scena; la sincronizzazione di Lenis con ScrollTrigger; l'uso in Astro con le transizioni di pagina; `invalidateOnRefresh` con i valori da funzione; le comparse con `ScrollTrigger.batch()` allineate a [motion.md](motion.md) §3.
+
+**Precisazione su una regola esistente:** [motion.md](motion.md) §2 (da F1) vieta le curve lineari. Le animazioni legate 1:1 allo scroll (`scrub`) e lo scroll orizzontale con `containerAnimation` richiedono invece `ease: "none"` sulla timeline esterna, altrimenti non funzionano [F8]: è stata aggiunta come eccezione tecnica limitata a quei casi, mentre la morbidezza resta affidata a `scrub` e a `fluid` dentro la timeline.
+
+**Non integrato:** le istruzioni di installazione per altri agenti (Cursor, Copilot, Codex, Antigravity), i file `.github/` e `.cursor-plugin/`, i progetti di esempio, il contesto su Webflow Interactions, l'elenco completo delle utilità di `gsap.utils` e i dettagli di PixiPlugin, Physics2D, PhysicsProps, EasePack, CustomWiggle e CustomBounce (citati solo per nome). Nell'esempio di scroll orizzontale della fonte c'erano due errori (`Max.max` e un valore in pixel passato a `xPercent`): il codice della skill è stato riscritto corretto.
+
+### Licenza F8
+
+```
+MIT License
+
+Copyright (c) 2026 GreenSock
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ## Scelta del proprietario: livello del sito e spesa proporzionata
 
