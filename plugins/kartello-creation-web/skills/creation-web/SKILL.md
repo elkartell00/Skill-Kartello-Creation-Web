@@ -1,10 +1,10 @@
 ---
 name: creation-web
-description: Crea siti web da zero per qualsiasi settore (sito vetrina multipagina, landing page, one page, portfolio, sito per attività locali) guidando l'utente con domande mirate su idea, obiettivo, pagine, palette colori, tipografia H1–H6, stile e conversione. Fissa un design system che resta costante su tutto il sito, poi pianifica e costruisce sezione per sezione una prima bozza di livello professionale, con un'esperienza visiva d'impatto in motion graphics creata in codice e Studio AI solo come ultimo supporto. Impara dai siti di esempio indicati dall'utente (basta l'indirizzo): li analizza nel browser, ne ricava struttura, layout, grafica e motion graphics e li cataloga in una libreria di stili da adattare ai nuovi brand. Usala quando l'utente chiede di creare, progettare o impostare un nuovo sito web o una landing page, oppure quando chiede di aggiungere pagine o sezioni a un sito che ha già `docs/brief-sito.md` e `docs/design-system.md`, o quando indica un sito di esempio da cui imparare.
+description: Crea siti web da zero per qualsiasi settore (sito vetrina multipagina, landing page, one page, portfolio, sito per attività locali) guidando l'utente con domande mirate su idea, obiettivo, pagine, palette colori, tipografia H1–H6, stile e conversione. Fissa un design system che resta costante su tutto il sito, poi pianifica e costruisce sezione per sezione una prima bozza di livello professionale, con un'esperienza visiva d'impatto in motion graphics creata in codice e Studio AI solo come ultimo supporto. Si appoggia alla Repository dei template: parte dai template analizzati a 360 gradi, poi dal catalogo di migliaia di siti premiati, e riusa le tecniche in codice apprese dai siti studiati, migliorandole a ogni progetto. Impara dai siti di esempio indicati dall'utente (basta l'indirizzo): li analizza nel browser, ne ricava struttura, layout, grafica, motion graphics e tecniche e li salva nella repository per adattarli ai nuovi brand. Usala quando l'utente chiede di creare, progettare o impostare un nuovo sito web o una landing page, oppure quando chiede di aggiungere pagine o sezioni a un sito che ha già `docs/brief-sito.md` e `docs/design-system.md`, o quando indica un sito di esempio da cui imparare.
 argument-hint: "[idea del sito | impara <indirizzo del sito>]"
 ---
 
-# Kartello Creation Web
+# Kartello Creation Siti Web (versione 2)
 
 Questa skill trasforma un'idea in una prima bozza di sito web di livello agenzia. Non impone uno stile: lo stile nasce dalle risposte dell'utente. Il metodo invece resta sempre lo stesso:
 
@@ -25,7 +25,19 @@ Idea iniziale passata all'avvio (può essere vuota): $ARGUMENTS
 9. **Il livello del sito decide impatto visivo e budget.** All'avvio l'utente sceglie il livello (domanda G1): **Low Quality** (sito normale e semplice), **Standard** (bel sito moderno) o **High Quality** (livello premium, esperienza immersiva con motion graphics avanzato). Al livello High Quality ogni sito ha una **scena d'impatto in motion graphics** costruita in codice (idea, storyboard, timeline, almeno tre giri di revisione su registrazione video), che è la prima cosa che si costruisce ([references/motion-graphics.md](references/motion-graphics.md)); a Standard animazioni moderne e curate, scena d'impatto facoltativa; a Low Quality animazioni essenziali.
 10. **Prima il codice, Studio AI proporzionato al livello.** Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e file video si creano prima **con il codice** (SVG, Canvas, WebGL, GSAP, Three.js, Remotion), e Claude Code ci prova davvero ([references/grafica-in-codice.md](references/grafica-in-codice.md)); le foto vere del cliente si usano quando servono fotografie. L'app **Studio AI** (server MCP `studio-ai`; mai altri servizi né foto di repertorio) si può usare a ogni livello, con un **budget base proporzionato al livello** ([references/contenuti-visivi.md](references/contenuti-visivi.md) §12). Se servirebbero più generazioni del budget base, **prima si chiede**: cosa aggiungono, quanto costano e che il sito **resta allo stesso livello**, solo più completo; decide l'utente. Al livello High Quality si può spendere di più, ma il risultato deve essere di livello premium. Le richieste a Studio AI partono senza conferme, quindi la skill propone sempre l'elenco con il motivo e la stima (`stima_costo`) e genera solo dopo il sì. Se Studio AI non è collegato, segnaposto etichettati e si prosegue.
 11. **Proponi, consiglia, decide l'utente.** Ogni sito è diverso. Per le scelte che danno carattere al sito (stile, struttura e layout, navigazione, animazioni, video e scroll cinematico, tecnologia) proponi 2–3 opzioni davvero diverse tra loro, ragionando su settore, obiettivo e pubblico; indica quella che consigli e spiega perché in una riga. La scelta finale è sempre dell'utente.
-12. **Impara dagli esempi, adatta al brand.** Quando l'utente indica un sito di esempio, la skill lo analizza da sola (basta l'indirizzo: lo apre nel browser, lo scorre e lo fotografa), ne ricava struttura, layout, grafica, immagini e motion graphics, registra i punti forti che piacciono all'utente e lo salva nella libreria personale, catalogato per tipologia. Nei siti nuovi propone i riferimenti pertinenti e li adatta al brand: colori, font, testi, immagini e SEO restano del brand e non si copia nulla ([references/libreria-esempi.md](references/libreria-esempi.md)).
+12. **Impara dagli esempi, adatta al brand.** I riferimenti vivono nella **Repository dei template**, una cartella separata dalla skill che l'utente fa crescere ([references/repository-template.md](references/repository-template.md)). L'ordine di consultazione è fisso:
+    - prima i **Template Analizzati**, studiati a 360 gradi;
+    - poi il **catalogo** `Template JSON` dei siti premiati, interrogato con lo script, mai letto intero.
+
+    Quando l'utente indica un sito di esempio, la skill lo analizza da sola: basta l'indirizzo, lo apre nel browser, lo scorre e lo fotografa, e se REA è installato ne studia anche il codice. Ne ricava struttura, layout, grafica, immagini, motion graphics e tecniche, registra i punti forti che piacciono all'utente e lo salva nella repository, nella cartella della sua categoria. Nei siti nuovi propone i riferimenti pertinenti e li adatta al brand: colori, font, testi, immagini, codice e SEO restano del brand e non si copia nulla ([references/libreria-esempi.md](references/libreria-esempi.md)).
+13. **Le tecniche apprese sono alternative da confrontare, non scorciatoie.** Prima di costruire la scena d'impatto, un effetto, un movimento, una scena 3D o una soluzione per le prestazioni:
+    1. definisci la **tua soluzione**, quella che Claude Code sceglierebbe da sé con le ricette della skill;
+    2. leggi `Tecniche Apprese/INDICE.md` nella repository e prendi le tecniche pertinenti come **alternative**;
+    3. **confrontale sugli stessi criteri**: resa e aderenza al brief e al design system, prestazioni (peso, fluidità, mobile), accessibilità e SEO, semplicità e manutenzione del codice, tempo, compatibilità con la tecnologia scelta (W4);
+    4. **scegli la migliore** e scrivi il confronto in una riga nel piano. Se le opzioni si equivalgono, o la differenza cambia ciò che l'utente vede, il budget o i tempi, **chiedi all'utente**: le due opzioni, quella che consigli e perché.
+
+    Una tecnica non si usa solo perché esiste. Quando la soluzione che ha vinto il confronto, tua o appresa, è migliore di quella nella repository, aggiornala: versione e storico, oppure una tecnica nuova dal modello [templates/tecnica.md](templates/tecnica.md). Così il confronto successivo parte più in alto. Il codice delle tecniche è sempre scritto da noi, mai copiato dai siti di esempio ([references/repository-template.md](references/repository-template.md) §5).
+14. **Gli strumenti si installano con il consenso dell'utente.** La skill controlla da sola cosa manca: Node, Playwright e un browser per le analisi, ffmpeg, Python, REA e la repository dei template ([references/requisiti.md](references/requisiti.md)). Spiega all'utente cosa serve e a cosa, e installa solo dopo il suo sì. Gli strumenti della skill vanno installati sul computer una volta sola; le librerie del sito (GSAP, Three.js, Lenis…) nella cartella del progetto. Se l'utente rifiuta, usa il ripiego indicato e prosegui.
 
 ## Come fare le domande
 
@@ -43,6 +55,14 @@ La banca completa delle domande, con opzioni e default, è in [references/domand
 
 ### Fase 0 — Avvio
 
+**Requisiti.** Alla prima esecuzione in una sessione, prima di qualsiasi analisi o costruzione, lancia:
+
+```bash
+node "${CLAUDE_SKILL_DIR}/assets/setup/requisiti.mjs"
+```
+
+Lo script dice cosa c'è, cosa manca e come installarlo, e trova la Repository dei template. Se manca qualcosa che serve al lavoro richiesto, segui [references/requisiti.md](references/requisiti.md): spiega cosa serve e a cosa, chiedi il permesso e installa solo dopo il sì. Se la repository non viene trovata, chiedi all'utente dove si trova ([references/repository-template.md](references/repository-template.md) §1).
+
 0. Se l'utente vuole solo far imparare un sito (un indirizzo con "impara", "aggiungi alla libreria" o simili, anche come argomento di avvio), segui la modalità Impara ([references/libreria-esempi.md](references/libreria-esempi.md) §3) e fermati lì.
 1. Controlla se nel progetto esistono già `docs/brief-sito.md`, `docs/design-system.md` e `docs/piano-sito.md`.
    - Se brief e design system esistono e sono approvati: leggili insieme al file dei token, salta i punti 2–4 e non rifare l'intervista. Se la richiesta è già chiara, procedi senza chiedere conferma; altrimenti mostra un riepilogo e chiedi se continuare, modificare un parametro o aggiungere pagine.
@@ -50,7 +70,12 @@ La banca completa delle domande, con opzioni e default, è in [references/domand
    - Se esiste solo uno tra brief e design system, o uno dei due è in bozza, riprendi dalla fase corrispondente.
    - Per una nuova pagina: P2 per quella pagina, scaletta e testi (Fase 4 solo per lei) da approvare, costruzione (Fase 5, punto 6) riusando header, footer e componenti esistenti, Fase 6 su quella pagina; aggiorna la tabella Pagine del brief e `docs/piano-sito.md`.
 2. Controlla se il progetto ha già un framework (`package.json`, `astro.config.*`, `next.config.*`, ecc.). Se c'è, annotalo: con W4 raccomanderai di mantenerlo, ma la scelta resta all'utente.
-3. Leggi l'idea iniziale e deduci tutto quello che puoi: settore, tipo di sito, obiettivo, pubblico. Se esiste la libreria degli esempi (`~/.claude/kartello/libreria-siti/`), leggi `INDICE.md` e `tipologie.md`.
+3. Leggi l'idea iniziale e deduci tutto quello che puoi: settore, tipo di sito, obiettivo, pubblico. Dalla Repository dei template ([references/repository-template.md](references/repository-template.md) §2) leggi tre indici:
+   - `Template Analizzati/INDICE.md`;
+   - `Template Analizzati/tipologie.md`;
+   - `Tecniche Apprese/INDICE.md`.
+
+   Il catalogo `Template JSON` non si legge intero: si interroga con lo script quando servono riferimenti (V0).
 4. Chiedi la modalità dell'intervista (Rapida, Standard, Approfondita) e il **livello del sito** (G1: Low Quality, Standard o High Quality), salvo che l'utente li abbia già indicati o abbia chiesto di procedere senza domande (regola d'oro 1). Se alla modalità risponde "decidi tu", vale Standard; per il livello vale High Quality.
 
 ### Fase 1 — Brief base (sempre)
@@ -59,7 +84,7 @@ Quattro giri, in quest'ordine (in modalità Rapida diventano due giri brevi con 
 
 1. **Idea**: cosa è, settore e posizionamento, obiettivo principale, pubblico, tipo di sito, lingua, riferimenti, materiali esistenti.
 2. **Pagine**: proponi un elenco di pagine adatto al settore. L'utente conferma, toglie o aggiunge. Definisci l'obiettivo di ogni pagina e cosa va nel menu.
-3. **Stile e palette**: se la libreria ha esempi pertinenti, proponi prima i riferimenti (V0, [references/libreria-esempi.md](references/libreria-esempi.md) §5); poi proponi 2–3 direzioni da [references/stili.md](references/stili.md) (V3); lo stile scelto fornisce i default di colori, tipografia, forme e animazioni (domande C, T, V, M). In modalità Rapida non chiedere lo stile: dichiara quello dedotto prima di proporre le palette. Poi colori di brand oppure tre proposte; tema chiaro o scuro; quanto colore. Costruisci i ruoli colore e verifica i contrasti secondo [references/design-system.md](references/design-system.md) §2.
+3. **Stile e palette**: proponi prima i riferimenti della repository (V0, [references/libreria-esempi.md](references/libreria-esempi.md) §5): i Template Analizzati pertinenti e, se non bastano, i migliori del catalogo per settore e livello. Poi proponi 2–3 direzioni da [references/stili.md](references/stili.md) (V3); lo stile scelto fornisce i default di colori, tipografia, forme e animazioni (domande C, T, V, M). In modalità Rapida non chiedere lo stile: dichiara quello dedotto prima di proporre le palette. Poi colori di brand oppure tre proposte; tema chiaro o scuro; quanto colore. Costruisci i ruoli colore e verifica i contrasti secondo [references/design-system.md](references/design-system.md) §2.
 4. **Tipografia**: font e scala (compatta, equilibrata, d'impatto). Mostra la tabella con Display, H1–H6, testi e bottoni, con misure desktop e mobile, e falla approvare: da qui in poi è fissa. Vedi [references/design-system.md](references/design-system.md) §3.
 
 ### Fase 2 — Approfondimento mirato
@@ -85,7 +110,7 @@ Prima di scrivere codice presenta, in quest'ordine:
 6. **FAQ**: da sei a dodici domande e risposte, se pertinente.
 7. **SEO**: indicizzare o no, title e meta description per pagina, dati strutturati ([references/seo.md](references/seo.md)).
 8. **Layout** delle landing: A, B, C, D o E, con il motivo.
-9. **Scena d'impatto in motion graphics** (livello High Quality, o Standard se scelto con M4): 2–3 idee diverse, quella consigliata, e lo storyboard in 5–8 battute con i tempi ([references/motion-graphics.md](references/motion-graphics.md) §1, [references/effetti-impatto.md](references/effetti-impatto.md)).
+9. **Scena d'impatto in motion graphics** (livello High Quality, o Standard se scelto con M4): 2–3 idee diverse, quella consigliata, e lo storyboard in 5–8 battute con i tempi ([references/motion-graphics.md](references/motion-graphics.md) §1, [references/effetti-impatto.md](references/effetti-impatto.md)). Per gli effetti principali mostra il **confronto** tra la tua soluzione e le tecniche apprese pertinenti (`Tecniche Apprese/INDICE.md`): la scelta consigliata e il perché (regola d'oro 13). Se la scelta spetta all'utente, falla approvare insieme al piano.
 10. **Piano degli asset**: ogni immagine, icona illustrativa, logo e video del sito, con come nasce (codice, cliente o Studio AI, e per Studio AI perché il codice non basta), formato e nome file, più la stima dei costi di ciò che passa da Studio AI ([references/grafica-in-codice.md](references/grafica-in-codice.md), [references/contenuti-visivi.md](references/contenuti-visivi.md) §3 e §12).
 
 Scrivi i testi secondo [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §6–§7 e [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §1; per SEO e layout segui [references/strategia-e-struttura.md](references/strategia-e-struttura.md) §8 e §5.
@@ -103,13 +128,20 @@ Attendi l'approvazione o le correzioni. Dopo l'approvazione salva il piano in `d
 7. **Animazioni** secondo il livello scelto ([references/motion.md](references/motion.md)).
 8. **Studio AI, proporzionato al livello**: se servono fotografie o riprese che il codice non può fare e che il cliente non ha, proponi l'elenco con il motivo e la stima (`stima_costo`), dentro il budget base del livello (G1), e per ogni generazione in più chiedi spiegando che il sito resta allo stesso livello; genera solo dopo il sì, con le regole di [references/contenuti-visivi.md](references/contenuti-visivi.md). Al livello High Quality le generazioni che servono alla scena d'impatto si preparano prima, nella Fase 5 punto 2.
 
+Prima di scrivere un effetto, un movimento, una scena 3D o una soluzione per le prestazioni non già decisi nel piano, fai il confronto della regola d'oro 13: tua soluzione contro tecniche apprese, poi la migliore, adattata al design system. Se durante la costruzione l'opzione scelta rende peggio del previsto (fotogrammi persi, peso, resa su mobile), prova l'alternativa e dillo all'utente.
+
 Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla volta, così le modifiche restano controllabili. Dopo ogni sezione completata aggiorna lo stato in `docs/piano-sito.md`. Durante tutta la costruzione valgono [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) e il design system del progetto.
 
 ### Fase 6 — Controllo qualità e consegna
 
 1. Passa la [checklist](references/checklist.md), compreso il controllo meccanico e il controllo SEO, e correggi ciò che non va.
 2. Registra la scena d'impatto e la Home in video e rivedile ([references/motion-graphics.md](references/motion-graphics.md) §6). Se possibile avvia il sito e controllalo a 375px, 768px e 1280px di larghezza (telefoni in dettaglio: [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) §6). Nella consegna distingui i controlli fatti da quelli non fatti.
-3. Consegna: cosa è stato fatto, come avviarlo, i file creati con Studio AI e dove sono, il costo totale (`riepilogo_spese`), l'elenco "Contenuti da sostituire", i punti aperti e i prossimi passi consigliati.
+3. **Restituisci alla repository.** Se nel confronto ha vinto una soluzione migliore di quella della repository (la tua o una tecnica migliorata), o ne hai creata una nuova riusabile, aggiornala in `Tecniche Apprese/`:
+   - versione alzata e riga nello storico, con il motivo per cui ha vinto il confronto;
+   - nuovo file e riga nell'indice, se la tecnica è nuova.
+
+   Così il sito successivo parte da lì ([references/repository-template.md](references/repository-template.md) §5).
+4. Consegna: cosa è stato fatto, come avviarlo, i file creati con Studio AI e dove sono, il costo totale (`riepilogo_spese`), l'elenco "Contenuti da sostituire", i confronti fatti (soluzione scelta e perché) e le tecniche apprese aggiornate, i punti aperti e i prossimi passi consigliati.
 
 ## Riferimenti
 
@@ -129,6 +161,8 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/seo.md](references/seo.md) | Fasi 4 e 6: title, meta, dati strutturati, contenuti citabili dalle AI, controllo SEO |
 | [references/effetti-impatto.md](references/effetti-impatto.md) | Fasi 2 e 4: effetto d'impatto (M4) e diversità tra siti |
 | [references/siti-3d-scroll.md](references/siti-3d-scroll.md) | Se l'effetto d'impatto è un "3D scroll" (famiglia E): ricette E1–E7 e motore in `assets/scroll-3d/` |
+| [references/repository-template.md](references/repository-template.md) | Fase 0 e ogni volta che servono riferimenti o tecniche: dove si trova la repository, come è fatta, come si cerca nel catalogo, come si aggiungono template e tecniche; script in `assets/template-repo/` |
 | [references/libreria-esempi.md](references/libreria-esempi.md) | Modalità Impara, domanda V0 e uso dei riferimenti; script in `assets/analisi-sito/` |
+| [references/requisiti.md](references/requisiti.md) | Fase 0: strumenti da installare con il consenso dell'utente; script in `assets/setup/` |
 | [references/checklist.md](references/checklist.md) | Fase 6 |
 | [references/fonti.md](references/fonti.md) | Origine delle regole integrate e licenze |

@@ -288,7 +288,27 @@ Grafica, illustrazioni, icone, logo, sfondi, animazioni, motion graphics, 3D e v
 
 ## Scelta del proprietario: imparare dagli esempi
 
-La skill impara dai siti di esempio indicati dall'utente: li analizza da sola nel browser (basta l'indirizzo), ne ricava struttura, layout, grafica, immagini e motion graphics, registra i punti forti scelti dall'utente e li cataloga per tipologia in una libreria personale fuori dal plugin (`~/.claude/kartello/libreria-siti/`). Nei siti nuovi i riferimenti si adattano al brand e non si copia nulla. Dove si trova: [libreria-esempi.md](libreria-esempi.md), script `assets/analisi-sito/analizza-sito.mjs` (codice originale), modello `templates/scheda-esempio.md`, regola d'oro 12 e Fase 0 di `SKILL.md`, domande I7 e V0 in [domande.md](domande.md), brief e checklist.
+La skill impara dai siti di esempio indicati dall'utente: li analizza da sola nel browser (basta l'indirizzo), ne ricava struttura, layout, grafica, immagini e motion graphics, registra i punti forti scelti dall'utente e li cataloga per tipologia, fuori dal plugin (versione 1: `~/.claude/kartello/libreria-siti/`; dalla versione 2 nella Repository dei template, sezione seguente). Nei siti nuovi i riferimenti si adattano al brand e non si copia nulla. Dove si trova: [libreria-esempi.md](libreria-esempi.md), script `assets/analisi-sito/analizza-sito.mjs` (codice originale), modello `templates/scheda-esempio.md`, regola d'oro 12 e Fase 0 di `SKILL.md`, domande I7 e V0 in [domande.md](domande.md), brief e checklist.
+
+## Scelta del proprietario: Repository dei template e tecniche apprese (versione 2)
+
+I riferimenti vivono in una cartella separata dalla skill, la **Repository dei template**, che l'utente fa crescere. Contiene:
+- **Template Analizzati**: siti studiati a 360 gradi, divisi per categoria;
+- **Template JSON**: un catalogo di siti premiati, interrogato con uno script;
+- **Tecniche Apprese**: metodi in codice imparati dai siti e riscritti da zero. Sono alternative da confrontare, ogni volta, con la soluzione propria di Claude Code: vince la migliore, oppure decide l'utente. Si aggiornano con versione e storico quando una soluzione migliore vince il confronto.
+
+L'ordine di consultazione è fisso: prima i template analizzati, poi il catalogo. Dove si trova:
+- [repository-template.md](repository-template.md) e regole d'oro 12 e 13 di `SKILL.md`;
+- Fase 0, Fase 4 punto 9, Fase 5 e Fase 6 punto 3;
+- [libreria-esempi.md](libreria-esempi.md) §1, §3 e §5, domanda V0;
+- modelli `scheda-esempio.md` e `tecnica.md`;
+- script in `assets/template-repo/` (`repository.mjs`, `cerca-template.mjs`, `collega-template.mjs`, `analisi-rea.mjs`), codice originale.
+
+## Scelta del proprietario: strumenti installati con il consenso (versione 2)
+
+La skill controlla da sola gli strumenti che le servono (Node, Playwright e browser, ffmpeg, Python, REA, repository) e li installa solo dopo il sì dell'utente: gli strumenti della skill sul computer, le librerie del sito nella cartella del progetto. Dove si trova: [requisiti.md](requisiti.md), regola d'oro 14 e Fase 0 di `SKILL.md`, script `assets/setup/requisiti.mjs` (codice originale).
+
+**Strumento esterno usato, non integrato:** REA — Reverse Engineer Anything (`rea-agents` su npm, repository morluto/rea, licenza MIT). La skill lo esegue da riga di comando per l'analisi profonda dei siti; nessuna parte del suo codice o della sua documentazione è copiata nella skill.
 
 ## Aggiunte Kartello
 

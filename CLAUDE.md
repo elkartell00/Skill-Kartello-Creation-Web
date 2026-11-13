@@ -8,6 +8,9 @@ Questa repository contiene una skill per Claude Code, distribuita come plugin
 - La skill è in `plugins/kartello-creation-web/skills/creation-web/`.
   `SKILL.md` contiene il flusso e le regole d'oro; il dettaglio sta in `references/` e i modelli in `templates/`.
 - `.claude/skills/creation-web` è un link simbolico alla stessa cartella: non duplicare file lì.
+- La Repository dei template (template analizzati, catalogo, tecniche apprese) **non** sta in questa repository:
+  è una cartella dell'utente, trovata con `KARTELLO_TEMPLATE` o `~/.claude/kartello/template-siti`
+  (vedi `references/repository-template.md`). Gli script che la usano sono in `assets/template-repo/`.
 - Se si rinomina la skill o il plugin, aggiornare insieme: nome della cartella, `name` nel frontmatter,
   `plugin.json`, `marketplace.json`, il link simbolico e `README.md`.
 

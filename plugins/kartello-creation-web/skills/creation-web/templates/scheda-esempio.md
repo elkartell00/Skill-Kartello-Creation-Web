@@ -3,7 +3,11 @@
 - Indirizzo: {https://…} · Pagine analizzate: {home, …}
 - Data dell'analisi: {gg/mm/aaaa} · Analisi: {completa con il browser | parziale, solo HTML}
 - Tipologia: {nome in tipologie.md} · Settore del sito: {…} · Livello corrispondente (G1): {Low Quality | Standard | High Quality}
-- Piattaforma e librerie rilevate: {es. Webflow, GSAP, ScrollTrigger, Lenis}
+- Piattaforma e librerie rilevate: {es. Webflow, GSAP, ScrollTrigger, Lenis} · Analisi profonda REA: {sì, vedi rea/evidenze.md | no}
+- Categoria della repository: {es. Food & Drink} · Id: {slug del catalogo o dominio} · Premi Awwwards e anno: {…}
+- Catalogo: {Template JSON/<Categoria>/<Nome sito>/sito.json | sito fuori catalogo}
+
+![panoramica](panoramica-desktop.jpg)
 
 ## Punti forti scelti dall'utente
 1. {punto forte, con le parole dell'utente}
@@ -40,8 +44,13 @@ Note dell'utente: {…}
 
 ## 6. Come rifarlo in codice
 - Strumenti e approccio:
+- Tecniche apprese da questo sito (file in `Tecniche Apprese/`, nuove o aggiornate):
 
 ## Come adattarlo a un altro brand
 - Cosa resta uguale (metodo, struttura, movimento):
 - Cosa cambia sempre (colori, font, testi, immagini, SEO del brand):
 - Settori in cui funziona bene:
+
+## Evidenze e limiti
+- File di questa cartella: `design-system.json` (valori misurati), `struttura.json` (sezioni con le foto), `passi/`, `rea/`
+- Cosa non è stato visto o verificato:

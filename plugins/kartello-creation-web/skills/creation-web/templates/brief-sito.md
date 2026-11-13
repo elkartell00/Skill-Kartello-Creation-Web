@@ -36,7 +36,8 @@ CTA nell'header:
 ## Tono e stile
 - Tono di voce; tu o lei:
 - Direzione stilistica:
-- Riferimenti dalla libreria (V0): {esempio → cosa si prende: struttura, layout, grafica, immagini, movimento | nessuno}
+- Riferimenti dalla Repository dei template (V0): {template analizzato o sito del catalogo → cosa si prende: struttura, layout, grafica, immagini, movimento | nessuno}
+- Tecniche apprese da valutare: {id delle tecniche in Tecniche Apprese da confrontare con la soluzione propria | nessuna}
 - Densità, angoli, gradienti:
 - Movimento, navigazione, tagline reveal:
 - Priorità mobile (V7):

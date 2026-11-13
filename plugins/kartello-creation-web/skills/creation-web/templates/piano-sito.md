@@ -64,6 +64,14 @@ Ripeti il blocco "Pagina" per ogni pagina della mappa. Nelle pagine interne tien
 |---|---|---|---|
 | Home | {sì \| no (`noindex`)} | | |
 
+## Scelte tecniche
+
+Per ogni effetto, movimento, scena 3D o soluzione per le prestazioni: la soluzione propria di Claude Code confrontata con le tecniche apprese pertinenti, sugli stessi criteri (resa e aderenza al design system, prestazioni, accessibilità e SEO, semplicità del codice, tempo, compatibilità con la tecnologia). Vince la migliore; se si equivalgono o la differenza cambia ciò che l'utente vede, il budget o i tempi, decide l'utente ([repository-template.md](../references/repository-template.md) §5).
+
+| Effetto | Soluzione propria | Tecnica appresa | Scelta | Perché | Deciso da |
+|---|---|---|---|---|---|
+| {es. scroll della hero} | {es. Lenis + ScrollTrigger} | {es. scroll-virtuale-infinito v1 \| nessuna} | {propria \| appresa} | {una riga} | {Claude \| utente} |
+
 ## Piano degli asset
 
 Cartella delle immagini: `{public/img}` · Stile salvato in Studio AI (solo se usato): {nome} · Studio AI: {collegato | non collegato: segnaposto etichettati}

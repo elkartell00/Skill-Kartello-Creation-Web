@@ -1,7 +1,7 @@
 {
   "name": "kartello-creation-web",
-  "description": "Crea siti web da zero per qualsiasi settore con domande guidate, design system fisso e costruzione sezione per sezione",
-  "version": "0.7.0",
+  "description": "Crea siti web da zero per qualsiasi settore con domande guidate, design system fisso e costruzione sezione per sezione; impara dalla Repository dei template e dalle tecniche apprese, migliorando a ogni sito",
+  "version": "2.0.0",
   "author": {
     "name": "elkartell00",
     "url": "https://github.com/elkartell00"
@@ -14,6 +14,9 @@
     "landing page",
     "design system",
     "web design",
-    "tailwind"
+    "tailwind",
+    "template",
+    "awwwards",
+    "REA"
   ]
 }

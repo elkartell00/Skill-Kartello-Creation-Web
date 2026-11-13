@@ -5,11 +5,14 @@
 // Serve a imparare il metodo, non a copiare: testi, immagini, loghi e codice non si riusano.
 //
 // Uso:  node analizza-sito.mjs <url> [cartella-output] [--passi 40] [--solo-desktop] [--video]
+//       [--scroll-virtuale] [--forza 1500]   per le esperienze 3D che si muovono solo con la rotella
+//       (attivato da solo se la pagina non scorre ma ha un canvas)
 // Requisiti: Node 18+ e Playwright (npm install -g playwright). Usa il Chromium di Playwright
 // o, se manca, Chrome o Edge già installati.
 
 import { createRequire } from 'node:module';
 import { execSync } from 'node:child_process';
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -18,10 +21,10 @@ import { pathToFileURL } from 'node:url';
 const argv = process.argv.slice(2);
 const flag = n => argv.includes(n);
 const opt = (n, d) => { const i = argv.indexOf(n); return i >= 0 && argv[i + 1] ? argv[i + 1] : d; };
-const pos = argv.filter((a, i) => !a.startsWith('--') && !(i > 0 && argv[i - 1] === '--passi'));
+const pos = argv.filter((a, i) => !a.startsWith('--') && !(i > 0 && ['--passi', '--forza'].includes(argv[i - 1])));
 const url = pos[0];
 if (!url || !/^https?:\/\//.test(url)) {
-  console.error('Uso: node analizza-sito.mjs <url http/https> [cartella-output] [--passi 40] [--solo-desktop] [--video]');
+  console.error('Uso: node analizza-sito.mjs <url http/https> [cartella-output] [--passi 40] [--solo-desktop] [--video] [--scroll-virtuale] [--forza 1500]');
   process.exit(1);
 }
 const slug = new URL(url).hostname.replace(/^www\./, '').replace(/[^a-z0-9]+/gi, '-')
@@ -250,8 +253,31 @@ async function analizzaVista(browser, nome, contesto, rete) {
   const passi = [];
   const altezza0 = await page.evaluate(() => document.documentElement.scrollHeight);
   const passo = Math.max(Math.round(vh * 0.7), Math.round(altezza0 / maxPassi));
+  // Scroll virtuale (versione 2): la pagina non scorre ma ha un canvas, come le esperienze 3D
+  // guidate dalla rotella. Si continua a girare la rotella e si fotografa a ogni passo.
+  // Il canvas può stare in uno shadow DOM chiuso: conta anche lo scroll bloccato su html o body.
+  const virtuale = flag('--scroll-virtuale') || await page.evaluate(() => {
+    const bloccato = [document.documentElement, document.body].some(e => /hidden|clip/.test(getComputedStyle(e).overflowY));
+    const canvas = !!document.querySelector('canvas') || [...document.querySelectorAll('*')].some(e => e.shadowRoot?.querySelector('canvas'));
+    return document.documentElement.scrollHeight <= innerHeight + 4 && (canvas || bloccato);
+  });
+  if (virtuale) {
+    const forza = parseInt(opt('--forza', '1500'), 10) || 1500;   // pixel di rotella per passo
+    let uguali = 0, ultimoHash = '';
+    for (let i = 0; i < maxPassi; i++) {
+      const f = path.join(dir, `passo-${String(i).padStart(2, '0')}.jpg`);
+      const foto = await page.screenshot({ path: f, type: 'jpeg', quality: 60 });
+      const hash = crypto.createHash('sha1').update(foto).digest('hex');
+      uguali = hash === ultimoHash ? uguali + 1 : 0;
+      ultimoHash = hash;
+      passi.push({ file: path.basename(f), rotella: i * forza });
+      if (uguali >= 2) break;                                    // la pagina non risponde più alla rotella
+      for (let k = 0; k < forza; k += 100) { await page.mouse.wheel(0, 100); await attesa(16); }
+      await attesa(2500);                                        // le scene si muovono con inerzia
+    }
+  }
   let ultimoY = -1, fermo = 0;
-  for (let i = 0; i < maxPassi; i++) {
+  for (let i = 0; i < (virtuale ? 0 : maxPassi); i++) {
     const yAttuale = await page.evaluate(() => scrollY);
     const f = path.join(dir, `passo-${String(i).padStart(2, '0')}.jpg`);
     await page.screenshot({ path: f, type: 'jpeg', quality: 60 });
@@ -272,7 +298,7 @@ async function analizzaVista(browser, nome, contesto, rete) {
   const files = passi.map(p => path.join(dir, p.file));
   await panoramica(browser, files, nome === 'desktop' ? 4 : 6, nome === 'desktop' ? 340 : 160, path.join(outDir, `panoramica-${nome}.jpg`));
   await panoramica(browser, intro, 4, nome === 'desktop' ? 340 : 160, path.join(outDir, `apertura-${nome}.jpg`));
-  return { viewport: contesto.viewport, passoScroll: passo, passi, dati };
+  return { viewport: contesto.viewport, passoScroll: passo, scrollVirtuale: virtuale, passi, dati };
 }
 
 function conta(m, k, v = 1) { if (k) m[k] = (m[k] || 0) + v; }
@@ -300,5 +326,5 @@ const risultato = {
 };
 fs.writeFileSync(path.join(outDir, 'analisi.json'), JSON.stringify(risultato, null, 2));
 console.log(`Analisi completata: ${outDir}`);
-console.log(`- panoramica-desktop.jpg e apertura-desktop.jpg (${desktop.passi.length} passi)` + (mobile ? `\n- panoramica-mobile.jpg e apertura-mobile.jpg (${mobile.passi.length} passi)` : ''));
+console.log(`- panoramica-desktop.jpg e apertura-desktop.jpg (${desktop.passi.length} passi${desktop.scrollVirtuale ? ', scroll virtuale con la rotella' : ''})` + (mobile ? `\n- panoramica-mobile.jpg e apertura-mobile.jpg (${mobile.passi.length} passi)` : ''));
 console.log(`- analisi.json · librerie rilevate: ${desktop.dati.librerie?.join(', ') || 'nessuna'}`);

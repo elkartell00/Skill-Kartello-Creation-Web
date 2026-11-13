@@ -35,7 +35,8 @@ Da passare nella Fase 6, pagina per pagina. Le voci marcate [F1] vengono da `lan
 - [ ] Niente Lorem Ipsum, marchi segnaposto, cliché o numeri tondi finti [F1]
 - [ ] Tutti i segnaposto elencati in "Contenuti da sostituire"
 - [ ] Tono di voce e "tu" o "lei" coerenti in tutto il sito
-- [ ] Riferimenti dalla libreria adattati, non copiati: nessun testo, immagine, logo, codice, colore o font del sito di esempio; il sito è riconoscibile come del brand ([libreria-esempi.md](libreria-esempi.md) §4)
+- [ ] Riferimenti dalla Repository dei template adattati, non copiati: nessun testo, immagine, logo, codice, colore o font del sito di esempio; il sito è riconoscibile come del brand ([libreria-esempi.md](libreria-esempi.md) §4)
+- [ ] Tecniche apprese: per ogni effetto principale confrontate con la soluzione propria sugli stessi criteri, scelta motivata nel piano (o decisa dall'utente se le opzioni si equivalevano); se ha vinto una soluzione migliore di quella della repository, aggiornata in `Tecniche Apprese/` con versione e storico ([repository-template.md](repository-template.md) §5)
 
 ## Scena d'impatto
 - [ ] Livello High Quality: scena d'impatto in motion graphics costruita in codice e rivista su registrazione almeno tre volte ([motion-graphics.md](motion-graphics.md) §7); il risultato è di livello premium
