@@ -15,6 +15,7 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | F8 | GSAP AI Skills ufficiali: `gsap-core`, `gsap-timeline`, `gsap-scrolltrigger`, `gsap-plugins`, `gsap-utils`, `gsap-react`, `gsap-frameworks`, `gsap-performance` | [greensock/gsap-skills](https://github.com/greensock/gsap-skills), commit aed9cfd3 | MIT | 2026-11-13 |
 | F9 | Lenis 1.3.27: README, pacchetti `lenis/react`, `lenis/vue`, `lenis/snap`, CSS consigliato, manifesto | [darkroomengineering/lenis](https://github.com/darkroomengineering/lenis), commit 5fe20e4 | MIT | 2026-11-13 |
 | F10 | React Bits: catalogo dei componenti, installazione, registro shadcn e MCP | [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits), commit 9d9c687 | MIT con Commons Clause: nessun codice copiato nella skill | 2026-11-13 |
+| F11 | `website-builder-setup` (installazione di UI/UX Pro Max, Framer Motion e 21st.dev Magic) | Fornita dal proprietario (zip, autore tenfoldmarc) | Nessuna licenza dichiarata: solo idee riscritte | 2026-11-13 |
 
 ---
 
@@ -409,6 +410,28 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+
+## F11 — website-builder-setup (tenfoldmarc)
+
+Skill di una pagina che guida chi non programma a installare tre strumenti: la banca dati UI/UX Pro Max, la libreria Framer Motion e il server MCP di 21st.dev Magic. Nessuna licenza dichiarata: integrate solo le idee, con testo e comandi riscritti. Prima di integrarla sono stati verificati i pacchetti: due dei tre comandi erano superati.
+
+| Parte di F11 | Dove è finita |
+|---|---|
+| Procedura guidata un passo alla volta, controllo di Node.js, "se un passo non riesce dai il comando manuale e prosegui", riavvio di Claude Code, invito a creare il primo sito | Modalità Prepara: [preparazione.md](preparazione.md); `SKILL.md` Fase 0 punto 0 e `argument-hint` |
+| UI/UX Pro Max | [banca-dati-design.md](banca-dati-design.md); passo 4 della preparazione; controllo in `requisiti.mjs`; domande V3, C2 e T; checklist |
+| 21st.dev Magic | [componenti-animati.md](componenti-animati.md) §10; passo 5 della preparazione; controllo in `requisiti.mjs`; checklist |
+| Framer Motion | [motion.md](motion.md) §7; raccomandazione della libreria in W4 |
+
+**Corretti rispetto alla fonte (precisazioni Kartello):**
+- UI/UX Pro Max: il pacchetto `uipro-cli` è superato (oggi `ui-ux-pro-max-cli`); per Claude Code si usa il plugin ufficiale del marketplace `nextlevelbuilder/ui-ux-pro-max-skill`, licenza MIT. Le sue skill di design non guidano quando è attiva Creation Web: la banca dati si usa solo come fonte di dati, mai i suoi file `MASTER.md`.
+- 21st.dev: `@21st-dev/magic` è un vecchio pacchetto di compatibilità e le chiavi della console Magic sono state annullate; si usa la CLI `@21st-dev/cli` con accesso dal browser. Mai chiavi incollate in chat né scritte dalla skill nei file di configurazione. Non è "gratis" senza limiti: il codice dei componenti ha un limite giornaliero gratuito e la generazione con l'AI è a pagamento, quindi vale la regola sulla spesa.
+- Framer Motion: oggi `motion` (import da `motion/react`); si installa nel progetto dopo la scelta della tecnologia, non durante la preparazione, e resta un'opzione accanto a GSAP (W4).
+
+**Già decisi dal proprietario, quindi prevalgono sulla fonte:** linguaggio professionale invece del tono informale della fonte; installazione solo dopo il consenso (regola d'oro 14), che nella modalità Prepara è la conferma dell'elenco iniziale; GSAP consigliato per scena d'impatto e scroll, Motion come alternativa.
+
+**Non integrato:** le istruzioni di installazione della skill stessa (`~/.claude/commands`, `claude install-skill`), le frasi promozionali ("sito da 500 o da 10.000 dollari"), la scrittura diretta della chiave API in `~/.claude.json`.
+
+**Strumenti esterni usati, non copiati:** UI/UX Pro Max (repository nextlevelbuilder/ui-ux-pro-max-skill, licenza MIT; nessun dato copiato nella skill, la banca dati si interroga dove l'utente l'ha installata) e la CLI di 21st.dev (`@21st-dev/cli`, licenza MIT; i componenti hanno le licenze dei rispettivi autori).
 
 ## Scelta del proprietario: livello del sito e spesa proporzionata
 

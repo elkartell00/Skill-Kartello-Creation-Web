@@ -173,3 +173,16 @@ document.querySelectorAll('[data-tagline]').forEach(initTaglineReveal);
 
 Quando lo scroll fa avanzare un video (telecamera che vola tra scene generate), segui [scroll-cinematico.md](scroll-cinematico.md): motore pronto in `assets/scroll-cinematico/`, video caricati come Blob, ricerche raggruppate su mobile, poster finché il video non disegna, solo immagini con `prefers-reduced-motion`. Valgono comunque le regole del §2.
 
+## §7 Motion (ex Framer Motion) nei siti in React
+
+Motion è la libreria di animazione per i componenti React, alternativa a GSAP quando servono soprattutto animazioni di componenti (domanda W4, libreria di animazione). `website-builder-setup` la proponeva per tutti i siti [F11]; nella skill è un'opzione, raccomandata secondo il brief (aggiunta Kartello). Valgono le regole del §2.
+
+- **Pacchetto**: oggi si chiama `motion` e si importa da `motion/react`; `framer-motion` è il nome precedente e resta compatibile. Si installa nel progetto, non sul computer: `npm install motion` (aggiunta Kartello).
+- **Curva del design system**: `transition={{ ease: [0.32, 0.72, 0, 1] }}`, gli stessi valori del token `--ease-fluid`; le durate secondo M1 (aggiunta Kartello).
+- **Movimento ridotto**: avvolgi l'app in `<MotionConfig reducedMotion="user">`, che toglie spostamenti e trasformazioni a chi ha scelto il movimento ridotto; per i casi particolari usa l'hook `useReducedMotion()` (aggiunta Kartello).
+- **Comparse allo scroll** (§3): `initial`, `whileInView` e `viewport={{ once: true, amount: 0 }}`, con gli stessi valori di spostamento, sfocatura e durata del §3 (aggiunta Kartello).
+- **Rendering sul server**: in Next.js i componenti animati sono componenti client (`'use client'`) (aggiunta Kartello).
+- **Peso**: per pagine con poche animazioni usa `LazyMotion` con il componente `m` invece di `motion`, che carica solo le funzioni usate (aggiunta Kartello).
+- **Scroll morbido**: con Lenis, collega l'aggiornamento al ciclo `frame` di Motion ([scroll-morbido.md](scroll-morbido.md) §5).
+- Non mescolare GSAP e Motion sullo stesso elemento: scegli una libreria per ogni animazione.
+

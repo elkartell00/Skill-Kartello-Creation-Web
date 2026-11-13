@@ -85,6 +85,35 @@ aggiungi({ id: 'rea', nome: 'REA (Reverse Engineer Anything)', serve: 'analisi p
   presente: !!(rea && reaV), dettaglio: rea ? `versione ${reaV ?? 'sconosciuta'}${nodePerRea ? '' : ' (Node troppo vecchio: aggiorna Node prima)'}` : 'non trovato',
   installa: 'npm install -g rea-agents (con Node 24.22.1 o più recente)' });
 
+// UI/UX Pro Max (banca dati di design): plugin di Claude Code o skill installata nel progetto o nella cartella utente.
+function trovaFile(radice, fine, profondita = 10) {
+  try {
+    for (const voce of fs.readdirSync(radice, { withFileTypes: true })) {
+      const p = path.join(radice, voce.name);
+      if (voce.isFile() && p.endsWith(fine)) return p;
+      if (voce.isDirectory() && profondita > 0 && !voce.name.startsWith('.git') && voce.name !== 'node_modules') {
+        const trovato = trovaFile(p, fine, profondita - 1);
+        if (trovato) return trovato;
+      }
+    }
+  } catch {}
+  return null;
+}
+const finaleUipro = path.join('ui-ux-pro-max', 'scripts', 'search.py');
+const uipro = [path.join(process.cwd(), '.claude', 'skills', finaleUipro), path.join(os.homedir(), '.claude', 'skills', finaleUipro)].find((p) => fs.existsSync(p))
+  || trovaFile(path.join(os.homedir(), '.claude', 'plugins'), finaleUipro);
+aggiungi({ id: 'uipro', nome: 'UI/UX Pro Max (banca dati di design)', serve: 'proposte di stili, palette e font per settore e controlli di usabilità (references/banca-dati-design.md)', obbligatorio: false,
+  presente: !!uipro, dettaglio: uipro ? `script di ricerca: ${uipro}` : 'non trovato', percorso: uipro,
+  installa: 'dentro Claude Code: /plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill e poi /plugin install ui-ux-pro-max@ui-ux-pro-max-skill' });
+
+// 21st.dev: server MCP configurato in Claude Code (configurazione utente o del progetto).
+const configMcp = [path.join(os.homedir(), '.claude.json'), path.join(process.cwd(), '.mcp.json')].some((f) => {
+  try { return /"21st[^"]*"\s*:/.test(fs.readFileSync(f, 'utf8')); } catch { return false; }
+});
+aggiungi({ id: '21st', nome: '21st.dev (componenti React)', serve: 'cercare e installare componenti React pronti (references/componenti-animati.md §10); serve un account', obbligatorio: false,
+  presente: configMcp, dettaglio: configMcp ? 'server MCP configurato' : 'non configurato',
+  installa: 'npx @21st-dev/cli@latest init --client claude --write e poi npx @21st-dev/cli@latest login' });
+
 const repo = trovaRepository();
 aggiungi({ id: 'repository', nome: 'Repository dei template', serve: 'template analizzati, catalogo dei siti premiati e tecniche apprese', obbligatorio: false,
   presente: !!repo, dettaglio: repo ? `${repo.radice} (${repo.fonte}${repo.versione < 2 ? ', solo libreria v1' : ''})` : 'non trovata',

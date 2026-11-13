@@ -1,4 +1,4 @@
-# Componenti animati pronti (React Bits)
+# Componenti pronti per i siti in React (React Bits e 21st.dev)
 
 React Bits è una raccolta di oltre 215 componenti React animati: testi, sfondi in shader, gallerie, card, menu, cursori, micro interazioni [F10]. Nei siti in **React, Next.js o Astro con isole React** accelera la costruzione: un effetto curato si installa con un comando come codice sorgente nel progetto, poi si adatta. Le regole marcate [F10] vengono da React Bits di David Haz (vedi [fonti.md](fonti.md)); le altre sono regole della skill per usarlo senza perdere qualità.
 
@@ -113,3 +113,24 @@ Con HTML statico o Astro senza React, React Bits non si usa così com'è. Due st
 - [ ] Movimento ridotto, telefoni e tastiera provati; cursori solo con puntatore fine; testi animati leggibili dai lettori di schermo.
 - [ ] Nessun errore di rendering sul server; componenti 3D caricati in modo differito.
 - [ ] `docs/licenze.md` con l'elenco dei componenti e la licenza di React Bits; nessun componente consegnato come prodotto a parte.
+
+## §10 21st.dev
+
+21st.dev è un catalogo di componenti React (bottoni, barre di navigazione, hero, card, footer, temi) pubblicati da molti autori, che Claude Code può cercare e installare tramite il suo server MCP o la sua CLI [F11]. Valgono tutte le regole dei paragrafi precedenti: mattoni e non idea (§1), adattamento al design system (§4), qualità contro l'effetto già visto (§6), prestazioni e accessibilità (§7), controllo (§9).
+
+**Impostazione** (aggiornata rispetto a F11, che usava il vecchio pacchetto `@21st-dev/magic` e una chiave da incollare in chat; precisazione Kartello):
+- `npx @21st-dev/cli@latest init --client claude --write` aggiunge il server MCP a Claude Code; poi `npx @21st-dev/cli@latest login` apre il browser per l'accesso. Riavvia Claude Code.
+- In alternativa una chiave API presa da 21st.dev, inserita dall'utente nelle impostazioni o nella variabile d'ambiente, **mai incollata in chat**. Le vecchie chiavi "Magic" non funzionano più: va creata una chiave nuova.
+- Fa parte della preparazione come strumento facoltativo ([preparazione.md](preparazione.md) §3, passo 5).
+
+**Costi** (regola sulla spesa, aggiunta Kartello):
+- Gratuiti: la ricerca, i temi e la ricerca dei loghi.
+- Il codice dei componenti ha un piccolo limite giornaliero gratuito, oltre il quale serve un abbonamento.
+- La generazione con l'intelligenza artificiale di 21st.dev (`generate`) richiede crediti a pagamento.
+- La skill resta dentro il limite gratuito e non usa mai funzioni a pagamento senza il sì esplicito dell'utente. Quando il limite è finito, lo dice e prosegue con React Bits o con il codice proprio.
+
+**Uso nella skill** (aggiunta Kartello):
+- Si cerca prima (`search`, gratuito), si sceglie 1 candidato da confrontare con la soluzione propria (regola d'oro 13), solo allora se ne prende il codice.
+- I componenti sono di autori diversi: controlla la licenza di ognuno prima di usarlo e annotala in `docs/licenze.md`. Se la licenza non è chiara, non usarlo.
+- Pensato per React con Tailwind e shadcn: con altre tecnologie vale il §8 (solo riferimento visivo, rifatto da zero).
+- La ricerca dei loghi (`logo`) serve solo per loghi di clienti o partner reali che hanno dato il consenso a comparire sul sito; mai loghi di marchi famosi come finte prove sociali (regola d'oro 6).

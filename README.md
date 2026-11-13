@@ -1,11 +1,19 @@
-# Skill Kartello Creation Siti Web — versione 2
+# Skill Kartello Creation Siti Web — versione 3
 
 Skill per [Claude Code](https://code.claude.com) che crea siti web da zero per qualsiasi settore.
 Quando la avvii ti fa domande mirate, fissa un design system che resta costante su tutto il sito,
 poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 
-> Stato: **versione 2.2.1**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
+> Stato: **versione 3.0.0**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
 > e, dalla versione 2, imparando dalla **Repository dei template**: più template e tecniche ci metti, più diventa brava.
+
+## Novità della versione 3.0.0
+
+- **Preparazione guidata del computer**: scrivi `/creation-web prepara` e la skill installa, un passo alla volta e solo dopo il tuo sì, tutto ciò che le serve. Spiega a cosa serve ogni strumento, non si blocca se un passo non riesce e alla fine ti propone il primo sito. Guida: `references/preparazione.md`.
+- **Banca dati di design** (UI/UX Pro Max, gratuita): proposte di stili, palette e font più adatte al settore e controlli di usabilità. Resta un aiuto: le proposte passano dalle regole della skill e il design system resta uno solo. Guida: `references/banca-dati-design.md`.
+- **Componenti di 21st.dev** per i siti in React, facoltativi: ricerca gratuita, nessuna funzione a pagamento senza il tuo consenso, licenza di ogni componente controllata.
+- **Motion (ex Framer Motion)**: regole d'uso nei siti in React, come alternativa a GSAP.
+- Integrata la skill `website-builder-setup`, correggendo i comandi superati e la gestione delle chiavi.
 
 ## Novità della versione 2.2.0
 

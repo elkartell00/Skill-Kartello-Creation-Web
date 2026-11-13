@@ -23,6 +23,8 @@ Lo script non installa nulla: dice cosa c'è, cosa manca e il comando giusto per
 | ffmpeg | video della scena d'impatto, scroll cinematico, 3D scroll a fotogrammi | solo per quei passi | `brew install ffmpeg` · `sudo apt install ffmpeg` · `winget install Gyan.FFmpeg` | animazione in codice senza video; registrazione con Playwright |
 | Python 3 | `knockout.py` dello scroll cinematico, strumenti della repository | solo per quei passi | `brew install python` | scontorno con altri metodi |
 | REA | analisi profonda dei siti: codice, librerie e versioni, rotte, risorse 3D, font, audio ([repository-template.md](repository-template.md) §7) | no, consigliato | `npm install -g rea-agents` (serve Node 24.22.1+, 22.23.4+ o 26.12.1+) | analisi senza la parte tecnica, dichiarata nella scheda |
+| UI/UX Pro Max | banca dati di stili, palette, font e regole di usabilità per settore ([banca-dati-design.md](banca-dati-design.md)) | no, consigliato | `/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill` poi `/plugin install ui-ux-pro-max@ui-ux-pro-max-skill` (serve Python 3) | proposte da [stili.md](stili.md) |
+| 21st.dev | componenti React pronti ([componenti-animati.md](componenti-animati.md) §10) | no, facoltativo; serve un account, con un limite gratuito | `npx @21st-dev/cli@latest init --client claude --write` poi `npx @21st-dev/cli@latest login` | React Bits o codice proprio |
 | Repository dei template | riferimenti e tecniche apprese | no, consigliata | collegamento o variabile ([repository-template.md](repository-template.md) §1) | stili di [stili.md](stili.md) e libreria della v1 se c'è |
 
 ## §3 Dove si installa
