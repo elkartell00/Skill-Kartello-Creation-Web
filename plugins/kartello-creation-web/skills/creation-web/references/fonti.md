@@ -14,6 +14,7 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | F7 | `scroll-cinematic` (skill più vecchia) | Fornita dal proprietario | Nessuna licenza: solo idee, nessun codice copiato | 2026-10-11 |
 | F8 | GSAP AI Skills ufficiali: `gsap-core`, `gsap-timeline`, `gsap-scrolltrigger`, `gsap-plugins`, `gsap-utils`, `gsap-react`, `gsap-frameworks`, `gsap-performance` | [greensock/gsap-skills](https://github.com/greensock/gsap-skills), commit aed9cfd3 | MIT | 2026-11-13 |
 | F9 | Lenis 1.3.27: README, pacchetti `lenis/react`, `lenis/vue`, `lenis/snap`, CSS consigliato, manifesto | [darkroomengineering/lenis](https://github.com/darkroomengineering/lenis), commit 5fe20e4 | MIT | 2026-11-13 |
+| F10 | React Bits: catalogo dei componenti, installazione, registro shadcn e MCP | [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits), commit 9d9c687 | MIT con Commons Clause: nessun codice copiato nella skill | 2026-11-13 |
 
 ---
 
@@ -356,6 +357,57 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
+## F10 — React Bits (DavidHDev/react-bits)
+
+Raccolta di oltre 215 componenti React animati (testi, animazioni, componenti, micro interazioni, sfondi), installabili come sorgente con la CLI di shadcn o con jsrepo. Integrata come **catalogo e metodo d'uso**, non come codice: la licenza vieta di ridistribuire i componenti in sé, quindi nella skill non c'è nessun file di React Bits. I componenti si installano nel progetto del cliente al momento della costruzione, che è l'uso consentito. Prima di scrivere le regole sono stati letti i sorgenti di tutti i 218 componenti, per ricavare dipendenze, supporto al movimento ridotto, pausa fuori schermo e limite della densità di pixel.
+
+| Parte di F10 | Dove è finita |
+|---|---|
+| Categorie e componenti (Text Animations, Animations, Components, Micro, Backgrounds) | Catalogo per esigenza in [componenti-animati.md](componenti-animati.md) §5, collegato alle ricette di [motion-graphics.md](motion-graphics.md) §3 |
+| Installazione (varianti JS e TS, CSS e Tailwind, shadcn, jsrepo, registro in `components.json`, server MCP) | [componenti-animati.md](componenti-animati.md) §3 |
+| Licenza MIT con Commons Clause | [componenti-animati.md](componenti-animati.md) §2; questa sezione |
+| Analisi dei sorgenti: dipendenze, movimento ridotto, prestazioni | [componenti-animati.md](componenti-animati.md) §3 e §7 |
+
+**Diventato opzione, non regola:** React Bits è un'alternativa da confrontare (regola d'oro 13) nei siti in React, Next.js o Astro con isole React; non influisce sulla scelta della tecnologia (W4).
+
+**Aggiunte Kartello nel file:** il ruolo di mattone e non di idea; l'adattamento obbligatorio al design system (token, `type-*`, curva `fluid`, icone del sito); il limite di un componente "da vetrina" per pagina e di un solo sfondo WebGL visibile; la diversità tra siti; il completamento dell'accessibilità per i componenti che non gestiscono movimento ridotto o lettori di schermo; il rendering lato server in Next.js e Astro; il file `docs/licenze.md` nel progetto; le due strade per i siti senza React; il controllo prima della consegna; la riga sui componenti famosi lasciati con i parametri della demo in [contenuti-e-qualita.md](contenuti-e-qualita.md) §7.
+
+**Non integrato:** il codice dei componenti (vietato dalla licenza), gli strumenti del sito di React Bits (Background Studio, Texture Lab, Shape Magic, Center Stage, Sound Lab) e la libreria di suoni, React Bits Pro (a pagamento: non si propone senza richiesta), le pagine del sito e il materiale promozionale.
+
+### Licenza F10
+
+```
+MIT + Commons Clause License Condition v1.0
+
+Copyright (c) 2026 David Haz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, and distribute the Software **as part of an application, website, or product**, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+## Commons Clause Restriction
+
+You may use this Software, including for any commercial purpose, **so long as you do not sell, sublicense, or redistribute the components themselves-whether alone, in a bundle, or as a ported version.**
+
+The same restriction covers the React Bits tools (Background Studio, Texture Lab, Shape Magic, Center Stage, Sound Lab and any tools added later) and the sounds in the sound library. **You may not sell, sublicense, or redistribute the tools or the sounds themselves, or offer the tools or a substantially similar copy of them as a hosted service-whether alone, in a bundle, or as a ported version.**
+
+What you make with the tools is yours to use. You can use exported code, images, videos, and audio files in any personal or commercial application, website, or product, including paid ones. **You may not sell or redistribute the exports on their own, either individually or as the product itself, such as a sound, texture, background, or template pack.**
+
+## No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 ## Scelta del proprietario: livello del sito e spesa proporzionata

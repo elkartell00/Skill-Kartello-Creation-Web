@@ -79,6 +79,7 @@ grep -rn ' — ' src/ app/ 2>/dev/null                                          
 - [ ] Nessun accesso a `window`, `document` o `localStorage` fuori dagli effetti nei framework con rendering lato server
 - [ ] Con GSAP: controllo del [gsap.md](gsap.md) §9 superato (plugin registrati, niente `markers` né strumenti di sviluppo in produzione, ScrollTrigger solo al primo livello, `refresh()` dopo i font, `matchMedia` con movimento ridotto, pulizia nei componenti) [F8]
 - [ ] Con Lenis: controllo di [scroll-morbido.md](scroll-morbido.md) §9 superato (CSS incluso, un solo motore di aggiornamento, ancore con `scroll-padding-top`, menu e finestre modali che fermano lo scroll, movimento ridotto rispettato) [F9]
+- [ ] Con React Bits: controllo di [componenti-animati.md](componenti-animati.md) §9 superato (adattati al design system, al massimo un componente da vetrina per pagina, movimento ridotto e lettori di schermo, `docs/licenze.md`) [F10]
 - [ ] Una sola etichetta per intento di CTA; CTA principali brevi
 - [ ] Sopratitoli entro il limite; tipi di sezione non ripetuti ([contenuti-e-qualita.md](contenuti-e-qualita.md) §7)
 - [ ] La pagina costruita corrisponde alla scaletta approvata in `docs/piano-sito.md`

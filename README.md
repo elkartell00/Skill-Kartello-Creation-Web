@@ -4,8 +4,16 @@ Skill per [Claude Code](https://code.claude.com) che crea siti web da zero per q
 Quando la avvii ti fa domande mirate, fissa un design system che resta costante su tutto il sito,
 poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 
-> Stato: **versione 2.1.5**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
+> Stato: **versione 2.2.0**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
 > e, dalla versione 2, imparando dalla **Repository dei template**: più template e tecniche ci metti, più diventa brava.
+
+## Novità della versione 2.2.0
+
+- **Componenti animati pronti per i siti in React** (React Bits, `DavidHDev/react-bits`): nuova guida `references/componenti-animati.md`.
+  - Catalogo di oltre 215 componenti (testi cinetici, sfondi in shader, gallerie, card, menu, cursori) collegato alle ricette del motion graphics.
+  - Installazione con un comando, adattamento obbligatorio al design system e confronto con la soluzione propria.
+  - Regole per evitare l'effetto "già visto", per prestazioni, movimento ridotto e lettori di schermo.
+  - Licenza rispettata: i componenti si usano nei siti dei clienti, ma non sono copiati nella skill né rivenduti.
 
 ## Novità della versione 2.1.5
 

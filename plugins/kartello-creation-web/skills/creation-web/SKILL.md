@@ -128,7 +128,7 @@ Attendi l'approvazione o le correzioni. Dopo l'approvazione salva il piano in `d
 7. **Animazioni** secondo il livello scelto ([references/motion.md](references/motion.md)).
 8. **Studio AI, proporzionato al livello**: se servono fotografie o riprese che il codice non può fare e che il cliente non ha, proponi l'elenco con il motivo e la stima (`stima_costo`), dentro il budget base del livello (G1), e per ogni generazione in più chiedi spiegando che il sito resta allo stesso livello; genera solo dopo il sì, con le regole di [references/contenuti-visivi.md](references/contenuti-visivi.md). Al livello High Quality le generazioni che servono alla scena d'impatto si preparano prima, nella Fase 5 punto 2.
 
-Prima di scrivere un effetto, un movimento, una scena 3D o una soluzione per le prestazioni non già decisi nel piano, fai il confronto della regola d'oro 13: tua soluzione contro tecniche apprese, poi la migliore, adattata al design system. Se durante la costruzione l'opzione scelta rende peggio del previsto (fotogrammi persi, peso, resa su mobile), prova l'alternativa e dillo all'utente.
+Prima di scrivere un effetto, un movimento, una scena 3D o una soluzione per le prestazioni non già decisi nel piano, fai il confronto della regola d'oro 13: tua soluzione contro tecniche apprese (e, nei siti in React, contro il componente adatto di React Bits, [references/componenti-animati.md](references/componenti-animati.md)), poi la migliore, adattata al design system. Se durante la costruzione l'opzione scelta rende peggio del previsto (fotogrammi persi, peso, resa su mobile), prova l'alternativa e dillo all'utente.
 
 Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla volta, così le modifiche restano controllabili. Dopo ogni sezione completata aggiorna lo stato in `docs/piano-sito.md`. Durante tutta la costruzione valgono [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) e il design system del progetto.
 
@@ -156,6 +156,7 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/motion-graphics.md](references/motion-graphics.md) | Fasi 4, 5 e 6: la scena d'impatto in motion graphics, metodo, ricettario, revisione |
 | [references/gsap.md](references/gsap.md) | Fasi 2, 5 e 6 quando si usa GSAP: impostazione, timeline, ScrollTrigger, plugin per ogni effetto, framework, prestazioni, errori da evitare |
 | [references/scroll-morbido.md](references/scroll-morbido.md) | Fasi 2 e 5 se si usa lo scroll morbido: Lenis con GSAP, Three.js e framework, menu e finestre modali, aggancio alle sezioni, limiti |
+| [references/componenti-animati.md](references/componenti-animati.md) | Fasi 4 e 5 nei siti in React: componenti animati di React Bits, licenza, installazione, adattamento al design system, catalogo per esigenza, qualità |
 | [references/grafica-in-codice.md](references/grafica-in-codice.md) | Fasi 4 e 5: prima il codice per grafica, 3D e video |
 | [references/contenuti-visivi.md](references/contenuti-visivi.md) | Fasi 2, 4 e 5: foto del cliente e Studio AI come ultimo passaggio |
 | [references/scroll-cinematico.md](references/scroll-cinematico.md) e [references/scroll-cinematico-prompt.md](references/scroll-cinematico-prompt.md) | Solo se A3 = video guidato dallo scroll o L1 = E: scroll cinematico con il motore in `assets/scroll-cinematico/` |

@@ -70,6 +70,7 @@ Libreria: {Phosphor | Solar | Iconamoon | altra, solo su richiesta esplicita} ·
 
 Livello: {nessuno | sottile | fluido | cinematografico} · Easing: `--ease-fluid` = `cubic-bezier(0.32, 0.72, 0, 1)` (in GSAP la curva `fluid`, creata dallo stesso token) · Durate: {} · Navigazione: {} · Tagline reveal: {sì | no}
 Libreria di animazione: {CSS | GSAP con ScrollTrigger | Motion} · Plugin GSAP usati: {es. SplitText, DrawSVG | nessuno} · Scroll morbido: {nessuno | Lenis | ScrollSmoother} · Curve aggiuntive per la scena d'impatto: {nome = valore | nessuna}
+Componenti React Bits usati: {nome → ruolo, parametri adattati | nessuno}
 
 ## Token in codice
 

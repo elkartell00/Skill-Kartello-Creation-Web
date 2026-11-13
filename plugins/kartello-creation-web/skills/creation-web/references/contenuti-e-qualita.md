@@ -88,6 +88,7 @@ Sono default, non dogmi: uno stile scelto o una richiesta esplicita dell'utente 
 - Al massimo 4 elementi di testo: sopratitolo o striscia del marchio (facoltativo), titolo, sottotitolo, riga di CTA (una principale e al massimo una secondaria). Fuori dalla hero: frasi sotto le CTA, strisce di fiducia, prezzi, elenchi di funzioni, file di avatar, etichette di versione. I loghi dei clienti vanno in una sezione sotto.
 - Serve un'immagine vera ([contenuti-visivi.md](contenuti-visivi.md)): testo più una macchia di gradiente è un segnaposto; un finto prodotto costruito con i `div` (finta lista di attività, finto terminale, finta dashboard) è il segnale più evidente.
 - Non sempre centrata: salvo siti editoriali o manifesti, preferisci composizioni divise o asimmetriche.
+- Nessun componente di libreria famoso lasciato con i colori e i parametri della demo (es. gli sfondi di React Bits): si riconosce subito ([componenti-animati.md](componenti-animati.md) §6).
 
 **Impaginazione**
 - Ogni tipo di sezione (tre card, testo più immagine, citazione a tutta larghezza, bento…) compare **al massimo una volta** per pagina; con 6 o più sezioni almeno 4 tipi diversi; al massimo 2 alternanze testo e immagine di fila.
