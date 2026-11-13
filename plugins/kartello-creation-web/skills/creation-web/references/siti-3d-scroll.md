@@ -57,7 +57,7 @@ ffmpeg -v error -i film-taglio.mp4 -an -vf "fps=23.5,scale=1920:-2:flags=lanczos
 - **Un capitolo per film**: sezione alta (420–600 vh, regola sulla quantità di movimento) con un palco fissato (`position: sticky`, `100dvh`) e il canvas; `mountFrameScrub` per ogni capitolo, con le tappe (`beats`) per i fermi su un fotogramma e i tratti più lenti [F6, F7].
 - **Testi in HTML** sopra il canvas, con finestre di comparsa (`data-in`, `data-out`): il primo capitolo leggibile da fermo, l'ultimo che resta alla fine. I testi nascosti non ricevono clic né tab (il motore li rende `inert`).
 - **Strumenti e contatori** con `onProgress(p, fotogramma)`: legati al fotogramma visibile, non alla percentuale di pagina.
-- **Scroll morbido** facoltativo con Lenis; il motore funziona anche con lo scroll nativo.
+- **Scroll morbido** facoltativo con Lenis ([scroll-morbido.md](scroll-morbido.md)); il motore funziona anche con lo scroll nativo.
 - **Lo spettacolo diventa un sito** quando ha accanto ciò che il cliente compra davvero: un ordine, un preventivo istantaneo, un configuratore, una prenotazione. Ogni modulo dice la verità: "non è stato inviato nulla" se è una demo [F6].
 - Movimento ridotto: poster e testi, nessuna sequenza scaricata. Mobile: ritaglio centrale con `focusX` per capitolo, sequenza più leggera se serve ([volo-in-prima-persona.md](volo-in-prima-persona.md) §7).
 

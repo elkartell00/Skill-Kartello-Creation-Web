@@ -4,8 +4,16 @@ Skill per [Claude Code](https://code.claude.com) che crea siti web da zero per q
 Quando la avvii ti fa domande mirate, fissa un design system che resta costante su tutto il sito,
 poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 
-> Stato: **versione 2.1.0**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
+> Stato: **versione 2.1.5**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
 > e, dalla versione 2, imparando dalla **Repository dei template**: più template e tecniche ci metti, più diventa brava.
+
+## Novità della versione 2.1.5
+
+- **Scroll morbido fatto bene con Lenis** (`darkroomengineering/lenis`, licenza MIT): nuova guida `references/scroll-morbido.md`.
+  - Quando usarlo per livello del sito e quando è meglio evitarlo.
+  - Impostazione corretta con GSAP, Three.js, React, Next.js, Vue, Nuxt e Astro, in un solo ciclo, così scroll, animazioni e 3D non si separano mai.
+  - Menu e finestre modali che fermano lo scroll, scroll interni, ancore sotto l'header fisso, aggancio alle sezioni, limiti su Safari e iOS.
+  - Movimento ridotto sempre rispettato.
 
 ## Novità della versione 2.1
 

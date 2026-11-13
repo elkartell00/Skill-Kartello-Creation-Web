@@ -155,6 +155,7 @@ Non ricostruire mai tutta la pagina a ogni iterazione: lavora una sezione alla v
 | [references/contenuti-e-qualita.md](references/contenuti-e-qualita.md) | Fasi 4 e 5: scrittura dei testi e costruzione |
 | [references/motion-graphics.md](references/motion-graphics.md) | Fasi 4, 5 e 6: la scena d'impatto in motion graphics, metodo, ricettario, revisione |
 | [references/gsap.md](references/gsap.md) | Fasi 2, 5 e 6 quando si usa GSAP: impostazione, timeline, ScrollTrigger, plugin per ogni effetto, framework, prestazioni, errori da evitare |
+| [references/scroll-morbido.md](references/scroll-morbido.md) | Fasi 2 e 5 se si usa lo scroll morbido: Lenis con GSAP, Three.js e framework, menu e finestre modali, aggancio alle sezioni, limiti |
 | [references/grafica-in-codice.md](references/grafica-in-codice.md) | Fasi 4 e 5: prima il codice per grafica, 3D e video |
 | [references/contenuti-visivi.md](references/contenuti-visivi.md) | Fasi 2, 4 e 5: foto del cliente e Studio AI come ultimo passaggio |
 | [references/scroll-cinematico.md](references/scroll-cinematico.md) e [references/scroll-cinematico-prompt.md](references/scroll-cinematico-prompt.md) | Solo se A3 = video guidato dallo scroll o L1 = E: scroll cinematico con il motore in `assets/scroll-cinematico/` |

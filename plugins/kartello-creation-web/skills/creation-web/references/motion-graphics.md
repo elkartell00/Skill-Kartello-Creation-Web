@@ -58,7 +58,7 @@ Le ricette "3D scroll" di [siti-3d-scroll.md](siti-3d-scroll.md) e gli effetti d
 
 - **GSAP** con ScrollTrigger e i plugin per testo, tracciati e morph (SplitText, DrawSVG, MorphSVG, Flip): la base della coreografia. È gratuito, plugin compresi, dal pacchetto pubblico `gsap`. Impostazione, plugin giusto per ogni ricetta, uso nei framework ed errori da evitare: [gsap.md](gsap.md) [F8].
 - **Three.js** (o React Three Fiber con `@react-three/drei` e `postprocessing`) per 3D, particelle, shader e post-produzione.
-- **Motion** (ex Framer Motion) per le animazioni dei componenti React; per lo scroll morbido **Lenis** oppure **ScrollSmoother** di GSAP, da proporre come opzione ([gsap.md](gsap.md) §5).
+- **Motion** (ex Framer Motion) per le animazioni dei componenti React; per lo scroll morbido **Lenis** (consigliato: tiene sincronizzati scroll, GSAP e WebGL in un solo ciclo, [scroll-morbido.md](scroll-morbido.md)) oppure **ScrollSmoother** di GSAP, da proporre come opzione ([gsap.md](gsap.md) §5).
 - **Remotion** per esportare video MP4 dal codice (verifica la licenza per le aziende).
 - Tutto installato nel progetto, niente CDN in produzione.
 

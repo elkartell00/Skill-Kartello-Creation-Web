@@ -13,6 +13,7 @@ Registro delle skill integrate in Creation Web. Le regole e le domande derivate 
 | F6 | *Build Award-Winning 3D Scroll Websites* (prompt pack PDF, settembre 2026) | Fornito dal proprietario | Nessuna licenza: solo tecniche e strutture riscritte | 2026-10-11 |
 | F7 | `scroll-cinematic` (skill più vecchia) | Fornita dal proprietario | Nessuna licenza: solo idee, nessun codice copiato | 2026-10-11 |
 | F8 | GSAP AI Skills ufficiali: `gsap-core`, `gsap-timeline`, `gsap-scrolltrigger`, `gsap-plugins`, `gsap-utils`, `gsap-react`, `gsap-frameworks`, `gsap-performance` | [greensock/gsap-skills](https://github.com/greensock/gsap-skills), commit aed9cfd3 | MIT | 2026-11-13 |
+| F9 | Lenis 1.3.27: README, pacchetti `lenis/react`, `lenis/vue`, `lenis/snap`, CSS consigliato, manifesto | [darkroomengineering/lenis](https://github.com/darkroomengineering/lenis), commit 5fe20e4 | MIT | 2026-11-13 |
 
 ---
 
@@ -321,6 +322,40 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
+
+## F9 — Lenis (darkroomengineering/lenis)
+
+La libreria di scroll morbido più usata nei siti premiati, già citata nella skill come opzione. Integrata la documentazione d'uso (impostazione, opzioni, integrazione con GSAP, React, Vue e Nuxt, aggancio alle sezioni, scroll interni, movimento ridotto, limiti), riscritta in italiano in un file per argomento. Dal codice sorgente sono stati verificati due comportamenti usati nelle regole: `scrollTo` tiene conto di `scroll-margin-top` e `scroll-padding-top`, e `respectReducedMotion` è attivo di default.
+
+| Parte di F9 | Dove è finita |
+|---|---|
+| Introduzione e manifesto (scroll nativo, sincronizzazione WebGL e pagina) | [scroll-morbido.md](scroll-morbido.md) introduzione e §4 |
+| Installazione, CSS consigliato, impostazione, opzioni principali (`autoRaf`, `anchors`, `stopInertiaOnNavigate`, `lerp`, `syncTouch`, `respectReducedMotion`) | [scroll-morbido.md](scroll-morbido.md) §1–§2 |
+| Integrazione con GSAP ScrollTrigger | [scroll-morbido.md](scroll-morbido.md) §3; [gsap.md](gsap.md) §5 |
+| `lenis/react` (con GSAP e Motion), `lenis/vue`, modulo Nuxt | [scroll-morbido.md](scroll-morbido.md) §5 |
+| Scroll annidati (`data-lenis-prevent`, `prevent`, `allowNestedScroll`), `autoToggle`, `stop()` e `start()` | [scroll-morbido.md](scroll-morbido.md) §6 |
+| `lenis/snap` | [scroll-morbido.md](scroll-morbido.md) §7 |
+| Limitazioni e risoluzione dei problemi | [scroll-morbido.md](scroll-morbido.md) §8–§9; riga in [checklist.md](checklist.md) |
+
+**Diventato opzione, non regola:** lo scroll morbido resta una scelta dell'utente (W4, libreria di animazione), con un consiglio per livello: nessuno a Low Quality, facoltativo a Standard, consigliato a High Quality quando le scene seguono lo scroll. Lenis è consigliato rispetto a ScrollSmoother perché lavora sullo scroll nativo; ScrollSmoother resta l'alternativa.
+
+**Aggiunte Kartello nel file:** quando è meglio non usare lo scroll morbido; `scroll-padding-top` per l'header fisso; un'istanza sola; il ciclo unico con Three.js e GSAP; l'uso in Astro con le transizioni di pagina; il blocco di Lenis insieme alle regole del menu di [motion.md](motion.md) §4; il ritorno in cima al cambio pagina; quando non usare l'aggancio; la compatibilità con i motori dello scroll cinematico e del 3D scroll.
+
+**Non integrato:** l'inclusione da CDN e l'uso "senza codice" con `unpkg` (la skill installa le librerie nel progetto), `lenis/framer`, lo scroll infinito (`infinite`), le opzioni di dettaglio poco utili ai siti vetrina (`wheelMultiplier`, `touchMultiplier`, `touchInertiaExponent`, `virtualScroll`, `naiveDimensions`, `eventsTarget`, `orientation` orizzontale), la roadmap della versione 2, il playground, gli sponsor e i tutorial esterni.
+
+### Licenza F9
+
+```
+The MIT License
+
+Copyright (c) 2024 darkroom.engineering
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
 ## Scelta del proprietario: livello del sito e spesa proporzionata

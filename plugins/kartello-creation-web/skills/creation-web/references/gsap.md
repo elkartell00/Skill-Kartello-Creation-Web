@@ -168,7 +168,7 @@ gsap.utils.toArray('.binario .card').forEach((card) => {
 ```
 
 **Scroll morbido: Lenis oppure ScrollSmoother** (opzione da proporre, decide l'utente):
-- **Lenis**: leggero, non cambia l'HTML. Va sincronizzato con ScrollTrigger (aggiunta Kartello):
+- **Lenis** (consigliato): leggero, lavora sullo scroll nativo, non cambia l'HTML. Va sincronizzato con ScrollTrigger; impostazione completa, framework, menu e finestre modali in [scroll-morbido.md](scroll-morbido.md) [F9]:
   ```js
   const lenis = new Lenis();
   lenis.on('scroll', ScrollTrigger.update);
