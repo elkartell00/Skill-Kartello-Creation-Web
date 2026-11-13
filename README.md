@@ -4,7 +4,7 @@ Skill per [Claude Code](https://code.claude.com) che crea siti web da zero per q
 Quando la avvii ti fa domande mirate, fissa un design system che resta costante su tutto il sito,
 poi pianifica e costruisce una prima bozza professionale sezione per sezione.
 
-> Stato: **versione 2.2.0**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
+> Stato: **versione 2.2.1**. Si arricchisce integrando altre skill una alla volta (vedi `references/fonti.md`)
 > e, dalla versione 2, imparando dalla **Repository dei template**: più template e tecniche ci metti, più diventa brava.
 
 ## Novità della versione 2.2.0

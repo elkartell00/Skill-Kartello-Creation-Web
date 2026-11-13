@@ -33,7 +33,11 @@ export { gsap, ScrollTrigger };
 ```
 
 - **Nessuna curva inventata**: le animazioni usano `fluid` (cioè `--ease-fluid`). Altre curve (`power3.out`, `expo.inOut`, `back.out(1.7)`…) solo se scritte nel design system per un uso preciso, per esempio nella scena d'impatto. Solo curve documentate [F8].
-- **Eccezione tecnica** (precisazione Kartello): quando l'animazione è legata 1:1 allo scroll (`scrub`) la curva della timeline esterna è `ease: "none"`, altrimenti posizione dello scroll e animazione non coincidono. Per lo scroll orizzontale con `containerAnimation` è obbligatorio [F8]. La morbidezza arriva da `scrub: 1` (o da Lenis); dentro la timeline i singoli passaggi possono usare `fluid`. Vale anche per i video e le sequenze guidati dallo scroll.
+- **Animazioni guidate dallo scroll: si decide per ogni sito** (domanda M5, [domande.md](domande.md) §2.4; precisazione Kartello):
+  - **Fedeli allo scroll**: la timeline esterna usa `ease: "none"`, così l'animazione si sposta esattamente quanto la rotella; la morbidezza arriva da `scrub: 1` (o da Lenis) e dentro la timeline i singoli passaggi possono usare `fluid`.
+  - **Morbide**: anche la timeline esterna usa `fluid`; l'animazione parte e frena dolcemente rispetto allo scroll, più elastica ma meno precisa.
+  - **Decido per ogni effetto** (default): la skill sceglie effetto per effetto e lo scrive nel piano.
+  - Restano sempre fedeli, perché altrimenti si rompono: lo scroll orizzontale con `containerAnimation` [F8] e i video o le sequenze di fotogrammi guidati dallo scroll. Se il sito ha scelto "Morbide", per questi effetti avvisa l'utente e proponi un'alternativa.
 - **Movimento ridotto e punti di rottura con `gsap.matchMedia()`** [F8]: tutte le animazioni stanno dentro un `matchMedia`, così quando la condizione cambia vengono annullate da sole, ScrollTrigger compresi.
 
 ```js

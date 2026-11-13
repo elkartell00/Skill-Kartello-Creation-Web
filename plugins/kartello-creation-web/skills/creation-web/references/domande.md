@@ -149,8 +149,11 @@ Se I3 è vendita, contatti, prenotazioni o lead. In due giri: K1–K4, poi K5–
 | M2 | Navigazione | Barra classica fissa · Isola fluttuante in vetro · Trasparente sopra la hero · Menu laterale | Barra classica fissa |
 | M3 | Sezione "tagline reveal": una frase grande che si accende parola per parola durante lo scroll | Sì · No | Sì per landing e stile Minimal tech, altrimenti no |
 | M4 | Scena d'impatto in motion graphics, quella che il visitatore ricorda [F5] | 2–3 idee in codice adatte all'attività ([motion-graphics.md](motion-graphics.md), [effetti-impatto.md](effetti-impatto.md)), più "Nessun effetto d'impatto" | Livello High Quality: sempre l'idea consigliata, nessuno solo se l'utente lo chiede. Standard: facoltativo, si propone. Low Quality: no, salvo richiesta |
+| M5 | Come seguono lo scroll le animazioni guidate dalla rotella? (solo se il sito ne ha: sezioni bloccate, binari orizzontali, video o sequenze a scroll) | Decido per ogni effetto (Consigliato) · Fedeli allo scroll: si muovono esattamente quanto la rotella · Morbide: partenza e frenata morbide anche allo scroll | Decido per ogni effetto |
 
 Dettagli in [motion.md](motion.md).
+
+M5 (precisazione Kartello, scelta del proprietario: dipende dal sito) [F8]. Spiegala con un esempio: "in una sezione dove le foto scorrono di lato mentre scorri, *fedeli* vuol dire che si spostano esattamente quanto la rotella; *morbide* che partono e frenano dolcemente, con una sensazione più elastica ma meno precisa". Con "Decido per ogni effetto" la scelta di ogni effetto va nel piano (Fase 4). Alcuni effetti funzionano bene solo fedeli: binari orizzontali con `containerAnimation`, video e sequenze di fotogrammi guidati dallo scroll. Se l'utente ha scelto "Morbide", per quegli effetti diglielo e proponi un'alternativa ([gsap.md](gsap.md) §2). In modalità Rapida vale il default.
 
 ### 2.5 Landing page [F1]
 
